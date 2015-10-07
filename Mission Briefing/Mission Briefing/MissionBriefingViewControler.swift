@@ -44,7 +44,7 @@ class MissionBriefingViewController: UIViewController
     @IBAction func authenticateAgent(sender: UIButton)
     {
         // This will cause the keyboard to dismiss when the authenticate button is tapped
-        if <#name text field property identifier goes here#>.isFirstResponder
+        if let agentGreeting = topNametextFeildOne.text
         {
             <#name text field property identifier goes here#>.resignFirstResponder
         }
@@ -62,6 +62,8 @@ class MissionBriefingViewController: UIViewController
             //    the delimiter would be a space character.
             //
             
+            
+           
             
             
             
