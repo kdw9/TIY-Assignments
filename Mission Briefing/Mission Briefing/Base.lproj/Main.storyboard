@@ -34,6 +34,23 @@
                                 <animations/>
                                 <state key="normal" title="Authenticate"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsz-lM-UeS">
+                                <rect key="frame" x="279" y="142" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ATC-0n-IhL">
+                                <rect key="frame" x="60" y="182" width="480" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Vsr-1X-462"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -43,10 +60,15 @@
                             <constraint firstItem="7Fq-Dy-mhS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="CkS-aG-XMB"/>
                             <constraint firstItem="Rto-uF-Aah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D7U-l0-stp"/>
                             <constraint firstItem="7Fq-Dy-mhS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RiQ-mh-0LI"/>
+                            <constraint firstItem="dsz-lM-UeS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V55-Ez-4ZW"/>
+                            <constraint firstItem="ATC-0n-IhL" firstAttribute="width" secondItem="I4D-t8-uVW" secondAttribute="width" id="YXl-kI-EmS"/>
                             <constraint firstItem="Rto-uF-Aah" firstAttribute="width" secondItem="I4D-t8-uVW" secondAttribute="width" multiplier="0.3" id="YkS-Ih-SsI"/>
+                            <constraint firstItem="ATC-0n-IhL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgT-Wa-f18"/>
+                            <constraint firstItem="ATC-0n-IhL" firstAttribute="top" secondItem="Rto-uF-Aah" secondAttribute="bottom" constant="48" id="kaJ-j4-OGb"/>
                             <constraint firstItem="I4D-t8-uVW" firstAttribute="top" secondItem="7Fq-Dy-mhS" secondAttribute="bottom" constant="8" id="smq-Gn-QZ1"/>
                             <constraint firstItem="I4D-t8-uVW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t4W-xY-ySz"/>
                             <constraint firstItem="Rto-uF-Aah" firstAttribute="top" secondItem="I4D-t8-uVW" secondAttribute="bottom" constant="8" id="wCt-4j-mev"/>
+                            <constraint firstItem="dsz-lM-UeS" firstAttribute="top" secondItem="Rto-uF-Aah" secondAttribute="bottom" constant="8" id="zDL-zK-S8g"/>
                         </constraints>
                     </view>
                 </viewController>
