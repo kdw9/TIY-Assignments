@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A042E1EE-8F19-459B-8C8B-F7B018234322</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8472055B3D52F585363BE6D4481E286073A0BEAB</key>
+		<string>https://github.com/kdw9/TIY-Assignments.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SayMyName/SayMyName.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8472055B3D52F585363BE6D4481E286073A0BEAB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kdw9/TIY-Assignments.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8472055B3D52F585363BE6D4481E286073A0BEAB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8472055B3D52F585363BE6D4481E286073A0BEAB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TIY-Assignments</string>
+		</dict>
+	</array>
+</dict>
+</plist>
