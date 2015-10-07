@@ -51,6 +51,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6u1-BI-QDZ">
+                                <rect key="frame" x="180" y="338" width="240" height="212"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -64,7 +68,9 @@
                             <constraint firstItem="ATC-0n-IhL" firstAttribute="width" secondItem="I4D-t8-uVW" secondAttribute="width" id="YXl-kI-EmS"/>
                             <constraint firstItem="Rto-uF-Aah" firstAttribute="width" secondItem="I4D-t8-uVW" secondAttribute="width" multiplier="0.3" id="YkS-Ih-SsI"/>
                             <constraint firstItem="ATC-0n-IhL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgT-Wa-f18"/>
+                            <constraint firstItem="6u1-BI-QDZ" firstAttribute="top" secondItem="ATC-0n-IhL" secondAttribute="bottom" constant="28" id="ii4-0F-U0g"/>
                             <constraint firstItem="ATC-0n-IhL" firstAttribute="top" secondItem="Rto-uF-Aah" secondAttribute="bottom" constant="48" id="kaJ-j4-OGb"/>
+                            <constraint firstItem="6u1-BI-QDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kah-bE-KKW"/>
                             <constraint firstItem="I4D-t8-uVW" firstAttribute="top" secondItem="7Fq-Dy-mhS" secondAttribute="bottom" constant="8" id="smq-Gn-QZ1"/>
                             <constraint firstItem="I4D-t8-uVW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t4W-xY-ySz"/>
                             <constraint firstItem="Rto-uF-Aah" firstAttribute="top" secondItem="I4D-t8-uVW" secondAttribute="bottom" constant="8" id="wCt-4j-mev"/>
@@ -76,4 +82,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="TIYLogo" width="240" height="212"/>
+    </resources>
 </document>
