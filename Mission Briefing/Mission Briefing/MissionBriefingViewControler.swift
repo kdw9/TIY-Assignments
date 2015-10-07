@@ -11,6 +11,11 @@ import UIKit
 class MissionBriefingViewController: UIViewController
 {
     // Place IBOutlet properties below
+    @IBOutlet var topNametextFeildOne: UITextField!
+    @IBOutlet var bottomPassWordtextFeildTwo: UITextField!
+    @IBOutlet var labeler: UILabel!
+    
+    
     
     
     override func viewDidLoad()
@@ -23,6 +28,9 @@ class MissionBriefingViewController: UIViewController
         //    Hint: there is a string literal that represents empty
         //
         
+        topNametextFeildOne.text = ""
+        bottomPassWordtextFeildTwo.text = ""
+        labeler.text = ""
     }
     
     override func didReceiveMemoryWarning()
@@ -44,7 +52,7 @@ class MissionBriefingViewController: UIViewController
         //
         // 4. Check whether there is text in BOTH the name and password textfields
         //
-        if <#?#>
+        if topNametextFeildOne.text == "" || bottomPassWordtextFeildTwo.text == ""
         {
             //
             // 5. The greeting label needs to be populated with the the string "Good evening, Agent #", where # is the last name of
