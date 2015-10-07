@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,18 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Fq-Dy-mhS">
-                                <rect key="frame" x="0.0" y="28" width="600" height="30"/>
+                                <rect key="frame" x="60" y="28" width="480" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I4D-t8-uVW">
+                                <rect key="frame" x="60" y="66" width="480" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rto-uF-Aah">
+                                <rect key="frame" x="228" y="104" width="144" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Authenticate"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="I4D-t8-uVW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="3vC-07-SUF"/>
                             <constraint firstItem="7Fq-Dy-mhS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="BFx-IW-bmA"/>
-                            <constraint firstItem="7Fq-Dy-mhS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CkS-aG-XMB"/>
+                            <constraint firstItem="7Fq-Dy-mhS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="CkS-aG-XMB"/>
+                            <constraint firstItem="Rto-uF-Aah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D7U-l0-stp"/>
                             <constraint firstItem="7Fq-Dy-mhS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RiQ-mh-0LI"/>
+                            <constraint firstItem="Rto-uF-Aah" firstAttribute="width" secondItem="I4D-t8-uVW" secondAttribute="width" multiplier="0.3" id="YkS-Ih-SsI"/>
+                            <constraint firstItem="I4D-t8-uVW" firstAttribute="top" secondItem="7Fq-Dy-mhS" secondAttribute="bottom" constant="8" id="smq-Gn-QZ1"/>
+                            <constraint firstItem="I4D-t8-uVW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t4W-xY-ySz"/>
+                            <constraint firstItem="Rto-uF-Aah" firstAttribute="top" secondItem="I4D-t8-uVW" secondAttribute="bottom" constant="8" id="wCt-4j-mev"/>
                         </constraints>
                     </view>
                 </viewController>
