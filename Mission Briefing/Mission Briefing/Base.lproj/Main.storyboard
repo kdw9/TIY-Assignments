@@ -77,6 +77,11 @@
                             <constraint firstItem="dsz-lM-UeS" firstAttribute="top" secondItem="Rto-uF-Aah" secondAttribute="bottom" constant="8" id="zDL-zK-S8g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomPassWordtextFeildTwo" destination="I4D-t8-uVW" id="ejA-ij-MHp"/>
+                        <outlet property="labeler" destination="dsz-lM-UeS" id="DfH-n8-RgA"/>
+                        <outlet property="topNametextFeildOne" destination="7Fq-Dy-mhS" id="dwP-KC-cRm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
