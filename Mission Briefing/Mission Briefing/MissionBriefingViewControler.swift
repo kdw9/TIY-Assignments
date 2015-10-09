@@ -14,6 +14,8 @@ class MissionBriefingViewController: UIViewController
     @IBOutlet var topNametextFeildOne: UITextField!
     @IBOutlet var bottomPassWordtextFeildTwo: UITextField!
     @IBOutlet var labeler: UILabel!
+    @IBOutlet var briefingTexingView: UITextView!
+    
     
     
     
@@ -44,10 +46,12 @@ class MissionBriefingViewController: UIViewController
     @IBAction func authenticateAgent(sender: UIButton)
     {
         // This will cause the keyboard to dismiss when the authenticate button is tapped
-        if let agentGreeting = topNametextFeildOne.text
+        if authenticateAgent.isFirstResponder
         {
             <#name text field property identifier goes here#>.resignFirstResponder
-        }
+       
+        
+        
         
         //
         // 4. Check whether there is text in BOTH the name and password textfields
