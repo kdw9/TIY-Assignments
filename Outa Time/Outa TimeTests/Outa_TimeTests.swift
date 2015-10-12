@@ -1,15 +1,15 @@
 //
-//  CountDownTests.swift
-//  CountDownTests
+//  Outa_TimeTests.swift
+//  Outa TimeTests
 //
-//  Created by Keron Williams on 10/9/15.
+//  Created by Keron Williams on 10/11/15.
 //  Copyright © 2015 The Iron Yard. All rights reserved.
 //
 
 import XCTest
-@testable import CountDown
+@testable import Outa_Time
 
-class CountDownTests: XCTestCase {
+class Outa_TimeTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

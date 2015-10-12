@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D8443AA1BC83E3E00149001"
-               BuildableName = "CountDown.app"
-               BlueprintName = "CountDown"
-               ReferencedContainer = "container:CountDown.xcodeproj">
+               BlueprintIdentifier = "5D8B19091BCB3F31006D085E"
+               BuildableName = "Outa Time.app"
+               BlueprintName = "Outa Time"
+               ReferencedContainer = "container:Outa Time.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D8443BE1BC83E3E00149001"
-               BuildableName = "CountDownTests.xctest"
-               BlueprintName = "CountDownTests"
-               ReferencedContainer = "container:CountDown.xcodeproj">
+               BlueprintIdentifier = "5D8B191D1BCB3F31006D085E"
+               BuildableName = "Outa TimeTests.xctest"
+               BlueprintName = "Outa TimeTests"
+               ReferencedContainer = "container:Outa Time.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D8443C91BC83E3E00149001"
-               BuildableName = "CountDownUITests.xctest"
-               BlueprintName = "CountDownUITests"
-               ReferencedContainer = "container:CountDown.xcodeproj">
+               BlueprintIdentifier = "5D8B19281BCB3F31006D085E"
+               BuildableName = "Outa TimeUITests.xctest"
+               BlueprintName = "Outa TimeUITests"
+               ReferencedContainer = "container:Outa Time.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D8443AA1BC83E3E00149001"
-            BuildableName = "CountDown.app"
-            BlueprintName = "CountDown"
-            ReferencedContainer = "container:CountDown.xcodeproj">
+            BlueprintIdentifier = "5D8B19091BCB3F31006D085E"
+            BuildableName = "Outa Time.app"
+            BlueprintName = "Outa Time"
+            ReferencedContainer = "container:Outa Time.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D8443AA1BC83E3E00149001"
-            BuildableName = "CountDown.app"
-            BlueprintName = "CountDown"
-            ReferencedContainer = "container:CountDown.xcodeproj">
+            BlueprintIdentifier = "5D8B19091BCB3F31006D085E"
+            BuildableName = "Outa Time.app"
+            BlueprintName = "Outa Time"
+            ReferencedContainer = "container:Outa Time.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D8443AA1BC83E3E00149001"
-            BuildableName = "CountDown.app"
-            BlueprintName = "CountDown"
-            ReferencedContainer = "container:CountDown.xcodeproj">
+            BlueprintIdentifier = "5D8B19091BCB3F31006D085E"
+            BuildableName = "Outa Time.app"
+            BlueprintName = "Outa Time"
+            ReferencedContainer = "container:Outa Time.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

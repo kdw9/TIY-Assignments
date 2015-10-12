@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D1E24111BC6AFAE00EBAAAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E24101BC6AFAE00EBAAAD /* AppDelegate.swift */; };
-		5D1E24131BC6AFAE00EBAAAD /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E24121BC6AFAE00EBAAAD /* CountDownViewController.swift */; };
-		5D1E24161BC6AFAE00EBAAAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1E24141BC6AFAE00EBAAAD /* Main.storyboard */; };
-		5D1E24181BC6AFAE00EBAAAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1E24171BC6AFAE00EBAAAD /* Assets.xcassets */; };
-		5D1E241B1BC6AFAE00EBAAAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1E24191BC6AFAE00EBAAAD /* LaunchScreen.storyboard */; };
-		5D1E24261BC6AFAF00EBAAAD /* CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E24251BC6AFAF00EBAAAD /* CountdownTests.swift */; };
-		5D1E24311BC6AFAF00EBAAAD /* CountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E24301BC6AFAF00EBAAAD /* CountdownUITests.swift */; };
-		5D1E243F1BC6B92600EBAAAD /* TimerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E243E1BC6B92600EBAAAD /* TimerPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5D8443AF1BC83E3E00149001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8443AE1BC83E3E00149001 /* AppDelegate.swift */; };
+		5D8443B11BC83E3E00149001 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8443B01BC83E3E00149001 /* CountDownViewController.swift */; };
+		5D8443B41BC83E3E00149001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8443B21BC83E3E00149001 /* Main.storyboard */; };
+		5D8443B61BC83E3E00149001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8443B51BC83E3E00149001 /* Assets.xcassets */; };
+		5D8443B91BC83E3E00149001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8443B71BC83E3E00149001 /* LaunchScreen.storyboard */; };
+		5D8443C41BC83E3E00149001 /* CountDownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8443C31BC83E3E00149001 /* CountDownTests.swift */; };
+		5D8443CF1BC83E3E00149001 /* CountDownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8443CE1BC83E3E00149001 /* CountDownUITests.swift */; };
+		5D8443DD1BC8764F00149001 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8443DC1BC8764F00149001 /* TimePickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D1E24221BC6AFAF00EBAAAD /* PBXContainerItemProxy */ = {
+		5D8443C01BC83E3E00149001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D1E24051BC6AFAE00EBAAAD /* Project object */;
+			containerPortal = 5D8443A31BC83E3E00149001 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D1E240C1BC6AFAE00EBAAAD;
-			remoteInfo = Countdown;
+			remoteGlobalIDString = 5D8443AA1BC83E3E00149001;
+			remoteInfo = CountDown;
 		};
-		5D1E242D1BC6AFAF00EBAAAD /* PBXContainerItemProxy */ = {
+		5D8443CB1BC83E3E00149001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D1E24051BC6AFAE00EBAAAD /* Project object */;
+			containerPortal = 5D8443A31BC83E3E00149001 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D1E240C1BC6AFAE00EBAAAD;
-			remoteInfo = Countdown;
+			remoteGlobalIDString = 5D8443AA1BC83E3E00149001;
+			remoteInfo = CountDown;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D1E240D1BC6AFAE00EBAAAD /* Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D1E24101BC6AFAE00EBAAAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D1E24121BC6AFAE00EBAAAD /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
-		5D1E24151BC6AFAE00EBAAAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5D1E24171BC6AFAE00EBAAAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5D1E241A1BC6AFAE00EBAAAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5D1E241C1BC6AFAE00EBAAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D1E24211BC6AFAF00EBAAAD /* CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D1E24251BC6AFAF00EBAAAD /* CountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTests.swift; sourceTree = "<group>"; };
-		5D1E24271BC6AFAF00EBAAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D1E242C1BC6AFAF00EBAAAD /* CountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D1E24301BC6AFAF00EBAAAD /* CountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownUITests.swift; sourceTree = "<group>"; };
-		5D1E24321BC6AFAF00EBAAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D1E243E1BC6B92600EBAAAD /* TimerPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPickerViewController.swift; sourceTree = "<group>"; };
+		5D8443AB1BC83E3E00149001 /* CountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8443AE1BC83E3E00149001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D8443B01BC83E3E00149001 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		5D8443B31BC83E3E00149001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D8443B51BC83E3E00149001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D8443B81BC83E3E00149001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D8443BA1BC83E3E00149001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8443BF1BC83E3E00149001 /* CountDownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8443C31BC83E3E00149001 /* CountDownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTests.swift; sourceTree = "<group>"; };
+		5D8443C51BC83E3E00149001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8443CA1BC83E3E00149001 /* CountDownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8443CE1BC83E3E00149001 /* CountDownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownUITests.swift; sourceTree = "<group>"; };
+		5D8443D01BC83E3E00149001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8443DC1BC8764F00149001 /* TimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D1E240A1BC6AFAE00EBAAAD /* Frameworks */ = {
+		5D8443A81BC83E3E00149001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D1E241E1BC6AFAF00EBAAAD /* Frameworks */ = {
+		5D8443BC1BC83E3E00149001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D1E24291BC6AFAF00EBAAAD /* Frameworks */ = {
+		5D8443C71BC83E3E00149001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,137 +76,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D1E24041BC6AFAE00EBAAAD = {
+		5D8443A21BC83E3E00149001 = {
 			isa = PBXGroup;
 			children = (
-				5D1E240F1BC6AFAE00EBAAAD /* Countdown */,
-				5D1E24241BC6AFAF00EBAAAD /* CountdownTests */,
-				5D1E242F1BC6AFAF00EBAAAD /* CountdownUITests */,
-				5D1E240E1BC6AFAE00EBAAAD /* Products */,
+				5D8443AD1BC83E3E00149001 /* CountDown */,
+				5D8443C21BC83E3E00149001 /* CountDownTests */,
+				5D8443CD1BC83E3E00149001 /* CountDownUITests */,
+				5D8443AC1BC83E3E00149001 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5D1E240E1BC6AFAE00EBAAAD /* Products */ = {
+		5D8443AC1BC83E3E00149001 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D1E240D1BC6AFAE00EBAAAD /* Countdown.app */,
-				5D1E24211BC6AFAF00EBAAAD /* CountdownTests.xctest */,
-				5D1E242C1BC6AFAF00EBAAAD /* CountdownUITests.xctest */,
+				5D8443AB1BC83E3E00149001 /* CountDown.app */,
+				5D8443BF1BC83E3E00149001 /* CountDownTests.xctest */,
+				5D8443CA1BC83E3E00149001 /* CountDownUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D1E240F1BC6AFAE00EBAAAD /* Countdown */ = {
+		5D8443AD1BC83E3E00149001 /* CountDown */ = {
 			isa = PBXGroup;
 			children = (
-				5D1E24101BC6AFAE00EBAAAD /* AppDelegate.swift */,
-				5D1E24121BC6AFAE00EBAAAD /* CountDownViewController.swift */,
-				5D1E24141BC6AFAE00EBAAAD /* Main.storyboard */,
-				5D1E24171BC6AFAE00EBAAAD /* Assets.xcassets */,
-				5D1E24191BC6AFAE00EBAAAD /* LaunchScreen.storyboard */,
-				5D1E241C1BC6AFAE00EBAAAD /* Info.plist */,
-				5D1E243E1BC6B92600EBAAAD /* TimerPickerViewController.swift */,
+				5D8443AE1BC83E3E00149001 /* AppDelegate.swift */,
+				5D8443B01BC83E3E00149001 /* CountDownViewController.swift */,
+				5D8443B21BC83E3E00149001 /* Main.storyboard */,
+				5D8443B51BC83E3E00149001 /* Assets.xcassets */,
+				5D8443B71BC83E3E00149001 /* LaunchScreen.storyboard */,
+				5D8443BA1BC83E3E00149001 /* Info.plist */,
+				5D8443DC1BC8764F00149001 /* TimePickerViewController.swift */,
 			);
-			path = Countdown;
+			path = CountDown;
 			sourceTree = "<group>";
 		};
-		5D1E24241BC6AFAF00EBAAAD /* CountdownTests */ = {
+		5D8443C21BC83E3E00149001 /* CountDownTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D1E24251BC6AFAF00EBAAAD /* CountdownTests.swift */,
-				5D1E24271BC6AFAF00EBAAAD /* Info.plist */,
+				5D8443C31BC83E3E00149001 /* CountDownTests.swift */,
+				5D8443C51BC83E3E00149001 /* Info.plist */,
 			);
-			path = CountdownTests;
+			path = CountDownTests;
 			sourceTree = "<group>";
 		};
-		5D1E242F1BC6AFAF00EBAAAD /* CountdownUITests */ = {
+		5D8443CD1BC83E3E00149001 /* CountDownUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5D1E24301BC6AFAF00EBAAAD /* CountdownUITests.swift */,
-				5D1E24321BC6AFAF00EBAAAD /* Info.plist */,
+				5D8443CE1BC83E3E00149001 /* CountDownUITests.swift */,
+				5D8443D01BC83E3E00149001 /* Info.plist */,
 			);
-			path = CountdownUITests;
+			path = CountDownUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D1E240C1BC6AFAE00EBAAAD /* Countdown */ = {
+		5D8443AA1BC83E3E00149001 /* CountDown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D1E24351BC6AFAF00EBAAAD /* Build configuration list for PBXNativeTarget "Countdown" */;
+			buildConfigurationList = 5D8443D31BC83E3E00149001 /* Build configuration list for PBXNativeTarget "CountDown" */;
 			buildPhases = (
-				5D1E24091BC6AFAE00EBAAAD /* Sources */,
-				5D1E240A1BC6AFAE00EBAAAD /* Frameworks */,
-				5D1E240B1BC6AFAE00EBAAAD /* Resources */,
+				5D8443A71BC83E3E00149001 /* Sources */,
+				5D8443A81BC83E3E00149001 /* Frameworks */,
+				5D8443A91BC83E3E00149001 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Countdown;
-			productName = Countdown;
-			productReference = 5D1E240D1BC6AFAE00EBAAAD /* Countdown.app */;
+			name = CountDown;
+			productName = CountDown;
+			productReference = 5D8443AB1BC83E3E00149001 /* CountDown.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5D1E24201BC6AFAF00EBAAAD /* CountdownTests */ = {
+		5D8443BE1BC83E3E00149001 /* CountDownTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D1E24381BC6AFAF00EBAAAD /* Build configuration list for PBXNativeTarget "CountdownTests" */;
+			buildConfigurationList = 5D8443D61BC83E3E00149001 /* Build configuration list for PBXNativeTarget "CountDownTests" */;
 			buildPhases = (
-				5D1E241D1BC6AFAF00EBAAAD /* Sources */,
-				5D1E241E1BC6AFAF00EBAAAD /* Frameworks */,
-				5D1E241F1BC6AFAF00EBAAAD /* Resources */,
+				5D8443BB1BC83E3E00149001 /* Sources */,
+				5D8443BC1BC83E3E00149001 /* Frameworks */,
+				5D8443BD1BC83E3E00149001 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D1E24231BC6AFAF00EBAAAD /* PBXTargetDependency */,
+				5D8443C11BC83E3E00149001 /* PBXTargetDependency */,
 			);
-			name = CountdownTests;
-			productName = CountdownTests;
-			productReference = 5D1E24211BC6AFAF00EBAAAD /* CountdownTests.xctest */;
+			name = CountDownTests;
+			productName = CountDownTests;
+			productReference = 5D8443BF1BC83E3E00149001 /* CountDownTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5D1E242B1BC6AFAF00EBAAAD /* CountdownUITests */ = {
+		5D8443C91BC83E3E00149001 /* CountDownUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D1E243B1BC6AFAF00EBAAAD /* Build configuration list for PBXNativeTarget "CountdownUITests" */;
+			buildConfigurationList = 5D8443D91BC83E3E00149001 /* Build configuration list for PBXNativeTarget "CountDownUITests" */;
 			buildPhases = (
-				5D1E24281BC6AFAF00EBAAAD /* Sources */,
-				5D1E24291BC6AFAF00EBAAAD /* Frameworks */,
-				5D1E242A1BC6AFAF00EBAAAD /* Resources */,
+				5D8443C61BC83E3E00149001 /* Sources */,
+				5D8443C71BC83E3E00149001 /* Frameworks */,
+				5D8443C81BC83E3E00149001 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D1E242E1BC6AFAF00EBAAAD /* PBXTargetDependency */,
+				5D8443CC1BC83E3E00149001 /* PBXTargetDependency */,
 			);
-			name = CountdownUITests;
-			productName = CountdownUITests;
-			productReference = 5D1E242C1BC6AFAF00EBAAAD /* CountdownUITests.xctest */;
+			name = CountDownUITests;
+			productName = CountDownUITests;
+			productReference = 5D8443CA1BC83E3E00149001 /* CountDownUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5D1E24051BC6AFAE00EBAAAD /* Project object */ = {
+		5D8443A31BC83E3E00149001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "The Iron Yard";
 				TargetAttributes = {
-					5D1E240C1BC6AFAE00EBAAAD = {
+					5D8443AA1BC83E3E00149001 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
-					5D1E24201BC6AFAF00EBAAAD = {
+					5D8443BE1BC83E3E00149001 = {
 						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 5D1E240C1BC6AFAE00EBAAAD;
+						TestTargetID = 5D8443AA1BC83E3E00149001;
 					};
-					5D1E242B1BC6AFAF00EBAAAD = {
+					5D8443C91BC83E3E00149001 = {
 						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 5D1E240C1BC6AFAE00EBAAAD;
+						TestTargetID = 5D8443AA1BC83E3E00149001;
 					};
 				};
 			};
-			buildConfigurationList = 5D1E24081BC6AFAE00EBAAAD /* Build configuration list for PBXProject "Countdown" */;
+			buildConfigurationList = 5D8443A61BC83E3E00149001 /* Build configuration list for PBXProject "CountDown" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -214,37 +214,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 5D1E24041BC6AFAE00EBAAAD;
-			productRefGroup = 5D1E240E1BC6AFAE00EBAAAD /* Products */;
+			mainGroup = 5D8443A21BC83E3E00149001;
+			productRefGroup = 5D8443AC1BC83E3E00149001 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D1E240C1BC6AFAE00EBAAAD /* Countdown */,
-				5D1E24201BC6AFAF00EBAAAD /* CountdownTests */,
-				5D1E242B1BC6AFAF00EBAAAD /* CountdownUITests */,
+				5D8443AA1BC83E3E00149001 /* CountDown */,
+				5D8443BE1BC83E3E00149001 /* CountDownTests */,
+				5D8443C91BC83E3E00149001 /* CountDownUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5D1E240B1BC6AFAE00EBAAAD /* Resources */ = {
+		5D8443A91BC83E3E00149001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1E241B1BC6AFAE00EBAAAD /* LaunchScreen.storyboard in Resources */,
-				5D1E24181BC6AFAE00EBAAAD /* Assets.xcassets in Resources */,
-				5D1E24161BC6AFAE00EBAAAD /* Main.storyboard in Resources */,
+				5D8443B91BC83E3E00149001 /* LaunchScreen.storyboard in Resources */,
+				5D8443B61BC83E3E00149001 /* Assets.xcassets in Resources */,
+				5D8443B41BC83E3E00149001 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D1E241F1BC6AFAF00EBAAAD /* Resources */ = {
+		5D8443BD1BC83E3E00149001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D1E242A1BC6AFAF00EBAAAD /* Resources */ = {
+		5D8443C81BC83E3E00149001 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,60 +254,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5D1E24091BC6AFAE00EBAAAD /* Sources */ = {
+		5D8443A71BC83E3E00149001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1E24131BC6AFAE00EBAAAD /* CountDownViewController.swift in Sources */,
-				5D1E24111BC6AFAE00EBAAAD /* AppDelegate.swift in Sources */,
-				5D1E243F1BC6B92600EBAAAD /* TimerPickerViewController.swift in Sources */,
+				5D8443B11BC83E3E00149001 /* CountDownViewController.swift in Sources */,
+				5D8443DD1BC8764F00149001 /* TimePickerViewController.swift in Sources */,
+				5D8443AF1BC83E3E00149001 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D1E241D1BC6AFAF00EBAAAD /* Sources */ = {
+		5D8443BB1BC83E3E00149001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1E24261BC6AFAF00EBAAAD /* CountdownTests.swift in Sources */,
+				5D8443C41BC83E3E00149001 /* CountDownTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D1E24281BC6AFAF00EBAAAD /* Sources */ = {
+		5D8443C61BC83E3E00149001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1E24311BC6AFAF00EBAAAD /* CountdownUITests.swift in Sources */,
+				5D8443CF1BC83E3E00149001 /* CountDownUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D1E24231BC6AFAF00EBAAAD /* PBXTargetDependency */ = {
+		5D8443C11BC83E3E00149001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D1E240C1BC6AFAE00EBAAAD /* Countdown */;
-			targetProxy = 5D1E24221BC6AFAF00EBAAAD /* PBXContainerItemProxy */;
+			target = 5D8443AA1BC83E3E00149001 /* CountDown */;
+			targetProxy = 5D8443C01BC83E3E00149001 /* PBXContainerItemProxy */;
 		};
-		5D1E242E1BC6AFAF00EBAAAD /* PBXTargetDependency */ = {
+		5D8443CC1BC83E3E00149001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D1E240C1BC6AFAE00EBAAAD /* Countdown */;
-			targetProxy = 5D1E242D1BC6AFAF00EBAAAD /* PBXContainerItemProxy */;
+			target = 5D8443AA1BC83E3E00149001 /* CountDown */;
+			targetProxy = 5D8443CB1BC83E3E00149001 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D1E24141BC6AFAE00EBAAAD /* Main.storyboard */ = {
+		5D8443B21BC83E3E00149001 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D1E24151BC6AFAE00EBAAAD /* Base */,
+				5D8443B31BC83E3E00149001 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5D1E24191BC6AFAE00EBAAAD /* LaunchScreen.storyboard */ = {
+		5D8443B71BC83E3E00149001 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D1E241A1BC6AFAE00EBAAAD /* Base */,
+				5D8443B81BC83E3E00149001 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5D1E24331BC6AFAF00EBAAAD /* Debug */ = {
+		5D8443D11BC83E3E00149001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -359,7 +359,7 @@
 			};
 			name = Debug;
 		};
-		5D1E24341BC6AFAF00EBAAAD /* Release */ = {
+		5D8443D21BC83E3E00149001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -396,72 +396,72 @@
 			};
 			name = Release;
 		};
-		5D1E24361BC6AFAF00EBAAAD /* Debug */ = {
+		5D8443D41BC83E3E00149001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Countdown/Info.plist;
+				INFOPLIST_FILE = CountDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.Countdown;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		5D1E24371BC6AFAF00EBAAAD /* Release */ = {
+		5D8443D51BC83E3E00149001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Countdown/Info.plist;
+				INFOPLIST_FILE = CountDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.Countdown;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		5D1E24391BC6AFAF00EBAAAD /* Debug */ = {
+		5D8443D71BC83E3E00149001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CountdownTests/Info.plist;
+				INFOPLIST_FILE = CountDownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountdownTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountDownTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countdown.app/Countdown";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountDown.app/CountDown";
 			};
 			name = Debug;
 		};
-		5D1E243A1BC6AFAF00EBAAAD /* Release */ = {
+		5D8443D81BC83E3E00149001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CountdownTests/Info.plist;
+				INFOPLIST_FILE = CountDownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountdownTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountDownTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countdown.app/Countdown";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountDown.app/CountDown";
 			};
 			name = Release;
 		};
-		5D1E243C1BC6AFAF00EBAAAD /* Debug */ = {
+		5D8443DA1BC83E3E00149001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = CountdownUITests/Info.plist;
+				INFOPLIST_FILE = CountDownUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountdownUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountDownUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Countdown;
+				TEST_TARGET_NAME = CountDown;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
 		};
-		5D1E243D1BC6AFAF00EBAAAD /* Release */ = {
+		5D8443DB1BC83E3E00149001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = CountdownUITests/Info.plist;
+				INFOPLIST_FILE = CountDownUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountdownUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.CountDownUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Countdown;
+				TEST_TARGET_NAME = CountDown;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -469,40 +469,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D1E24081BC6AFAE00EBAAAD /* Build configuration list for PBXProject "Countdown" */ = {
+		5D8443A61BC83E3E00149001 /* Build configuration list for PBXProject "CountDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D1E24331BC6AFAF00EBAAAD /* Debug */,
-				5D1E24341BC6AFAF00EBAAAD /* Release */,
+				5D8443D11BC83E3E00149001 /* Debug */,
+				5D8443D21BC83E3E00149001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D1E24351BC6AFAF00EBAAAD /* Build configuration list for PBXNativeTarget "Countdown" */ = {
+		5D8443D31BC83E3E00149001 /* Build configuration list for PBXNativeTarget "CountDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D1E24361BC6AFAF00EBAAAD /* Debug */,
-				5D1E24371BC6AFAF00EBAAAD /* Release */,
+				5D8443D41BC83E3E00149001 /* Debug */,
+				5D8443D51BC83E3E00149001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		5D1E24381BC6AFAF00EBAAAD /* Build configuration list for PBXNativeTarget "CountdownTests" */ = {
+		5D8443D61BC83E3E00149001 /* Build configuration list for PBXNativeTarget "CountDownTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D1E24391BC6AFAF00EBAAAD /* Debug */,
-				5D1E243A1BC6AFAF00EBAAAD /* Release */,
+				5D8443D71BC83E3E00149001 /* Debug */,
+				5D8443D81BC83E3E00149001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		5D1E243B1BC6AFAF00EBAAAD /* Build configuration list for PBXNativeTarget "CountdownUITests" */ = {
+		5D8443D91BC83E3E00149001 /* Build configuration list for PBXNativeTarget "CountDownUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D1E243C1BC6AFAF00EBAAAD /* Debug */,
-				5D1E243D1BC6AFAF00EBAAAD /* Release */,
+				5D8443DA1BC83E3E00149001 /* Debug */,
+				5D8443DB1BC83E3E00149001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5D1E24051BC6AFAE00EBAAAD /* Project object */;
+	rootObject = 5D8443A31BC83E3E00149001 /* Project object */;
 }

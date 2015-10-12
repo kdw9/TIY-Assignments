@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CountDown.xcscheme</key>
+		<key>Outa Time.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5D8443AA1BC83E3E00149001</key>
+		<key>5D8B19091BCB3F31006D085E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D8443BE1BC83E3E00149001</key>
+		<key>5D8B191D1BCB3F31006D085E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D8443C91BC83E3E00149001</key>
+		<key>5D8B19281BCB3F31006D085E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
