@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YoG-To-ON2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hero Table View Controller-->
+        <scene sceneID="M1s-m6-0ZC">
+            <objects>
+                <tableViewController id="1kZ-IX-7b8" customClass="HeroTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Qa-iy-Rdp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SheildHero" textLabel="rb3-w7-l0W" detailTextLabel="lhB-AF-P1l" style="IBUITableViewCellStyleValue1" id="sbT-1i-LH1">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sbT-1i-LH1" id="N3L-nP-Ec7">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rb3-w7-l0W">
+                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lhB-AF-P1l">
+                                            <rect key="frame" x="523" y="12" width="42" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1kZ-IX-7b8" id="yif-HD-Am0"/>
+                            <outlet property="delegate" destination="1kZ-IX-7b8" id="g4n-tZ-oBO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="uZg-mi-3kk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4M-hZ-6td" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="387"/>
+        </scene>
+        <!--Hero Detail View Controller-->
+        <scene sceneID="spo-ch-nEc">
+            <objects>
+                <viewController id="7bW-oV-5Cj" customClass="HeroDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f0t-1P-IpG"/>
+                        <viewControllerLayoutGuide type="bottom" id="rxI-1K-CrF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MYF-CH-M5b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HERO NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8v-4w-Lh0">
+                                <rect key="frame" x="39" y="20" width="141" height="29"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOME WORLD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPv-CQ-691">
+                                <rect key="frame" x="39" y="69" width="141" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HERO POWERS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRj-S4-Onp">
+                                <rect key="frame" x="39" y="98" width="141" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IRj-S4-Onp" firstAttribute="top" secondItem="vPv-CQ-691" secondAttribute="bottom" constant="8" id="H2p-C2-WWU"/>
+                            <constraint firstItem="Y8v-4w-Lh0" firstAttribute="top" secondItem="f0t-1P-IpG" secondAttribute="bottom" id="Sra-j8-rHd"/>
+                            <constraint firstItem="vPv-CQ-691" firstAttribute="centerX" secondItem="Y8v-4w-Lh0" secondAttribute="centerX" id="TQu-zH-eFm"/>
+                            <constraint firstItem="vPv-CQ-691" firstAttribute="top" secondItem="Y8v-4w-Lh0" secondAttribute="bottom" constant="20" id="Ubp-ww-ruR"/>
+                            <constraint firstItem="vPv-CQ-691" firstAttribute="leading" secondItem="Y8v-4w-Lh0" secondAttribute="leading" id="XWd-Ax-Dpr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y8v-4w-Lh0" secondAttribute="trailing" constant="400" id="hED-I5-o1W"/>
+                            <constraint firstItem="IRj-S4-Onp" firstAttribute="leading" secondItem="vPv-CQ-691" secondAttribute="leading" id="sqD-mC-nAB"/>
+                            <constraint firstItem="IRj-S4-Onp" firstAttribute="centerX" secondItem="vPv-CQ-691" secondAttribute="centerX" id="uN7-tU-O1s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heroName" destination="Y8v-4w-Lh0" id="guH-xU-Tb5"/>
+                        <outlet property="heroPower" destination="IRj-S4-Onp" id="vt9-fL-lq7"/>
+                        <outlet property="heroWorld" destination="vPv-CQ-691" id="xT6-vt-XoG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttg-x7-dfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PjT-TQ-KG6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YoG-To-ON2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KJ1-lF-mXX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1kZ-IX-7b8" kind="relationship" relationship="rootViewController" id="bz8-f5-7GK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLH-NH-CS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373" y="387"/>
+        </scene>
+    </scenes>
+</document>

@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="1252" y="369"/>
         </scene>
-        <!--View Controller-->
+        <!--Travel Time Picker View Controller-->
         <scene sceneID="T9a-MB-4C6">
             <objects>
-                <viewController id="OlS-CI-etW" sceneMemberID="viewController">
+                <viewController id="OlS-CI-etW" customClass="TravelTimePickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5CC-HI-Se7"/>
                         <viewControllerLayoutGuide type="bottom" id="5kd-d8-i3B"/>
@@ -155,8 +155,21 @@
                     <view key="view" contentMode="scaleToFill" id="abM-y8-6f9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WZ2-qv-2Dv">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="466312452.103338">
+                                    <!--2015-10-12 03:14:12 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WZ2-qv-2Dv" firstAttribute="centerX" secondItem="abM-y8-6f9" secondAttribute="centerX" id="PSh-wL-2RK"/>
+                            <constraint firstItem="WZ2-qv-2Dv" firstAttribute="top" secondItem="5CC-HI-Se7" secondAttribute="bottom" constant="128" id="trn-O2-GjL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8hs-24-Sf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
