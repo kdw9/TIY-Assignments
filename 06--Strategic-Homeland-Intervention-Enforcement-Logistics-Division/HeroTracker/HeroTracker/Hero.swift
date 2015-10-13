@@ -10,4 +10,15 @@ import Foundation
 
 class Hero
 {
+    var realName: String
+    var coverName: String
+    var accessLevel: Int
+    
+    init(dictionary: NSDictionary)
+    {
+    realName = dictionary["realName"] as! String
+    coverName = dictionary["coverName"] as! String
+    accessLevel = dictionary["accessLevel"] as! Int
+        
+    }
 }

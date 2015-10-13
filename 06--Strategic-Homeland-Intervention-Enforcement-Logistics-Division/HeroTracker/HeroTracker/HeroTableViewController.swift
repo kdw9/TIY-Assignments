@@ -38,12 +38,12 @@ class HeroTableViewController: UITableViewController
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return storeCustHeroModel.count
     }
 
     /*
@@ -109,6 +109,10 @@ class HeroTableViewController: UITableViewController
          let dataFromFile = NSData(contentsOfFile: filePath!)
             let heroData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! NSArray
             for heroDictionary in heroData
+            {
+                let anHero = Hero(dictionary: heroDictionary as! NSDictionary)
+                storeCustHeroModel.append(anHero)
+            }
 
         }
         catch let error as NSError
