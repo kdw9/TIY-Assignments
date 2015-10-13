@@ -21,7 +21,7 @@ class HeroTableViewController: UITableViewController
         
         loadHeroes()
         
-//khskhshjsdf
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -46,15 +46,19 @@ class HeroTableViewController: UITableViewController
         return storeCustHeroModel.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("SheildHero", forIndexPath: indexPath)
 
         // Configure the cell...
+        let anHero = storeCustHeroModel[indexPath.row]
+        // This is the main text label.
+        cell.textLabel!.text = anHero.coverName
+        cell.detailTextLabel!.text = anHero.realName
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -101,6 +105,8 @@ class HeroTableViewController: UITableViewController
     }
     */
 
+ 
+    
     func loadHeroes()
     {
         do
