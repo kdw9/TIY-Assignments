@@ -10,8 +10,13 @@ import UIKit
 
 class JackPotTableViewController: UITableViewController {
 
+    
+    var storeTcket = Array <MoneyTicket>()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +34,26 @@ class JackPotTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return storeTcket.count
+        
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCellWithIdentifier("quickPickCell", forIndexPath: indexPath)
 
         // Configure the cell...
-
+        let insideEachCell = storeTcket[indexPath.row]
+        cell.textLabel?.text = "\(insideEachCell.ticketNumbers)"
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -74,13 +82,12 @@ class JackPotTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support conditional rearranging of the table view.
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-    */
 
     /*
     // MARK: - Navigation
@@ -92,4 +99,13 @@ class JackPotTableViewController: UITableViewController {
     }
     */
 
+    @IBAction func addTapped(sender: UIBarButtonItem)
+    {
+        let newPath = NSIndexPath(forRow:storeTcket.count , inSection: 0)
+        storeTcket.append(MoneyTicket())
+        tableView.insertRowsAtIndexPaths([newPath], withRowAnimation: .Top)
+        // create ticket
+        // add the ticket to the array
+        // tell the tableView to reload
+    }
 }

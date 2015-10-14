@@ -14,7 +14,7 @@
 		5DA3FBFC1BCDA61F00EAE9A9 /* Jack_PotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3FBFB1BCDA61F00EAE9A9 /* Jack_PotTests.swift */; };
 		5DA3FC071BCDA61F00EAE9A9 /* Jack_PotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3FC061BCDA61F00EAE9A9 /* Jack_PotUITests.swift */; };
 		5DA3FC151BCDA6A500EAE9A9 /* JackPotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3FC141BCDA6A500EAE9A9 /* JackPotTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		5DA3FC171BCDA7DB00EAE9A9 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3FC161BCDA7DB00EAE9A9 /* Money.swift */; settings = {ASSET_TAGS = (); }; };
+		5DA3FC171BCDA7DB00EAE9A9 /* MoneyTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3FC161BCDA7DB00EAE9A9 /* MoneyTicket.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		5DA3FC061BCDA61F00EAE9A9 /* Jack_PotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jack_PotUITests.swift; sourceTree = "<group>"; };
 		5DA3FC081BCDA61F00EAE9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DA3FC141BCDA6A500EAE9A9 /* JackPotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JackPotTableViewController.swift; sourceTree = "<group>"; };
-		5DA3FC161BCDA7DB00EAE9A9 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		5DA3FC161BCDA7DB00EAE9A9 /* MoneyTicket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTicket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 				5DA3FBEF1BCDA61F00EAE9A9 /* LaunchScreen.storyboard */,
 				5DA3FBF21BCDA61F00EAE9A9 /* Info.plist */,
 				5DA3FC141BCDA6A500EAE9A9 /* JackPotTableViewController.swift */,
-				5DA3FC161BCDA7DB00EAE9A9 /* Money.swift */,
+				5DA3FC161BCDA7DB00EAE9A9 /* MoneyTicket.swift */,
 			);
 			path = "Jack Pot";
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DA3FC171BCDA7DB00EAE9A9 /* Money.swift in Sources */,
+				5DA3FC171BCDA7DB00EAE9A9 /* MoneyTicket.swift in Sources */,
 				5DA3FC151BCDA6A500EAE9A9 /* JackPotTableViewController.swift in Sources */,
 				5DA3FBE71BCDA61F00EAE9A9 /* AppDelegate.swift in Sources */,
 			);
