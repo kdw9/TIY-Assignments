@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zuJ-7E-7JA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Jack Pot Table View Controller-->
+        <scene sceneID="xvk-R0-1Cb">
+            <objects>
+                <tableViewController id="YFa-Cr-ncK" customClass="JackPotTableViewController" customModule="Jack_Pot" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VLx-Hu-k48">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lce-TZ-0eR">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lce-TZ-0eR" id="Nxy-2R-MLh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-3B-bdn">
+                                            <rect key="frame" x="262" y="-11" width="77" height="65"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="39"/>
+                                            <state key="normal" title="ADD">
+                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="IMf-3B-bdn" firstAttribute="centerY" secondItem="Nxy-2R-MLh" secondAttribute="centerY" id="Nec-fi-b35"/>
+                                        <constraint firstItem="IMf-3B-bdn" firstAttribute="centerY" secondItem="Nxy-2R-MLh" secondAttribute="centerY" id="YF2-CE-dog"/>
+                                        <constraint firstItem="IMf-3B-bdn" firstAttribute="centerX" secondItem="Nxy-2R-MLh" secondAttribute="centerX" id="yAE-mo-9s8"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="YF2-CE-dog"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YFa-Cr-ncK" id="3xh-7g-29f"/>
+                            <outlet property="delegate" destination="YFa-Cr-ncK" id="RM0-aG-XlV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DO0-mv-Pvi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSx-Jg-X3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="346"/>
+        </scene>
+        <!--Jack Pot Money Controller-->
+        <scene sceneID="BBv-5b-0ZU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zuJ-7E-7JA" customClass="JackPotMoneyController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yqS-mU-qam">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YFa-Cr-ncK" kind="relationship" relationship="rootViewController" id="llY-qv-U1P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et2-MU-31P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="346"/>
+        </scene>
+    </scenes>
+</document>
