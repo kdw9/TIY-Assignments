@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0nT-59-Gx9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uvk-Cf-CXf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0nT-59-Gx9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zz4-nw-oaO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n81-CI-O8u" kind="relationship" relationship="rootViewController" id="ELV-ng-YxB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tSV-yJ-Kmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="346"/>
+        </scene>
+        <!--Jack Pot Table View Controller-->
+        <scene sceneID="Fnz-Ns-rMH">
+            <objects>
+                <tableViewController id="n81-CI-O8u" customClass="JackPotTableViewController" customModule="Jack_Pot" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eSn-J9-plQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="quickPickCell" textLabel="xcc-IH-fdK" detailTextLabel="oxe-PO-Uic" style="IBUITableViewCellStyleValue1" id="Gvw-Cs-ZxC">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gvw-Cs-ZxC" id="z0i-kn-5b3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xcc-IH-fdK">
+                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oxe-PO-Uic">
+                                            <rect key="frame" x="543" y="12" width="42" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="EDs-Bs-iU8" kind="show" id="Nxb-gm-vXJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="n81-CI-O8u" id="8g8-1A-b6M"/>
+                            <outlet property="delegate" destination="n81-CI-O8u" id="K5Q-ui-I2k"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="4eA-Jj-Fxp">
+                        <barButtonItem key="leftBarButtonItem" title="View Winning Number" id="Xtk-D2-RTL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8o0-tm-1aE">
+                            <connections>
+                                <action selector="addTapped:" destination="n81-CI-O8u" id="uQv-fD-1vM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gep-wT-Ail" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="346"/>
+        </scene>
+        <!--Winners Circle View Controller-->
+        <scene sceneID="FWb-1h-Sfl">
+            <objects>
+                <viewController id="EDs-Bs-iU8" customClass="WinnersCircleViewController" customModule="Jack_Pot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUw-J6-mNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="gH3-FI-rKC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LbL-nL-jcB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pb7-mt-H7G">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                                <animations/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhk-NX-RN8">
+                                <rect key="frame" x="245" y="476" width="110" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="26"/>
+                                <state key="normal" title="Winner ">
+                                    <color key="titleColor" red="1" green="0.041046944598614132" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pb7-mt-H7G" firstAttribute="centerY" secondItem="LbL-nL-jcB" secondAttribute="centerY" id="2bC-6n-xpb"/>
+                            <constraint firstItem="Uhk-NX-RN8" firstAttribute="top" secondItem="Pb7-mt-H7G" secondAttribute="bottom" constant="68" id="80f-zD-ujH"/>
+                            <constraint firstItem="Pb7-mt-H7G" firstAttribute="centerX" secondItem="LbL-nL-jcB" secondAttribute="centerX" id="g55-72-d1P"/>
+                            <constraint firstItem="Uhk-NX-RN8" firstAttribute="centerX" secondItem="Pb7-mt-H7G" secondAttribute="centerX" id="kfc-dM-bHo"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDW-gv-jhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2690" y="346"/>
+        </scene>
+    </scenes>
+</document>
