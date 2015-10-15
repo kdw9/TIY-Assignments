@@ -60,6 +60,9 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="EDs-Bs-iU8" kind="show" id="Nxb-gm-vXJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -68,6 +71,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="4eA-Jj-Fxp">
+                        <barButtonItem key="leftBarButtonItem" title="View Winning Number" id="Xtk-D2-RTL"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8o0-tm-1aE">
                             <connections>
                                 <action selector="addTapped:" destination="n81-CI-O8u" id="uQv-fD-1vM"/>
@@ -78,6 +82,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gep-wT-Ail" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2009" y="346"/>
+        </scene>
+        <!--Winners Circle View Controller-->
+        <scene sceneID="FWb-1h-Sfl">
+            <objects>
+                <viewController id="EDs-Bs-iU8" customClass="WinnersCircleViewController" customModule="Jack_Pot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUw-J6-mNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="gH3-FI-rKC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LbL-nL-jcB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pb7-mt-H7G">
+                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                                <animations/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhk-NX-RN8">
+                                <rect key="frame" x="245" y="476" width="110" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="26"/>
+                                <state key="normal" title="Winner ">
+                                    <color key="titleColor" red="1" green="0.041046944598614132" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pb7-mt-H7G" firstAttribute="centerY" secondItem="LbL-nL-jcB" secondAttribute="centerY" id="2bC-6n-xpb"/>
+                            <constraint firstItem="Uhk-NX-RN8" firstAttribute="top" secondItem="Pb7-mt-H7G" secondAttribute="bottom" constant="68" id="80f-zD-ujH"/>
+                            <constraint firstItem="Pb7-mt-H7G" firstAttribute="centerX" secondItem="LbL-nL-jcB" secondAttribute="centerX" id="g55-72-d1P"/>
+                            <constraint firstItem="Uhk-NX-RN8" firstAttribute="centerX" secondItem="Pb7-mt-H7G" secondAttribute="centerX" id="kfc-dM-bHo"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDW-gv-jhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2690" y="346"/>
         </scene>
     </scenes>
 </document>

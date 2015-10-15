@@ -12,6 +12,9 @@ import Foundation
 class MoneyTicket
 {
  var ticketNumbers = Array <Int> ()
+    var ticketStaus: Bool!
+    var dollarAmount: Int!
+    
     
     init()
     {
@@ -37,6 +40,5 @@ func generateAndAdd()
     } while !pickFound
     
     }
-    
     
 }
