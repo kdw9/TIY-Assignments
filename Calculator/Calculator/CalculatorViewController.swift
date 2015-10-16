@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CalculatorViewController: UIViewController
+{
+//    @IBOutlet var displayScreen: UILabel!
+    @IBOutlet var display: UILabel!
+    var currentlyTyping = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +23,21 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func cancelButton(sender: UIButton)
+    {
+        display.text = "0"
+    }
 
+    @IBAction func number(sender: UIButton)
+    {
+        display.text = sender.currentTitle
+    }
+    
+    
+  
+    
+ 
 
 }
 

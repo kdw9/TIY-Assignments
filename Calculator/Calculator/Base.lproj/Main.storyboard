@@ -8,7 +8,7 @@
         <!--Calculator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -33,6 +33,9 @@
                                 <state key="normal" title="C">
                                     <color key="titleColor" red="0.16720450219999999" green="0.12854179839999999" blue="0.19525114530000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCH-XF-Qka"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRR-Hs-AZk">
                                 <rect key="frame" x="0.0" y="210" width="147" height="94"/>
@@ -42,6 +45,9 @@
                                 <state key="normal" title="7">
                                     <color key="titleColor" red="0.16720450219999999" green="0.12854179839999999" blue="0.19525114530000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="number:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTJ-yB-w5e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrN-Vp-Q4G">
                                 <rect key="frame" x="150" y="210" width="147" height="94"/>
@@ -61,15 +67,6 @@
                                     <color key="titleColor" red="0.16720450219999999" green="0.12854179839999999" blue="0.19525114530000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRr-k4-jKu">
-                                <rect key="frame" x="300" y="112" width="147" height="95"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.53990101439790572" green="0.53990101439790572" blue="0.53990101439790572" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="%">
-                                    <color key="titleColor" red="0.16720450219999999" green="0.12854179839999999" blue="0.19525114530000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpW-J8-ED3">
                                 <rect key="frame" x="300" y="210" width="147" height="94"/>
                                 <animations/>
@@ -78,6 +75,9 @@
                                 <state key="normal" title="9">
                                     <color key="titleColor" red="0.16720450219999999" green="0.12854179839999999" blue="0.19525114530000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="number:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZn-Ie-Aqe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RQ-e4-Pjq">
                                 <rect key="frame" x="450" y="210" width="150" height="94"/>
@@ -197,6 +197,15 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRr-k4-jKu">
+                                <rect key="frame" x="300" y="112" width="147" height="95"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.53990101439790572" green="0.53990101439790572" blue="0.53990101439790572" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="%">
+                                    <color key="titleColor" red="0.16720450219999999" green="0.12854179839999999" blue="0.19525114530000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -296,6 +305,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="display" destination="oas-pr-RE6" id="PRK-rC-0dn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
