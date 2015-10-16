@@ -34,6 +34,10 @@ class CalculatorViewController: UIViewController
         display.text = sender.currentTitle
     }
     
+    @IBAction func operators(sender: UIButton)
+    {
+        display.text = sender.currentTitle
+    }
     
   
     
