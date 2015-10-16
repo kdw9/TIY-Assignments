@@ -13,6 +13,7 @@ class CalculatorViewController: UIViewController
 //    @IBOutlet var displayScreen: UILabel!
     @IBOutlet var display: UILabel!
     var currentlyTyping = false
+    var brain = CalculatorBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +28,17 @@ class CalculatorViewController: UIViewController
     @IBAction func cancelButton(sender: UIButton)
     {
         display.text = "0"
+        brain = CalculatorBrain()
     }
 
     @IBAction func number(sender: UIButton)
     {
-        display.text = sender.currentTitle
+        display.text = brain.addDigit(sender.currentTitle!)
     }
     
     @IBAction func operators(sender: UIButton)
     {
-        display.text = sender.currentTitle
+        display.text = brain.addOperator (sender.currentTitle)
     }
     
   
