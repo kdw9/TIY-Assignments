@@ -38,8 +38,13 @@ class CalculatorViewController: UIViewController
     
     @IBAction func operators(sender: UIButton)
     {
-        display.text = brain.addOperator (sender.currentTitle)
+        
+    let tapSymbol = sender.currentTitle
+    
+     brain.symbolPress(opsymbol!)
+        
     }
+    
     
   
     

@@ -34,12 +34,12 @@ class CalculatorBrain
     // If the symbol has not been pressed then any number that follow goes into operandOne, "else" - meaning the symbol is presed, then it goes in operandTwo.
    
         
-        func pressSymbol(addOperator: String)
+        func symbolPress(operate: String)
         {
-           symbol = addOperator
+           symbol = operate
         }
 
-    }
+    
 }
 
 
