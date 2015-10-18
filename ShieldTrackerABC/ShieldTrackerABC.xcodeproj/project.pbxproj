@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5D7178FD1BD41DEF008A1070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7178FC1BD41DEF008A1070 /* AppDelegate.swift */; };
-		5D7178FF1BD41DEF008A1070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7178FE1BD41DEF008A1070 /* ViewController.swift */; };
 		5D7179021BD41DEF008A1070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7179001BD41DEF008A1070 /* Main.storyboard */; };
 		5D7179041BD41DEF008A1070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7179031BD41DEF008A1070 /* Assets.xcassets */; };
 		5D7179071BD41DEF008A1070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7179051BD41DEF008A1070 /* LaunchScreen.storyboard */; };
 		5D7179121BD41DF0008A1070 /* ShieldTrackerABCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7179111BD41DF0008A1070 /* ShieldTrackerABCTests.swift */; };
 		5D71791D1BD41DF0008A1070 /* ShieldTrackerABCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71791C1BD41DF0008A1070 /* ShieldTrackerABCUITests.swift */; };
+		5D71792B1BD42727008A1070 /* HeroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71792A1BD42727008A1070 /* HeroTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5D71792D1BD42AC5008A1070 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71792C1BD42AC5008A1070 /* Hero.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		5D7178F91BD41DEF008A1070 /* ShieldTrackerABC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShieldTrackerABC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7178FC1BD41DEF008A1070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D7178FE1BD41DEF008A1070 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D7179011BD41DEF008A1070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D7179031BD41DEF008A1070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D7179061BD41DEF008A1070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		5D7179181BD41DF0008A1070 /* ShieldTrackerABCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShieldTrackerABCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D71791C1BD41DF0008A1070 /* ShieldTrackerABCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldTrackerABCUITests.swift; sourceTree = "<group>"; };
 		5D71791E1BD41DF0008A1070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D71792A1BD42727008A1070 /* HeroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTableViewController.swift; sourceTree = "<group>"; };
+		5D71792C1BD42AC5008A1070 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				5D7178FC1BD41DEF008A1070 /* AppDelegate.swift */,
-				5D7178FE1BD41DEF008A1070 /* ViewController.swift */,
+				5D71792A1BD42727008A1070 /* HeroTableViewController.swift */,
+				5D71792C1BD42AC5008A1070 /* Hero.swift */,
 				5D7179001BD41DEF008A1070 /* Main.storyboard */,
 				5D7179031BD41DEF008A1070 /* Assets.xcassets */,
 				5D7179051BD41DEF008A1070 /* LaunchScreen.storyboard */,
@@ -255,8 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7178FF1BD41DEF008A1070 /* ViewController.swift in Sources */,
 				5D7178FD1BD41DEF008A1070 /* AppDelegate.swift in Sources */,
+				5D71792D1BD42AC5008A1070 /* Hero.swift in Sources */,
+				5D71792B1BD42727008A1070 /* HeroTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
