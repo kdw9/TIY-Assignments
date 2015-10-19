@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>The Grial Diary.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5DE2F39D1BD567A200EB41D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5DE2F3B11BD567A300EB41D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5DE2F3BC1BD567A300EB41D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
