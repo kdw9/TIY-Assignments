@@ -11,9 +11,18 @@ import UIKit
 class GrailDiaryTableViewController: UITableViewController
 {
     
+    var areaSites = Array<Model>()
+    
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        
+        title = "Must See Places"
+        
+        loadSites()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -38,16 +47,19 @@ class GrailDiaryTableViewController: UITableViewController
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return areaSites.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("PageShiftCell", forIndexPath: indexPath) as! PageShiftCell
 
         // Configure the cell...
-        cell.leftLabel.text = "\(indexPath.row)"
-        cell.rightLabel.text = "I got it"
+        
+        let aSite = areaSites[indexPath.row]
+        cell.leftLabel.text = aSite.name
+        cell.rightLabel.text =  aSite.location
     
 
         return cell
@@ -98,5 +110,23 @@ class GrailDiaryTableViewController: UITableViewController
         // Pass the selected object to the new view controller.
     }
     */
-
+    private func loadSites()
+    {
+        do
+        {
+            let filePath = NSBundle.mainBundle().pathForResource("sites", ofType: "json")
+            let dataFromFile = NSData(contentsOfFile: filePath!)
+            let siteData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options:[]) as! NSArray
+            for modelDictionary in siteData
+            {
+            let aSite = Model(modelDictionary: modelDictionary as! NSDictionary)
+                areaSites.append(aSite)
+            }
+            areaSites.sortInPlace({ $0.name < $1.name})
+        }
+        catch let error as NSError
+        {
+            print(error)
+        }
+    }
 }

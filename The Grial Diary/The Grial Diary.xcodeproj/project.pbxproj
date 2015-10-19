@@ -16,6 +16,7 @@
 		5DE2F3D01BD56AE900EB41D0 /* GrailDiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F3CF1BD56AE900EB41D0 /* GrailDiaryTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5DE2F3D21BD56BEC00EB41D0 /* PageShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F3D11BD56BEC00EB41D0 /* PageShiftCell.swift */; settings = {ASSET_TAGS = (); }; };
 		5DE2F3D41BD5715A00EB41D0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F3D31BD5715A00EB41D0 /* Model.swift */; settings = {ASSET_TAGS = (); }; };
+		5DE2F3D81BD57F7700EB41D0 /* sites.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2F3D71BD57F7700EB41D0 /* sites.json */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5DE2F3CF1BD56AE900EB41D0 /* GrailDiaryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrailDiaryTableViewController.swift; sourceTree = "<group>"; };
 		5DE2F3D11BD56BEC00EB41D0 /* PageShiftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageShiftCell.swift; sourceTree = "<group>"; };
 		5DE2F3D31BD5715A00EB41D0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5DE2F3D71BD57F7700EB41D0 /* sites.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sites.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				5DE2F3A11BD567A200EB41D0 /* AppDelegate.swift */,
 				5DE2F3D11BD56BEC00EB41D0 /* PageShiftCell.swift */,
 				5DE2F3D31BD5715A00EB41D0 /* Model.swift */,
+				5DE2F3D71BD57F7700EB41D0 /* sites.json */,
 				5DE2F3A51BD567A200EB41D0 /* Main.storyboard */,
 				5DE2F3A81BD567A200EB41D0 /* Assets.xcassets */,
 				5DE2F3AA1BD567A200EB41D0 /* LaunchScreen.storyboard */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DE2F3AC1BD567A200EB41D0 /* LaunchScreen.storyboard in Resources */,
+				5DE2F3D81BD57F7700EB41D0 /* sites.json in Resources */,
 				5DE2F3A91BD567A200EB41D0 /* Assets.xcassets in Resources */,
 				5DE2F3A71BD567A200EB41D0 /* Main.storyboard in Resources */,
 			);
