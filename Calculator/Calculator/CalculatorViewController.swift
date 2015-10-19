@@ -40,17 +40,16 @@ class CalculatorViewController: UIViewController
     
     @IBAction func operators(sender: UIButton)
     {
-        
-    let tapSymbol = sender.currentTitle
     
-     brain.symbolPress(opsymbol!)
-        
     }
+
+        
+}
     
     
   
     
  
 
-}
+
 
