@@ -41,6 +41,9 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="qBd-TA-2kp" kind="show" id="u2z-js-gAv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -53,6 +56,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ep-0l-0bF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1404" y="381"/>
+        </scene>
+        <!--Hero Detail View Controller-->
+        <scene sceneID="E5X-L0-BTU">
+            <objects>
+                <viewController id="qBd-TA-2kp" customClass="HeroDetailViewController" customModule="ShieldTrackerABC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MbD-aE-lHQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="lvz-5B-i9E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2si-om-3m2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHg-fJ-JoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2099" y="381"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="voD-Pi-scd">

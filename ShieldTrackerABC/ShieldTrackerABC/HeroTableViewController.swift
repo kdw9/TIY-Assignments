@@ -11,14 +11,15 @@ import UIKit
 class HeroTableViewController: UITableViewController
 {
 
-    var heroes = Array<String>()
+    var heroes = Array<Hero>()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
         
-        heroes.append("Iron Man")
+        title = "SHEILD Hero Tracker"
+        loadHeroes()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -51,9 +52,9 @@ class HeroTableViewController: UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier("TheHeroCell", forIndexPath: indexPath)
 
         // Configure the cell...
-
-        cell.textLabel?.text = heroes[indexPath.row]
-
+        let aHero = heroes[indexPath.row]
+        cell.textLabel?.text = aHero .name
+        cell.detailTextLabel?.text = aHero .homeworld
         return cell
     }
 
@@ -93,7 +94,7 @@ class HeroTableViewController: UITableViewController
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -101,6 +102,28 @@ class HeroTableViewController: UITableViewController
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+
+    
+    private func loadHeroes()
+    {
+        do
+        {
+            let filePath =
+                NSBundle.mainBundle().pathForResource("heroes", ofType: "json")
+                let dataFromFile = NSData (contentsOfFile: filePath!)
+                let heroData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options:[]) as! NSArray
+            for heroDictionary in heroData
+            {
+                let aHero = Hero(heroDictionary: heroDictionary as! NSDictionary)
+                heroes.append(aHero)
+            }
+            heroes.sortInPlace({ $0.name < $1.name })
+        }
+        catch let error as NSError
+        {
+        print(error)
+        }
+    
+    }
 
 }
