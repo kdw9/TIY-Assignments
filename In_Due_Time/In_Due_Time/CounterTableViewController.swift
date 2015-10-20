@@ -49,6 +49,17 @@ class CounterTableViewController: UITableViewController
 
         // Configure the cell...
 
+        let aListItem = todoList[indexPath.row]
+        if aListItem.title == nil
+        {
+            cell.listTitleTextField.becomeFirstResponder()
+        }
+        else
+        {
+            cell.listTitleTextField.text = aListItem.title
+        }
+        
+        
         return cell
     }
 

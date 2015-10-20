@@ -11,8 +11,7 @@ import UIKit
 class TodoCell: UITableViewCell {
 
     @IBOutlet var listTitleTextField: UITextField!
-    @IBOutlet var listLabel: UILabel!
-    @IBOutlet var listStepper: UIStepper!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

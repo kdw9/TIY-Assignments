@@ -14,7 +14,7 @@ import CoreData
 
 extension TheList {
 
-    @NSManaged var count: Int16
+    @NSManaged var completed: Bool
     @NSManaged var title: String?
 
 }

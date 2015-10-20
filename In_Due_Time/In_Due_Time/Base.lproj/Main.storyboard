@@ -21,39 +21,30 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqJ-hW-ESe">
-                                            <rect key="frame" x="455" y="11" width="28" height="21"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000000" translatesAutoresizingMaskIntoConstraints="NO" id="lKW-CX-mOw">
-                                            <rect key="frame" x="491" y="7" width="94" height="29"/>
-                                            <animations/>
-                                        </stepper>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="List Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1EC-fe-b0a">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="List Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1EC-fe-b0a">
                                             <rect key="frame" x="15" y="12" width="432" height="20"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfW-gn-4ze">
+                                            <rect key="frame" x="502" y="13" width="46" height="30"/>
+                                            <animations/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4oK-Kt-h6O">
+                                            <rect key="frame" x="425" y="13" width="51" height="31"/>
+                                            <animations/>
+                                        </switch>
                                     </subviews>
                                     <animations/>
                                     <constraints>
-                                        <constraint firstItem="lKW-CX-mOw" firstAttribute="leading" secondItem="kqJ-hW-ESe" secondAttribute="trailing" constant="8" id="9pb-ws-ZyB"/>
-                                        <constraint firstItem="kqJ-hW-ESe" firstAttribute="leading" secondItem="1EC-fe-b0a" secondAttribute="trailing" constant="8" id="ZeV-fu-1gN"/>
-                                        <constraint firstAttribute="trailing" secondItem="lKW-CX-mOw" secondAttribute="trailing" constant="15" id="Zk4-Cq-H9r"/>
                                         <constraint firstItem="1EC-fe-b0a" firstAttribute="leading" secondItem="iXc-6b-huV" secondAttribute="leading" constant="15" id="e1f-43-yvH"/>
-                                        <constraint firstItem="lKW-CX-mOw" firstAttribute="centerY" secondItem="iXc-6b-huV" secondAttribute="centerY" id="iia-Wp-Rt1"/>
                                         <constraint firstItem="1EC-fe-b0a" firstAttribute="centerY" secondItem="iXc-6b-huV" secondAttribute="centerY" id="o3g-Qx-mQ8"/>
-                                        <constraint firstItem="kqJ-hW-ESe" firstAttribute="centerY" secondItem="lKW-CX-mOw" secondAttribute="centerY" id="vHp-GI-9am"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="listLabel" destination="kqJ-hW-ESe" id="w5E-6k-aMd"/>
-                                    <outlet property="listStepper" destination="lKW-CX-mOw" id="Xc7-tI-Tlm"/>
                                     <outlet property="listTitleTextField" destination="1EC-fe-b0a" id="3lK-Ih-937"/>
                                 </connections>
                             </tableViewCell>
