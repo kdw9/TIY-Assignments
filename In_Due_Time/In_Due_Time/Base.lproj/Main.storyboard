@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ekr-Xn-DFk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Counter Table View Controller-->
+        <scene sceneID="yO0-Gj-4fI">
+            <objects>
+                <tableViewController id="NAo-8c-Sr0" customClass="CounterTableViewController" customModule="In_Due_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Akq-Bq-cLk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodoCell" id="1Vf-zr-x0h" customClass="TodoCell" customModule="In_Due_Time" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Vf-zr-x0h" id="iXc-6b-huV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqJ-hW-ESe">
+                                            <rect key="frame" x="455" y="11" width="28" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000000" translatesAutoresizingMaskIntoConstraints="NO" id="lKW-CX-mOw">
+                                            <rect key="frame" x="491" y="7" width="94" height="29"/>
+                                            <animations/>
+                                        </stepper>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="List Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1EC-fe-b0a">
+                                            <rect key="frame" x="15" y="12" width="432" height="20"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="lKW-CX-mOw" firstAttribute="leading" secondItem="kqJ-hW-ESe" secondAttribute="trailing" constant="8" id="9pb-ws-ZyB"/>
+                                        <constraint firstItem="kqJ-hW-ESe" firstAttribute="leading" secondItem="1EC-fe-b0a" secondAttribute="trailing" constant="8" id="ZeV-fu-1gN"/>
+                                        <constraint firstAttribute="trailing" secondItem="lKW-CX-mOw" secondAttribute="trailing" constant="15" id="Zk4-Cq-H9r"/>
+                                        <constraint firstItem="1EC-fe-b0a" firstAttribute="leading" secondItem="iXc-6b-huV" secondAttribute="leading" constant="15" id="e1f-43-yvH"/>
+                                        <constraint firstItem="lKW-CX-mOw" firstAttribute="centerY" secondItem="iXc-6b-huV" secondAttribute="centerY" id="iia-Wp-Rt1"/>
+                                        <constraint firstItem="1EC-fe-b0a" firstAttribute="centerY" secondItem="iXc-6b-huV" secondAttribute="centerY" id="o3g-Qx-mQ8"/>
+                                        <constraint firstItem="kqJ-hW-ESe" firstAttribute="centerY" secondItem="lKW-CX-mOw" secondAttribute="centerY" id="vHp-GI-9am"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="listLabel" destination="kqJ-hW-ESe" id="w5E-6k-aMd"/>
+                                    <outlet property="listStepper" destination="lKW-CX-mOw" id="Xc7-tI-Tlm"/>
+                                    <outlet property="listTitleTextField" destination="1EC-fe-b0a" id="3lK-Ih-937"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NAo-8c-Sr0" id="9TF-tS-8xV"/>
+                            <outlet property="delegate" destination="NAo-8c-Sr0" id="ro8-ag-XWC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="K4O-3j-8S8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Kd-zn-CqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="258"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GiP-NP-D6D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ekr-Xn-DFk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KDd-eT-vO5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NAo-8c-Sr0" kind="relationship" relationship="rootViewController" id="nv8-1g-6vl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lv9-am-Nsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="258"/>
+        </scene>
+    </scenes>
+</document>
