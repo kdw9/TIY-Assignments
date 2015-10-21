@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class CounterTableViewController: UITableViewController
+class CounterTableViewController: UITableViewController, UITextFieldDelegate
 {
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var todoList = Array<TheList>()
@@ -61,7 +61,7 @@ class CounterTableViewController: UITableViewController
         }
         else
         {
-            cell.listTitleTextField.text = aListItem.title
+            cell.listTitleTextField.text = aListItem.title; resignFirstResponder()
         }
         
             // I need to put a for in loop here to make the button work.
@@ -116,7 +116,26 @@ class CounterTableViewController: UITableViewController
         // Pass the selected object to the new view controller.
     }
     */
+    // MARK: UITextField Delegate
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        var rc = false
+        
+        if textField.text != ""
+        {
+            rc = true
+            let contentView = textField.superview
+            let cell = contentView?.superview as! TodoCell
+            let indexPath = tableView.indexPathForCell(cell)
+            let aListItem = todoList[indexPath!.row]
+            aListItem.title = textField.text
+            textField.resignFirstResponder()
+            saveContext()
+        }
+        
+        return rc
+    }
     // MARK: - Action Handlers
     @IBAction func addToList(sender: UIBarButtonItem)
     {
@@ -124,5 +143,17 @@ class CounterTableViewController: UITableViewController
           todoList.append(aListItem)
         tableView.reloadData()
     }
-
+// MARK: - Private
+    
+    func saveContext()
+    {
+    do{
+        try managedObjectContext.save()
+        }
+        catch{
+        let nserror = error as NSError
+        NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
+            abort()
+        }
+    }
 }
