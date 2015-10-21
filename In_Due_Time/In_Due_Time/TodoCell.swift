@@ -12,7 +12,11 @@ class TodoCell: UITableViewCell {
 
     @IBOutlet var listTitleTextField: UITextField!
 
-    override func awakeFromNib() {
+    @IBOutlet var checkButton: UIButton!
+  
+    
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
         // Initialization code
     }

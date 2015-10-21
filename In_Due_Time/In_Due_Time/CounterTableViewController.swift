@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class CounterTableViewController: UITableViewController
 {
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var todoList = Array<TheList>()
+    
+    
+    let checkImg = UIImage (contentsOfFile: "checkbutton.png")
+    let unCheckImg = UIImage (contentsOfFile: "unchecked.png")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +63,9 @@ class CounterTableViewController: UITableViewController
         {
             cell.listTitleTextField.text = aListItem.title
         }
+        
+            // I need to put a for in loop here to make the button work.
+        
         
         
         return cell
@@ -108,5 +116,13 @@ class CounterTableViewController: UITableViewController
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: - Action Handlers
+    @IBAction func addToList(sender: UIBarButtonItem)
+    {
+        let aListItem = NSEntityDescription.insertNewObjectForEntityForName("TheList", inManagedObjectContext: managedObjectContext) as! TheList
+          todoList.append(aListItem)
+        tableView.reloadData()
+    }
 
 }
