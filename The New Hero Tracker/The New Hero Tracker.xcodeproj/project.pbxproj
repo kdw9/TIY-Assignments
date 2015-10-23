@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DC3E4731BD99D2900065358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4721BD99D2900065358 /* AppDelegate.swift */; };
+		5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4761BD99D2A00065358 /* Main.storyboard */; };
+		5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4791BD99D2A00065358 /* Assets.xcassets */; };
+		5DC3E47D1BD99D2A00065358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */; };
+		5DC3E4851BD99D8600065358 /* TheHeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4841BD99D8600065358 /* TheHeroesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5DC3E4871BD9A45F00065358 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4861BD9A45F00065358 /* Hero.swift */; settings = {ASSET_TAGS = (); }; };
+		5DC3E4891BD9B73E00065358 /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4881BD9B73E00065358 /* heroes.json */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DC3E46F1BD99D2900065358 /* The New Hero Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The New Hero Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC3E4721BD99D2900065358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DC3E4771BD99D2A00065358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DC3E4791BD99D2A00065358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DC3E47C1BD99D2A00065358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DC3E47E1BD99D2A00065358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC3E4841BD99D8600065358 /* TheHeroesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheHeroesTableViewController.swift; sourceTree = "<group>"; };
+		5DC3E4861BD9A45F00065358 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		5DC3E4881BD9B73E00065358 /* heroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heroes.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DC3E46C1BD99D2900065358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DC3E4661BD99D2900065358 = {
+			isa = PBXGroup;
+			children = (
+				5DC3E4711BD99D2900065358 /* The New Hero Tracker */,
+				5DC3E4701BD99D2900065358 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DC3E4701BD99D2900065358 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DC3E46F1BD99D2900065358 /* The New Hero Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DC3E4711BD99D2900065358 /* The New Hero Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				5DC3E4721BD99D2900065358 /* AppDelegate.swift */,
+				5DC3E4841BD99D8600065358 /* TheHeroesTableViewController.swift */,
+				5DC3E4861BD9A45F00065358 /* Hero.swift */,
+				5DC3E4881BD9B73E00065358 /* heroes.json */,
+				5DC3E4761BD99D2A00065358 /* Main.storyboard */,
+				5DC3E4791BD99D2A00065358 /* Assets.xcassets */,
+				5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */,
+				5DC3E47E1BD99D2A00065358 /* Info.plist */,
+			);
+			path = "The New Hero Tracker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DC3E46E1BD99D2900065358 /* The New Hero Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DC3E4811BD99D2A00065358 /* Build configuration list for PBXNativeTarget "The New Hero Tracker" */;
+			buildPhases = (
+				5DC3E46B1BD99D2900065358 /* Sources */,
+				5DC3E46C1BD99D2900065358 /* Frameworks */,
+				5DC3E46D1BD99D2900065358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The New Hero Tracker";
+			productName = "The New Hero Tracker";
+			productReference = 5DC3E46F1BD99D2900065358 /* The New Hero Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DC3E4671BD99D2900065358 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					5DC3E46E1BD99D2900065358 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5DC3E46A1BD99D2900065358 /* Build configuration list for PBXProject "The New Hero Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DC3E4661BD99D2900065358;
+			productRefGroup = 5DC3E4701BD99D2900065358 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DC3E46E1BD99D2900065358 /* The New Hero Tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DC3E46D1BD99D2900065358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC3E47D1BD99D2A00065358 /* LaunchScreen.storyboard in Resources */,
+				5DC3E4891BD9B73E00065358 /* heroes.json in Resources */,
+				5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */,
+				5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DC3E46B1BD99D2900065358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC3E4731BD99D2900065358 /* AppDelegate.swift in Sources */,
+				5DC3E4851BD99D8600065358 /* TheHeroesTableViewController.swift in Sources */,
+				5DC3E4871BD9A45F00065358 /* Hero.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DC3E4761BD99D2A00065358 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DC3E4771BD99D2A00065358 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DC3E47C1BD99D2A00065358 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DC3E47F1BD99D2A00065358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DC3E4801BD99D2A00065358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DC3E4821BD99D2A00065358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The New Hero Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.The-New-Hero-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5DC3E4831BD99D2A00065358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "The New Hero Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.The-New-Hero-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DC3E46A1BD99D2900065358 /* Build configuration list for PBXProject "The New Hero Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC3E47F1BD99D2A00065358 /* Debug */,
+				5DC3E4801BD99D2A00065358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DC3E4811BD99D2A00065358 /* Build configuration list for PBXNativeTarget "The New Hero Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC3E4821BD99D2A00065358 /* Debug */,
+				5DC3E4831BD99D2A00065358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DC3E4671BD99D2900065358 /* Project object */;
+}

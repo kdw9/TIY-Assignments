@@ -1,25 +1,22 @@
 //
-//  HeroTableViewController.swift
-//  ShieldTrackerABC
+//  TheHeroesTableViewController.swift
+//  The New Hero Tracker
 //
-//  Created by Keron Williams on 10/18/15.
+//  Created by Keron Williams on 10/22/15.
 //  Copyright © 2015 The Iron Yard. All rights reserved.
 //
 
 import UIKit
 
-class HeroTableViewController: UITableViewController
+class TheHeroesTableViewController: UITableViewController
 {
-
     var heroes = Array<Hero>()
-    
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
         
-        title = "SHEILD Hero Tracker"
-        loadHeroes()
+       title = "The Hero Tracker"
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -27,7 +24,7 @@ class HeroTableViewController: UITableViewController
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    
+
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -40,24 +37,26 @@ class HeroTableViewController: UITableViewController
     {
         return 1
     }
-    // This gives the amount of heroes in the Array
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // This is how you determine how many elements are in you Array.
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return heroes.count
     }
 
-    // This defines what goes into the cell.
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TheHeroCell", forIndexPath: indexPath)
-
-        // Configure the cell...
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("HeroCell", forIndexPath: indexPath)
+        
+        // Create a handle. Attatch the balloon to the string
+        
         let aHero = heroes[indexPath.row]
-        cell.textLabel?.text = aHero .name
-        cell.detailTextLabel?.text = aHero .homeworld
+        cell.textLabel?.text = aHero.name
+        cell.detailTextLabel?.text = aHero.homeWorld
+        // Configure the cell...
+
         return cell
     }
-
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -94,7 +93,7 @@ class HeroTableViewController: UITableViewController
     }
     */
 
-
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -102,28 +101,28 @@ class HeroTableViewController: UITableViewController
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    */
 
-    
     private func loadHeroes()
     {
         do
         {
             let filePath =
-                NSBundle.mainBundle().pathForResource("heroes", ofType: "json")
-                let dataFromFile = NSData (contentsOfFile: filePath!)
-                let heroData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options:[]) as! NSArray
+            NSBundle.mainBundle().pathForResource("heroes", ofType: "json")
+            let dataFromFile = NSData(contentsOfFile: filePath!)
+            let heroData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! NSArray
             for heroDictionary in heroData
             {
                 let aHero = Hero(heroDictionary: heroDictionary as! NSDictionary)
                 heroes.append(aHero)
             }
-            heroes.sortInPlace({ $0.name < $1.name })
+            heroes.sortInPlace({ $0.name < $1.name})
         }
         catch let error as NSError
         {
-        print(error)
+            print(error)
         }
-    
+        
     }
-
+    
 }
