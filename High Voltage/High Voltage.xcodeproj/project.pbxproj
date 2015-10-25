@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5DC3E4631BD97DCC00065358 /* VoltageFaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4621BD97DCC00065358 /* VoltageFaceTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		5DC3E4651BD9809100065358 /* TheVoltageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4641BD9809100065358 /* TheVoltageCell.swift */; settings = {ASSET_TAGS = (); }; };
+		5DD45E9A1BDD3B75006578D9 /* OperatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD45E991BDD3B75006578D9 /* OperatorBrain.swift */; settings = {ASSET_TAGS = (); }; };
+		5DD45EA01BDD5872006578D9 /* HighVoltageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD45E9F1BDD5872006578D9 /* HighVoltageTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		5DF7D0DD1BD967FB00EABD7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7D0DC1BD967FB00EABD7E /* AppDelegate.swift */; };
 		5DF7D0E21BD967FB00EABD7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF7D0E01BD967FB00EABD7E /* Main.storyboard */; };
 		5DF7D0E41BD967FB00EABD7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF7D0E31BD967FB00EABD7E /* Assets.xcassets */; };
@@ -17,7 +18,8 @@
 
 /* Begin PBXFileReference section */
 		5DC3E4621BD97DCC00065358 /* VoltageFaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltageFaceTableViewController.swift; sourceTree = "<group>"; };
-		5DC3E4641BD9809100065358 /* TheVoltageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheVoltageCell.swift; sourceTree = "<group>"; };
+		5DD45E991BDD3B75006578D9 /* OperatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorBrain.swift; sourceTree = "<group>"; };
+		5DD45E9F1BDD5872006578D9 /* HighVoltageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighVoltageTableViewCell.swift; sourceTree = "<group>"; };
 		5DF7D0D91BD967FB00EABD7E /* High Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "High Voltage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF7D0DC1BD967FB00EABD7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF7D0E11BD967FB00EABD7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				5DF7D0DC1BD967FB00EABD7E /* AppDelegate.swift */,
-				5DC3E4641BD9809100065358 /* TheVoltageCell.swift */,
 				5DC3E4621BD97DCC00065358 /* VoltageFaceTableViewController.swift */,
+				5DD45E9F1BDD5872006578D9 /* HighVoltageTableViewCell.swift */,
+				5DD45E991BDD3B75006578D9 /* OperatorBrain.swift */,
 				5DF7D0E01BD967FB00EABD7E /* Main.storyboard */,
 				5DF7D0E31BD967FB00EABD7E /* Assets.xcassets */,
 				5DF7D0E51BD967FB00EABD7E /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF7D0DD1BD967FB00EABD7E /* AppDelegate.swift in Sources */,
-				5DC3E4651BD9809100065358 /* TheVoltageCell.swift in Sources */,
 				5DC3E4631BD97DCC00065358 /* VoltageFaceTableViewController.swift in Sources */,
+				5DD45EA01BDD5872006578D9 /* HighVoltageTableViewCell.swift in Sources */,
+				5DD45E9A1BDD3B75006578D9 /* OperatorBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

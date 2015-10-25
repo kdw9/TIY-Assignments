@@ -1,14 +1,14 @@
 //
-//  VoltageFaceTableViewController.swift
-//  High Voltage
+//  HighVoltageTableViewController.swift
+//  High Voltage Home Assignment
 //
-//  Created by Keron Williams on 10/22/15.
+//  Created by Keron Williams on 10/25/15.
 //  Copyright © 2015 The Iron Yard. All rights reserved.
 //
 
 import UIKit
 
-class VoltageFaceTableViewController: UITableViewController
+class HighVoltageTableViewController: UITableViewController
 {
     var formulas = Array<OperatorBrain>()
     override func viewDidLoad()
@@ -30,31 +30,25 @@ class VoltageFaceTableViewController: UITableViewController
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int
-    {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return formulas.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    {
-        let cell = tableView.dequeueReusableCellWithIdentifier("HighVoltageCell", forIndexPath: indexPath) as!
-        
-        cell.textLabel?.text = formulas[indexPath.row]
-        
-     
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("HighVoltageCell", forIndexPath: indexPath)
+
         // Configure the cell...
 
         return cell
     }
-    
+
 
     /*
     // Override to support conditional editing of the table view.

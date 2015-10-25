@@ -1,18 +1,17 @@
 //
-//  TheVoltageCell.swift
+//  HighVoltageTableViewCell.swift
 //  High Voltage
 //
-//  Created by Keron Williams on 10/22/15.
+//  Created by Keron Williams on 10/25/15.
 //  Copyright © 2015 The Iron Yard. All rights reserved.
 //
 
 import UIKit
 
-class TheVoltageCell: UITableViewCell
+class HighVoltageTableViewCell: UITableViewCell
 {
-    @IBOutlet weak var voltage: UILabel!
-    @IBOutlet weak var unitInput: UITextField!
-    
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var label: UILabel!
     override func awakeFromNib()
     {
         super.awakeFromNib()
