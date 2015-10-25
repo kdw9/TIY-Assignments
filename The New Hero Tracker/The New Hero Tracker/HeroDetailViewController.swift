@@ -14,6 +14,8 @@ class HeroDetailViewController: UIViewController
     // What Im doing right here is storing an Individual Thow
     // This is creating a handle for this current detail view controller
     var eachHero: Hero?
+    
+    
     // Controll and Drag to connect the IBOutlets into the detail view controller
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var homeworldLabel: UILabel!
@@ -31,7 +33,7 @@ class HeroDetailViewController: UIViewController
         homeworldLabel.text = eachHero?.homeworld
         powerLabel.text = eachHero?.powers
          //heroPortrait.image = UIImage(named: hero!.portrait)
-        heroPicture.image = UIImage(named: eachHero!.heroImage)
+        heroPicture.image = UIImage(named: (eachHero?.heroImage)!)
         
         
     }
