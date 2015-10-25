@@ -14,6 +14,11 @@
 		5DC3E4851BD99D8600065358 /* TheHeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4841BD99D8600065358 /* TheHeroesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5DC3E4871BD9A45F00065358 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4861BD9A45F00065358 /* Hero.swift */; settings = {ASSET_TAGS = (); }; };
 		5DC3E4891BD9B73E00065358 /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4881BD9B73E00065358 /* heroes.json */; settings = {ASSET_TAGS = (); }; };
+		5DD45E7C1BDAAF74006578D9 /* avengers.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E7B1BDAAF74006578D9 /* avengers.png */; settings = {ASSET_TAGS = (); }; };
+		5DD45E7E1BDC5DBC006578D9 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD45E7D1BDC5DBC006578D9 /* HeroDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5DD45E821BDC6EF4006578D9 /* DragonbonesBB_ital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */; settings = {ASSET_TAGS = (); }; };
+		5DD45E831BDC6EF4006578D9 /* DragonbonesBB_reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E801BDC6EF4006578D9 /* DragonbonesBB_reg.ttf */; settings = {ASSET_TAGS = (); }; };
+		5DD45E841BDC6EF4006578D9 /* DragonbonesBB_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E811BDC6EF4006578D9 /* DragonbonesBB_bold.ttf */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		5DC3E4841BD99D8600065358 /* TheHeroesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheHeroesTableViewController.swift; sourceTree = "<group>"; };
 		5DC3E4861BD9A45F00065358 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		5DC3E4881BD9B73E00065358 /* heroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heroes.json; sourceTree = "<group>"; };
+		5DD45E7B1BDAAF74006578D9 /* avengers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avengers.png; sourceTree = "<group>"; };
+		5DD45E7D1BDC5DBC006578D9 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DragonbonesBB_ital.ttf; sourceTree = "<group>"; };
+		5DD45E801BDC6EF4006578D9 /* DragonbonesBB_reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DragonbonesBB_reg.ttf; sourceTree = "<group>"; };
+		5DD45E811BDC6EF4006578D9 /* DragonbonesBB_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DragonbonesBB_bold.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +70,13 @@
 			children = (
 				5DC3E4721BD99D2900065358 /* AppDelegate.swift */,
 				5DC3E4841BD99D8600065358 /* TheHeroesTableViewController.swift */,
+				5DD45E7D1BDC5DBC006578D9 /* HeroDetailViewController.swift */,
 				5DC3E4861BD9A45F00065358 /* Hero.swift */,
 				5DC3E4881BD9B73E00065358 /* heroes.json */,
+				5DD45E7B1BDAAF74006578D9 /* avengers.png */,
+				5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */,
+				5DD45E801BDC6EF4006578D9 /* DragonbonesBB_reg.ttf */,
+				5DD45E811BDC6EF4006578D9 /* DragonbonesBB_bold.ttf */,
 				5DC3E4761BD99D2A00065358 /* Main.storyboard */,
 				5DC3E4791BD99D2A00065358 /* Assets.xcassets */,
 				5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */,
@@ -127,8 +142,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD45E841BDC6EF4006578D9 /* DragonbonesBB_bold.ttf in Resources */,
 				5DC3E47D1BD99D2A00065358 /* LaunchScreen.storyboard in Resources */,
+				5DD45E831BDC6EF4006578D9 /* DragonbonesBB_reg.ttf in Resources */,
 				5DC3E4891BD9B73E00065358 /* heroes.json in Resources */,
+				5DD45E7C1BDAAF74006578D9 /* avengers.png in Resources */,
+				5DD45E821BDC6EF4006578D9 /* DragonbonesBB_ital.ttf in Resources */,
 				5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */,
 				5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */,
 			);
@@ -142,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC3E4731BD99D2900065358 /* AppDelegate.swift in Sources */,
+				5DD45E7E1BDC5DBC006578D9 /* HeroDetailViewController.swift in Sources */,
 				5DC3E4851BD99D8600065358 /* TheHeroesTableViewController.swift in Sources */,
 				5DC3E4871BD9A45F00065358 /* Hero.swift in Sources */,
 			);
@@ -293,6 +313,7 @@
 				5DC3E4831BD99D2A00065358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

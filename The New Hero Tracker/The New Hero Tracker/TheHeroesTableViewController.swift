@@ -17,6 +17,7 @@ class TheHeroesTableViewController: UITableViewController
         super.viewDidLoad()
         
        title = "The Hero Tracker"
+        loadHeroes()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -44,18 +45,36 @@ class TheHeroesTableViewController: UITableViewController
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("HeroCell", forIndexPath: indexPath)
         
         // Create a handle. Attatch the balloon to the string
         
         let aHero = heroes[indexPath.row]
         cell.textLabel?.text = aHero.name
-        cell.detailTextLabel?.text = aHero.homeWorld
+        cell.detailTextLabel?.text = aHero.homeworld
         // Configure the cell...
 
         return cell
     }
+    
+    // Keron Learning another way to do a Segue
+    // This is how to select a row, and make it flash like a clicker
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        // This is how to select a row, and make it flash like a clicker
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        // This code allows the segue to happen using the story board, in other words this is virtually creating a page for each item in the index path rows
+        let selectedHero = heroes[indexPath.row]
+        let detailVC = storyboard?.instantiateViewControllerWithIdentifier("HeroDetailViewController") as! HeroDetailViewController
+        detailVC.eachHero = selectedHero
+        // this is how you tell the system to add this detail to the screan
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    
     
 
     /*
@@ -92,17 +111,23 @@ class TheHeroesTableViewController: UITableViewController
         return true
     }
     */
-
-    /*
+    
+    
+    
+    // Keron Learning another way to do a Segue
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
+ 
     private func loadHeroes()
     {
         do
@@ -116,7 +141,7 @@ class TheHeroesTableViewController: UITableViewController
                 let aHero = Hero(heroDictionary: heroDictionary as! NSDictionary)
                 heroes.append(aHero)
             }
-            heroes.sortInPlace({ $0.name < $1.name})
+                heroes.sortInPlace({ $0.name < $1.name})
         }
         catch let error as NSError
         {
@@ -124,5 +149,6 @@ class TheHeroesTableViewController: UITableViewController
         }
         
     }
-    
+
+
 }
