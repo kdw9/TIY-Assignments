@@ -19,6 +19,15 @@
 		5DD45E821BDC6EF4006578D9 /* DragonbonesBB_ital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */; settings = {ASSET_TAGS = (); }; };
 		5DD45E831BDC6EF4006578D9 /* DragonbonesBB_reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E801BDC6EF4006578D9 /* DragonbonesBB_reg.ttf */; settings = {ASSET_TAGS = (); }; };
 		5DD45E841BDC6EF4006578D9 /* DragonbonesBB_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E811BDC6EF4006578D9 /* DragonbonesBB_bold.ttf */; settings = {ASSET_TAGS = (); }; };
+		5DD45E8E1BDC9096006578D9 /* captain-america.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E851BDC9096006578D9 /* captain-america.jpg */; settings = {ASSET_TAGS = (); }; };
+		5DD45E8F1BDC9096006578D9 /* gamora.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E861BDC9096006578D9 /* gamora.jpg */; settings = {ASSET_TAGS = (); }; };
+		5DD45E901BDC9096006578D9 /* raccoon_rocket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E871BDC9096006578D9 /* raccoon_rocket.jpg */; settings = {ASSET_TAGS = (); }; };
+		5DD45E911BDC9096006578D9 /* thor in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E881BDC9096006578D9 /* thor */; settings = {ASSET_TAGS = (); }; };
+		5DD45E921BDC9096006578D9 /* muscle-hulk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E891BDC9096006578D9 /* muscle-hulk.jpg */; settings = {ASSET_TAGS = (); }; };
+		5DD45E931BDC9096006578D9 /* drax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E8A1BDC9096006578D9 /* drax.jpg */; settings = {ASSET_TAGS = (); }; };
+		5DD45E941BDC9096006578D9 /* starlord.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E8B1BDC9096006578D9 /* starlord.jpg */; settings = {ASSET_TAGS = (); }; };
+		5DD45E951BDC9096006578D9 /* Black-Iron-Man-l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E8C1BDC9096006578D9 /* Black-Iron-Man-l.jpg */; settings = {ASSET_TAGS = (); }; };
+		5DD45E961BDC9096006578D9 /* groot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E8D1BDC9096006578D9 /* groot.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +45,15 @@
 		5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DragonbonesBB_ital.ttf; sourceTree = "<group>"; };
 		5DD45E801BDC6EF4006578D9 /* DragonbonesBB_reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DragonbonesBB_reg.ttf; sourceTree = "<group>"; };
 		5DD45E811BDC6EF4006578D9 /* DragonbonesBB_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DragonbonesBB_bold.ttf; sourceTree = "<group>"; };
+		5DD45E851BDC9096006578D9 /* captain-america.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "captain-america.jpg"; sourceTree = "<group>"; };
+		5DD45E861BDC9096006578D9 /* gamora.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gamora.jpg; sourceTree = "<group>"; };
+		5DD45E871BDC9096006578D9 /* raccoon_rocket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raccoon_rocket.jpg; sourceTree = "<group>"; };
+		5DD45E881BDC9096006578D9 /* thor */ = {isa = PBXFileReference; lastKnownFileType = file; path = thor; sourceTree = "<group>"; };
+		5DD45E891BDC9096006578D9 /* muscle-hulk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "muscle-hulk.jpg"; sourceTree = "<group>"; };
+		5DD45E8A1BDC9096006578D9 /* drax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drax.jpg; sourceTree = "<group>"; };
+		5DD45E8B1BDC9096006578D9 /* starlord.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starlord.jpg; sourceTree = "<group>"; };
+		5DD45E8C1BDC9096006578D9 /* Black-Iron-Man-l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-Iron-Man-l.jpg"; sourceTree = "<group>"; };
+		5DD45E8D1BDC9096006578D9 /* groot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = groot.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,15 @@
 				5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */,
 				5DD45E801BDC6EF4006578D9 /* DragonbonesBB_reg.ttf */,
 				5DD45E811BDC6EF4006578D9 /* DragonbonesBB_bold.ttf */,
+				5DD45E851BDC9096006578D9 /* captain-america.jpg */,
+				5DD45E861BDC9096006578D9 /* gamora.jpg */,
+				5DD45E871BDC9096006578D9 /* raccoon_rocket.jpg */,
+				5DD45E881BDC9096006578D9 /* thor */,
+				5DD45E891BDC9096006578D9 /* muscle-hulk.jpg */,
+				5DD45E8A1BDC9096006578D9 /* drax.jpg */,
+				5DD45E8B1BDC9096006578D9 /* starlord.jpg */,
+				5DD45E8C1BDC9096006578D9 /* Black-Iron-Man-l.jpg */,
+				5DD45E8D1BDC9096006578D9 /* groot.jpg */,
 				5DC3E4761BD99D2A00065358 /* Main.storyboard */,
 				5DC3E4791BD99D2A00065358 /* Assets.xcassets */,
 				5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */,
@@ -142,12 +169,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD45E931BDC9096006578D9 /* drax.jpg in Resources */,
+				5DD45E961BDC9096006578D9 /* groot.jpg in Resources */,
 				5DD45E841BDC6EF4006578D9 /* DragonbonesBB_bold.ttf in Resources */,
+				5DD45E921BDC9096006578D9 /* muscle-hulk.jpg in Resources */,
 				5DC3E47D1BD99D2A00065358 /* LaunchScreen.storyboard in Resources */,
+				5DD45E8F1BDC9096006578D9 /* gamora.jpg in Resources */,
+				5DD45E8E1BDC9096006578D9 /* captain-america.jpg in Resources */,
+				5DD45E901BDC9096006578D9 /* raccoon_rocket.jpg in Resources */,
+				5DD45E951BDC9096006578D9 /* Black-Iron-Man-l.jpg in Resources */,
 				5DD45E831BDC6EF4006578D9 /* DragonbonesBB_reg.ttf in Resources */,
 				5DC3E4891BD9B73E00065358 /* heroes.json in Resources */,
 				5DD45E7C1BDAAF74006578D9 /* avengers.png in Resources */,
+				5DD45E941BDC9096006578D9 /* starlord.jpg in Resources */,
 				5DD45E821BDC6EF4006578D9 /* DragonbonesBB_ital.ttf in Resources */,
+				5DD45E911BDC9096006578D9 /* thor in Resources */,
 				5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */,
 				5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */,
 			);
