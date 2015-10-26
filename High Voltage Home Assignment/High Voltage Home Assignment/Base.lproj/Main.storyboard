@@ -8,14 +8,14 @@
         <scene sceneID="eeH-HM-dFD">
             <objects>
                 <tableViewController id="esp-XQ-yKW" customClass="HighVoltageTableViewController" customModule="High_Voltage_Home_Assignment" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eF1-Py-Y3P">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="eF1-Py-Y3P">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HighVoltageCell" id="OfU-iw-0Wz" customClass="VoltageTableViewCell" customModule="High_Voltage_Home_Assignment" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OfU-iw-0Wz" id="cGT-wL-eOD">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -65,12 +65,62 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="wrf-LA-nrC">
                         <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="EVk-T8-dmt"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vX5-Xe-Wn9"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vX5-Xe-Wn9">
+                            <connections>
+                                <segue destination="WZF-zz-h6G" kind="popoverPresentation" identifier="ShowFormulaListPopOverSegue" popoverAnchorBarButtonItem="vX5-Xe-Wn9" id="B4S-72-gar">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="refresh" destination="EVk-T8-dmt" id="xt0-8E-9jS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlP-Dh-6Zj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1256" y="248"/>
+        </scene>
+        <!--Formula List Table View Controller-->
+        <scene sceneID="wsE-u0-e1R">
+            <objects>
+                <tableViewController id="WZF-zz-h6G" customClass="FormulaListTableViewController" customModule="High_Voltage_Home_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yMM-f4-2fO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier=" FormulaCell" textLabel="5lh-eF-ZrJ" style="IBUITableViewCellStyleDefault" id="u93-vD-gaR" customClass="Formulas">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u93-vD-gaR" id="wMz-Cl-94r">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5lh-eF-ZrJ">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WZF-zz-h6G" id="ikx-7P-7vU"/>
+                            <outlet property="delegate" destination="WZF-zz-h6G" id="ScS-AD-Jmi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vg9-1Y-s87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970" y="248"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vYS-qb-7ny">
