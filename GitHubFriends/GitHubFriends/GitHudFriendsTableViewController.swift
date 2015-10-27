@@ -56,7 +56,7 @@ class GitHudFriendsTableViewController: UITableViewController, APIControllerProt
     
     func didReciveAPIResults(name: NSDictionary)
     {
-        <#code#>
+        let
     }
      
 }
