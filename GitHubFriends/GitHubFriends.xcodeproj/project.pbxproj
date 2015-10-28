@@ -12,6 +12,7 @@
 		5D84F25C1BDFFCF100A387B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D84F25B1BDFFCF100A387B1 /* Assets.xcassets */; };
 		5D84F25F1BDFFCF100A387B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D84F25D1BDFFCF100A387B1 /* LaunchScreen.storyboard */; };
 		5D84F2671BE00A7C00A387B1 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84F2661BE00A7C00A387B1 /* APIController.swift */; settings = {ASSET_TAGS = (); }; };
+		5D84F2691BE064DF00A387B1 /* FriendProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84F2681BE064DF00A387B1 /* FriendProfile.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5D84F25E1BDFFCF100A387B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D84F2601BDFFCF200A387B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D84F2661BE00A7C00A387B1 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		5D84F2681BE064DF00A387B1 /* FriendProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				5D84F2541BDFFCF000A387B1 /* AppDelegate.swift */,
 				5D84F2561BDFFCF000A387B1 /* GitHudFriendsTableViewController.swift */,
 				5D84F2661BE00A7C00A387B1 /* APIController.swift */,
+				5D84F2681BE064DF00A387B1 /* FriendProfile.swift */,
 				5D84F25B1BDFFCF100A387B1 /* Assets.xcassets */,
 				5D84F25D1BDFFCF100A387B1 /* LaunchScreen.storyboard */,
 				5D84F2601BDFFCF200A387B1 /* Info.plist */,
@@ -136,6 +139,7 @@
 				5D84F2571BDFFCF000A387B1 /* GitHudFriendsTableViewController.swift in Sources */,
 				5D84F2551BDFFCF000A387B1 /* AppDelegate.swift in Sources */,
 				5D84F2671BE00A7C00A387B1 /* APIController.swift in Sources */,
+				5D84F2691BE064DF00A387B1 /* FriendProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +281,7 @@
 				5D84F2651BDFFCF200A387B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
