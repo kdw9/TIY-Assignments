@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eUk-Cy-rBj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Grail Diary Table View Controller-->
+        <scene sceneID="5d6-BC-ZA6">
+            <objects>
+                <tableViewController id="EwE-5a-vrG" customClass="GrailDiaryTableViewController" customModule="The_Grial_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gsy-hk-8az">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PageShiftCell" id="BuO-gS-gKY" customClass="PageShiftCell" customModule="The_Grial_Diary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BuO-gS-gKY" id="CQI-tI-ujZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oo-vO-o6D">
+                                            <rect key="frame" x="15" y="11" width="42" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eM-7H-zDP">
+                                            <rect key="frame" x="543" y="11" width="42" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="2Oo-vO-o6D" firstAttribute="leading" secondItem="CQI-tI-ujZ" secondAttribute="leading" constant="15" id="IJr-fI-ETV"/>
+                                        <constraint firstItem="2Oo-vO-o6D" firstAttribute="centerY" secondItem="CQI-tI-ujZ" secondAttribute="centerY" id="IdY-5U-rVu"/>
+                                        <constraint firstAttribute="trailing" secondItem="9eM-7H-zDP" secondAttribute="trailing" constant="15" id="XGA-Qe-siy"/>
+                                        <constraint firstItem="9eM-7H-zDP" firstAttribute="centerY" secondItem="2Oo-vO-o6D" secondAttribute="centerY" id="bjK-Bg-5tm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="leftLabel" destination="2Oo-vO-o6D" id="v3r-9T-R5v"/>
+                                    <outlet property="rightLabel" destination="9eM-7H-zDP" id="77a-pl-Wrr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EwE-5a-vrG" id="LEk-iv-t5k"/>
+                            <outlet property="delegate" destination="EwE-5a-vrG" id="oVa-t9-LY7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3Ag-on-Yta"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zs5-wW-Qud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="386"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="96g-bl-ZNJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eUk-Cy-rBj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dG8-p7-od8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EwE-5a-vrG" kind="relationship" relationship="rootViewController" id="1D0-wX-ITt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b44-QK-OGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="386"/>
+        </scene>
+    </scenes>
+</document>

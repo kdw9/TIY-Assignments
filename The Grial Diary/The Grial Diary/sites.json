@@ -1,0 +1,52 @@
+ [
+  {
+    "name": "Agra Fort",
+    "location": "Uttar Pradesh",
+    "datebuilt": "1565"
+  },
+  {
+    "name": "Parthenon",
+    "location": "Greece",
+    "datebuilt": "447 BC"
+  },
+  {
+    "name": "The Great Pyramid of Giza",
+    "location": "Egypt",
+    "datebuilt": "2470 B.C"
+  },
+  {
+    "name": "Colosseum",
+    "location": "Rome",
+    "datebuilt": "70 A.D"
+  },
+  {
+    "name": "Dome of the Rock",
+    "location": "Jerusalem",
+    "datebuilt": "685 A.D"
+  },
+  {
+    "name": "Akshardham",
+    "location": "Delhi",
+    "datebuilt": "2005"
+  },
+  {
+    "name": "Statue of Liberty",
+    "location": "New York",
+    "datebuilt": "1886"
+  },
+  {
+    "name": "Taj Mahal",
+    "location": "India",
+    "datebuilt": "1631"
+  },
+  {
+    "name": "The Great wall of China",
+    "location": "China",
+    "datebuilt": "206 B.C"
+  },
+  {
+    "name": "Victoria monument",
+    "location": "London",
+    "datebuilt": "1911"
+  }
+]
