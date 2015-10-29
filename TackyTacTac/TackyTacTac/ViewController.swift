@@ -27,8 +27,8 @@ class ViewController: UIViewController
     
     
     
-// 1.) *** first thing  we are doing is making a frame label
-// CGRect Descrines the position and Size of somthing - it can also be in Double and Int
+// 1.) *** first thing  we are doing is making a frame "LABEL"
+// CGRect Describes the position and Size of something - it can also be in Double and Int
     let gameStatusLabel = UILabel(frame: CGRect(x: 0, y: 80, width: 200, height: 50))
     let playeroneScoreLabel = UILabel(frame: CGRect(x: 0, y: 425, width: 200, height: 50))
     let playertwoScoreLabel = UILabel(frame: CGRect(x: 0, y: 450, width: 200, height: 50))
