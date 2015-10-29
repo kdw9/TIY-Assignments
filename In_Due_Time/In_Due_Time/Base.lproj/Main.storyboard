@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ekr-Xn-DFk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Counter Table View Controller-->
+        <scene sceneID="yO0-Gj-4fI">
+            <objects>
+                <tableViewController id="NAo-8c-Sr0" customClass="CounterTableViewController" customModule="In_Due_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Akq-Bq-cLk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodoCell" id="1Vf-zr-x0h" customClass="TodoCell" customModule="In_Due_Time" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Vf-zr-x0h" id="iXc-6b-huV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="List Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1EC-fe-b0a">
+                                            <rect key="frame" x="15" y="7" width="50" height="30"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xp-fI-IAW">
+                                            <rect key="frame" x="545" y="2" width="40" height="40"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Hu9-l2-713"/>
+                                                <constraint firstAttribute="width" constant="40" id="sYP-Bz-r7C"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                            <state key="normal" title="Button" image="checkbutton.png"/>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="1xp-fI-IAW" firstAttribute="leading" secondItem="1EC-fe-b0a" secondAttribute="trailing" constant="480" id="A3l-4E-Aw3"/>
+                                        <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="Bdu-bU-3dC"/>
+                                        <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="P37-pJ-frR"/>
+                                        <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="PWI-R0-0KN"/>
+                                        <constraint firstItem="1xp-fI-IAW" firstAttribute="centerY" secondItem="1EC-fe-b0a" secondAttribute="centerY" id="SK5-Gl-yae"/>
+                                        <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="SLv-vC-dde"/>
+                                        <constraint firstItem="1xp-fI-IAW" firstAttribute="centerX" secondItem="iXc-6b-huV" secondAttribute="centerX" id="TCC-lN-LgC"/>
+                                        <constraint firstItem="1EC-fe-b0a" firstAttribute="leading" secondItem="iXc-6b-huV" secondAttribute="leading" constant="15" id="e1f-43-yvH"/>
+                                        <constraint firstItem="1xp-fI-IAW" firstAttribute="centerY" secondItem="1EC-fe-b0a" secondAttribute="centerY" id="g0T-iX-Bze"/>
+                                        <constraint firstItem="1xp-fI-IAW" firstAttribute="centerX" secondItem="1EC-fe-b0a" secondAttribute="centerX" id="gcb-I7-Q1B"/>
+                                        <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="gw4-ef-Wyy"/>
+                                        <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="miN-Ec-w1e"/>
+                                        <constraint firstItem="1EC-fe-b0a" firstAttribute="centerY" secondItem="iXc-6b-huV" secondAttribute="centerY" id="o3g-Qx-mQ8"/>
+                                        <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="rbJ-Se-kBe"/>
+                                        <constraint firstItem="1xp-fI-IAW" firstAttribute="leading" secondItem="1EC-fe-b0a" secondAttribute="trailing" constant="480" id="vWG-OT-ZGc"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="A3l-4E-Aw3"/>
+                                            <exclude reference="Bdu-bU-3dC"/>
+                                            <exclude reference="P37-pJ-frR"/>
+                                            <exclude reference="PWI-R0-0KN"/>
+                                            <exclude reference="SK5-Gl-yae"/>
+                                            <exclude reference="SLv-vC-dde"/>
+                                            <exclude reference="TCC-lN-LgC"/>
+                                            <exclude reference="gcb-I7-Q1B"/>
+                                            <exclude reference="gw4-ef-Wyy"/>
+                                            <exclude reference="miN-Ec-w1e"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="checkButton" destination="1xp-fI-IAW" id="0U0-5r-qCi"/>
+                                    <outlet property="listTitleTextField" destination="1EC-fe-b0a" id="3lK-Ih-937"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NAo-8c-Sr0" id="9TF-tS-8xV"/>
+                            <outlet property="delegate" destination="NAo-8c-Sr0" id="ro8-ag-XWC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="K4O-3j-8S8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cU9-cG-8ND">
+                            <connections>
+                                <action selector="addToList:" destination="NAo-8c-Sr0" id="Aqc-WX-eyF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Kd-zn-CqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="258"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GiP-NP-D6D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ekr-Xn-DFk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KDd-eT-vO5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NAo-8c-Sr0" kind="relationship" relationship="rootViewController" id="nv8-1g-6vl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lv9-am-Nsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="258"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkbutton.png" width="300" height="300"/>
+    </resources>
+</document>
