@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dES-pl-Hb4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Voltage Face Table View Controller-->
+        <scene sceneID="8nU-2J-rAr">
+            <objects>
+                <tableViewController id="VRz-jh-7ia" customClass="VoltageFaceTableViewController" customModule="High_Voltage" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cQ7-Pn-C7i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HighVoltage" id="VO6-2V-Z4U" customClass="TheVoltageCell" customModule="High_Voltage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VO6-2V-Z4U" id="c5H-AO-faM">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hw-yf-m2R">
+                                            <rect key="frame" x="15" y="11" width="42" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gkn-DS-FvG">
+                                            <rect key="frame" x="495" y="7" width="90" height="30"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Gkn-DS-FvG" secondAttribute="trailing" constant="15" id="6Dd-iD-FeJ"/>
+                                        <constraint firstItem="6Hw-yf-m2R" firstAttribute="centerY" secondItem="c5H-AO-faM" secondAttribute="centerY" id="Xqb-EO-Goy"/>
+                                        <constraint firstItem="Gkn-DS-FvG" firstAttribute="centerY" secondItem="6Hw-yf-m2R" secondAttribute="centerY" id="XuZ-34-YLQ"/>
+                                        <constraint firstItem="6Hw-yf-m2R" firstAttribute="leading" secondItem="c5H-AO-faM" secondAttribute="leading" constant="15" id="eYX-kp-aK0"/>
+                                        <constraint firstItem="Gkn-DS-FvG" firstAttribute="leading" secondItem="6Hw-yf-m2R" secondAttribute="trailing" constant="438" id="oqq-az-mug"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="unitInput" destination="Gkn-DS-FvG" id="fmq-NT-kLR"/>
+                                    <outlet property="voltage" destination="6Hw-yf-m2R" id="Cub-ps-jKD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VRz-jh-7ia" id="GnF-iW-JJ5"/>
+                            <outlet property="delegate" destination="VRz-jh-7ia" id="FWR-Ch-ehj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="CxD-Km-Je3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vRB-3B-i87"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpr-95-U1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528" y="236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vqc-Om-43j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dES-pl-Hb4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kud-eC-RNL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VRz-jh-7ia" kind="relationship" relationship="rootViewController" id="cWo-11-xoU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcC-2a-D7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="236"/>
+        </scene>
+    </scenes>
+</document>

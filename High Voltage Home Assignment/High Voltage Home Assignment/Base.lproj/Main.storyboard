@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="poV-EX-UzF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--High Voltage Table View Controller-->
+        <scene sceneID="eeH-HM-dFD">
+            <objects>
+                <tableViewController id="esp-XQ-yKW" customClass="HighVoltageTableViewController" customModule="High_Voltage_Home_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="eF1-Py-Y3P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HighVoltageCell" id="OfU-iw-0Wz" customClass="VoltageTableViewCell" customModule="High_Voltage_Home_Assignment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OfU-iw-0Wz" id="cGT-wL-eOD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUV-Hu-rGu">
+                                            <rect key="frame" x="15" y="11" width="120" height="21"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="8II-aC-vwM"/>
+                                                <constraint firstAttribute="width" constant="120" id="Vfu-9t-rpF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUi-rV-rrf">
+                                            <rect key="frame" x="285" y="7" width="300" height="30"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="LLV-SN-fUC"/>
+                                                <constraint firstAttribute="width" constant="300" id="eHa-8x-lQI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="eUV-Hu-rGu" firstAttribute="leading" secondItem="cGT-wL-eOD" secondAttribute="leading" constant="15" id="Vg1-Dc-bfE"/>
+                                        <constraint firstItem="eUV-Hu-rGu" firstAttribute="centerY" secondItem="cGT-wL-eOD" secondAttribute="centerY" id="WNd-EU-abg"/>
+                                        <constraint firstItem="nUi-rV-rrf" firstAttribute="centerY" secondItem="cGT-wL-eOD" secondAttribute="centerY" id="hJ4-iR-QYH"/>
+                                        <constraint firstAttribute="trailing" secondItem="nUi-rV-rrf" secondAttribute="trailing" constant="15" id="iYq-ro-PdK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="label" destination="eUV-Hu-rGu" id="Qyw-b1-DvS"/>
+                                    <outlet property="textfield" destination="nUi-rV-rrf" id="F38-zq-F1n"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="esp-XQ-yKW" id="30t-yB-TOs"/>
+                            <outlet property="delegate" destination="esp-XQ-yKW" id="nO9-P3-R5t"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="wrf-LA-nrC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="EVk-T8-dmt"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vX5-Xe-Wn9">
+                            <connections>
+                                <segue destination="WZF-zz-h6G" kind="popoverPresentation" identifier="ShowFormulaListPopOverSegue" popoverAnchorBarButtonItem="vX5-Xe-Wn9" id="B4S-72-gar">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="refresh" destination="EVk-T8-dmt" id="xt0-8E-9jS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlP-Dh-6Zj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256" y="248"/>
+        </scene>
+        <!--Formula List Table View Controller-->
+        <scene sceneID="wsE-u0-e1R">
+            <objects>
+                <tableViewController id="WZF-zz-h6G" customClass="FormulaListTableViewController" customModule="High_Voltage_Home_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yMM-f4-2fO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier=" FormulaCell" textLabel="5lh-eF-ZrJ" style="IBUITableViewCellStyleDefault" id="u93-vD-gaR" customClass="Formulas">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u93-vD-gaR" id="wMz-Cl-94r">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5lh-eF-ZrJ">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WZF-zz-h6G" id="ikx-7P-7vU"/>
+                            <outlet property="delegate" destination="WZF-zz-h6G" id="ScS-AD-Jmi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vg9-1Y-s87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970" y="248"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vYS-qb-7ny">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="poV-EX-UzF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iED-vc-3PE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="esp-XQ-yKW" kind="relationship" relationship="rootViewController" id="ocS-4j-lTc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1D-cV-yz4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="248"/>
+        </scene>
+    </scenes>
+</document>
