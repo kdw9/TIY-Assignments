@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avengers.png" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-4B-poZ">
+                                <rect key="frame" x="165" y="180" width="270" height="240"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="TP4-Dz-L8o"/>
+                                    <constraint firstAttribute="width" constant="270" id="rfC-lm-Lv5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Avengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SF-kc-2dZ">
+                                <rect key="frame" x="188" y="398" width="225" height="162"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3SF-kc-2dZ" secondAttribute="height" multiplier="226:55" id="nNQ-I1-XQo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="39"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nNQ-I1-XQo"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3SF-kc-2dZ" secondAttribute="bottom" constant="67" id="3NL-wI-LwU"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3SF-kc-2dZ" secondAttribute="bottom" constant="139" id="7vd-tP-deN"/>
+                            <constraint firstItem="3SF-kc-2dZ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="260" id="JSG-Zv-UY5"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3SF-kc-2dZ" secondAttribute="bottom" constant="40" id="PY4-mF-DqK"/>
+                            <constraint firstItem="eTX-4B-poZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="S1R-Aq-74Z"/>
+                            <constraint firstItem="3SF-kc-2dZ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="332" id="WnU-ev-Ty2"/>
+                            <constraint firstItem="3SF-kc-2dZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ydq-Gl-DF4"/>
+                            <constraint firstItem="3SF-kc-2dZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZcU-By-cfb"/>
+                            <constraint firstItem="eTX-4B-poZ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aMr-oQ-jof"/>
+                            <constraint firstItem="3SF-kc-2dZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="188" id="bon-1d-lls"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3SF-kc-2dZ" secondAttribute="bottom" constant="95" id="dkA-0k-N5M"/>
+                            <constraint firstAttribute="trailing" secondItem="3SF-kc-2dZ" secondAttribute="trailing" constant="180" id="n9x-xd-Frp"/>
+                            <constraint firstItem="3SF-kc-2dZ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="378" id="stj-Mg-Y3G"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JSG-Zv-UY5"/>
+                                <exclude reference="WnU-ev-Ty2"/>
+                                <exclude reference="ZcU-By-cfb"/>
+                                <exclude reference="bon-1d-lls"/>
+                                <exclude reference="n9x-xd-Frp"/>
+                                <exclude reference="3NL-wI-LwU"/>
+                                <exclude reference="7vd-tP-deN"/>
+                                <exclude reference="dkA-0k-N5M"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avengers.png" width="1152" height="1080"/>
+    </resources>
+</document>
