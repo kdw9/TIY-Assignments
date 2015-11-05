@@ -20,7 +20,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
  //  PFOject
         Parse.setApplicationId("tYdqZBRpIt4P4V3U2uzMdbEMA9fnV7JUvHurNR3d",
             clientKey: "cP96apkpWgI8tqLHMu8u9Bk87Z5wa6uWcpNAicjY")
+       
+//        let hero = PFObject(className: "Hero")
+//        hero["name"] = "Thor"
+//        hero["power"] = 500
+//        hero.saveInBackgroundWithBlock
+//        {
+//            (success: Bool, error: NSError?) -> Void in
+//            if success
+//            {
+//                print("Thunder")
+//            }
+//            else
+//            {
+//                print(error?.localizedDescription)
+//            }
+//        }
         
+        let query = PFQuery(className: "Hero")
+        query.whereKey("Power", greaterThan: 400)
+        query.findObjectsInBackgroundWithBlock
+        {
+            (results: [PFObject]?, error: NSError?) -> Void in
+            if error == nil
+            {
+                print(results)
+            }
+            else
+            {
+                print(error?.localizedDescription)
+            }
+        }
         return true
     }
 
