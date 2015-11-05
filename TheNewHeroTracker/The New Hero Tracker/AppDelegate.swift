@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
         
         let query = PFQuery(className: "Hero")
-        query.whereKey("Power", greaterThan: 400)
+        query.whereKey("power", greaterThan: 400)
         query.findObjectsInBackgroundWithBlock
         {
             (results: [PFObject]?, error: NSError?) -> Void in
