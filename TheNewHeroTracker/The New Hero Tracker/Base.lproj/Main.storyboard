@@ -20,6 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HeroCell" textLabel="8Pc-Tt-mdv" detailTextLabel="tNM-lq-Za7" style="IBUITableViewCellStyleValue1" id="3pz-dG-SWh">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -33,7 +34,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tNM-lq-Za7">
@@ -48,6 +49,7 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -59,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFD-Mp-lBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="360"/>
+            <point key="canvasLocation" x="1872" y="375"/>
         </scene>
         <!--Hero Detail View Controller-->
         <scene sceneID="5LL-Xy-xAc">
@@ -94,7 +96,7 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S3e-13-69M">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S3e-13-69M">
                                 <rect key="frame" x="73" y="296" width="455" height="275"/>
                                 <animations/>
                                 <constraints>
@@ -182,6 +184,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
+                                    <action selector="signInTapped:" destination="9eV-BA-97g" eventType="touchUpInside" id="7yx-8R-QkL"/>
                                     <segue destination="dLl-4E-kgz" kind="show" id="h14-JD-e5x"/>
                                 </connections>
                             </button>
@@ -216,6 +219,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="navBarCreateAccount" destination="tbj-if-1rp" id="D11-JT-Pwg"/>
+                        <outlet property="signInButton" destination="O3B-BK-OvM" id="nBD-xl-oYw"/>
+                        <outlet property="userName" destination="hry-Iu-95f" id="Rmf-BL-jOo"/>
+                        <outlet property="userNameTextFeild" destination="hry-Iu-95f" id="wx8-aD-bDz"/>
+                        <outlet property="userPassword" destination="XVW-Jg-546" id="Rv0-u2-zTE"/>
+                        <outlet property="userPasswordTextField" destination="XVW-Jg-546" id="q9f-QZ-Vk2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4k-98-EmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -250,6 +261,9 @@
                                     <constraint firstAttribute="width" constant="145" id="aLd-39-syX"/>
                                 </constraints>
                                 <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="createAccountTapped:" destination="lfq-n5-LcA" eventType="touchUpInside" id="GIs-Zz-2al"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ri-FK-NSI">
                                 <rect key="frame" x="50" y="162" width="500" height="30"/>
@@ -273,6 +287,11 @@
                             <constraint firstItem="kmN-9d-H7e" firstAttribute="centerX" secondItem="2iS-HH-58u" secondAttribute="centerX" id="z1n-At-D80"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="creatAccountButton" destination="caS-04-nEd" id="MVk-4a-7xg"/>
+                        <outlet property="emailPassword" destination="1ri-FK-NSI" id="hMq-27-7pg"/>
+                        <outlet property="emailTextField" destination="kmN-9d-H7e" id="8C5-U6-Jp0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63J-h9-3MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,7 +314,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zs2-WF-7ws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195" y="360"/>
+            <point key="canvasLocation" x="1196" y="375"/>
         </scene>
         <!--Open View Controller-->
         <scene sceneID="Dxd-7T-pPD">

@@ -10,8 +10,16 @@ import UIKit
 
 class LoginViewController: UIViewController
 {
-
-    override func viewDidLoad() {
+    @IBOutlet weak var userNameTextFeild: UITextField!
+    @IBOutlet weak var userPasswordTextField: UITextField!
+    
+//    @IBOutlet weak var signInButton: UIButton!
+//    
+//    @IBOutlet weak var navBarCreateAccount: UIBarButtonItem!
+//    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -34,4 +42,91 @@ class LoginViewController: UIViewController
     }
     */
 
+    func userCanSignIn() ->Bool
+    {
+        if userNameTextFeild.text != "" && userPasswordTextField.text != ""
+        {
+            return true
+        }
+            return false
+    }
+    @IBAction func signInTapped(sender: UIButton)
+    {
+        if userCanSignIn()
+        {
+        PFUser.logInWithUsernameInBackground(userNameTextFeild.text!, password: userPasswordTextField.text!)
+            {
+                (user: PFUser?, error:NSError?) -> Void in
+                
+                if user !== nil
+                {
+                    print("login successful")
+                }
+                else
+                {
+                    print("error: "+(error?.localizedDescription)!)
+                }
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

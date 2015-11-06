@@ -11,6 +11,7 @@
 		5D344D841BEAF34800ECC31A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D831BEAF34800ECC31A /* LoginViewController.swift */; };
 		5D344D861BEAF72700ECC31A /* LOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D851BEAF72700ECC31A /* LOpenViewController.swift */; };
 		5D344D881BEAF83100ECC31A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D871BEAF83100ECC31A /* RegisterViewController.swift */; };
+		5D344D8A1BEBABCA00ECC31A /* thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D344D891BEBABCA00ECC31A /* thor.jpg */; };
 		5DC3E4731BD99D2900065358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4721BD99D2900065358 /* AppDelegate.swift */; };
 		5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4761BD99D2A00065358 /* Main.storyboard */; };
 		5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4791BD99D2A00065358 /* Assets.xcassets */; };
@@ -26,7 +27,6 @@
 		5DD45E8E1BDC9096006578D9 /* captain-america.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E851BDC9096006578D9 /* captain-america.jpg */; };
 		5DD45E8F1BDC9096006578D9 /* gamora.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E861BDC9096006578D9 /* gamora.jpg */; };
 		5DD45E901BDC9096006578D9 /* raccoon_rocket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E871BDC9096006578D9 /* raccoon_rocket.jpg */; };
-		5DD45E911BDC9096006578D9 /* thor in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E881BDC9096006578D9 /* thor */; };
 		5DD45E921BDC9096006578D9 /* muscle-hulk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E891BDC9096006578D9 /* muscle-hulk.jpg */; };
 		5DD45E931BDC9096006578D9 /* drax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E8A1BDC9096006578D9 /* drax.jpg */; };
 		5DD45E941BDC9096006578D9 /* starlord.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DD45E8B1BDC9096006578D9 /* starlord.jpg */; };
@@ -41,6 +41,7 @@
 		5D344D831BEAF34800ECC31A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5D344D851BEAF72700ECC31A /* LOpenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOpenViewController.swift; sourceTree = "<group>"; };
 		5D344D871BEAF83100ECC31A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5D344D891BEBABCA00ECC31A /* thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thor.jpg; sourceTree = "<group>"; };
 		5DC3E46F1BD99D2900065358 /* The New Hero Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The New Hero Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC3E4721BD99D2900065358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC3E4771BD99D2A00065358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		5DD45E851BDC9096006578D9 /* captain-america.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "captain-america.jpg"; sourceTree = "<group>"; };
 		5DD45E861BDC9096006578D9 /* gamora.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gamora.jpg; sourceTree = "<group>"; };
 		5DD45E871BDC9096006578D9 /* raccoon_rocket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raccoon_rocket.jpg; sourceTree = "<group>"; };
-		5DD45E881BDC9096006578D9 /* thor */ = {isa = PBXFileReference; lastKnownFileType = file; path = thor; sourceTree = "<group>"; };
 		5DD45E891BDC9096006578D9 /* muscle-hulk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "muscle-hulk.jpg"; sourceTree = "<group>"; };
 		5DD45E8A1BDC9096006578D9 /* drax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drax.jpg; sourceTree = "<group>"; };
 		5DD45E8B1BDC9096006578D9 /* starlord.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starlord.jpg; sourceTree = "<group>"; };
@@ -109,10 +109,14 @@
 		5DC3E4711BD99D2900065358 /* The New Hero Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				5D344D891BEBABCA00ECC31A /* thor.jpg */,
 				5DC3E4721BD99D2900065358 /* AppDelegate.swift */,
 				5DC3E4841BD99D8600065358 /* TheHeroesTableViewController.swift */,
 				5DD45E7D1BDC5DBC006578D9 /* HeroDetailViewController.swift */,
 				5DC3E4861BD9A45F00065358 /* Hero.swift */,
+				5D344D831BEAF34800ECC31A /* LoginViewController.swift */,
+				5D344D851BEAF72700ECC31A /* LOpenViewController.swift */,
+				5D344D871BEAF83100ECC31A /* RegisterViewController.swift */,
 				5DC3E4881BD9B73E00065358 /* heroes.json */,
 				5DD45E7B1BDAAF74006578D9 /* avengers.png */,
 				5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */,
@@ -121,7 +125,6 @@
 				5DD45E851BDC9096006578D9 /* captain-america.jpg */,
 				5DD45E861BDC9096006578D9 /* gamora.jpg */,
 				5DD45E871BDC9096006578D9 /* raccoon_rocket.jpg */,
-				5DD45E881BDC9096006578D9 /* thor */,
 				5DD45E971BDD2EC3006578D9 /* Black-Iron-Man-l.jpg */,
 				5DD45E891BDC9096006578D9 /* muscle-hulk.jpg */,
 				5DD45E8A1BDC9096006578D9 /* drax.jpg */,
@@ -132,9 +135,6 @@
 				5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */,
 				5DC3E47E1BD99D2A00065358 /* Info.plist */,
 				5D344D801BEAE1A700ECC31A /* The New Hero Tracker-Bridging-Header.h */,
-				5D344D831BEAF34800ECC31A /* LoginViewController.swift */,
-				5D344D851BEAF72700ECC31A /* LOpenViewController.swift */,
-				5D344D871BEAF83100ECC31A /* RegisterViewController.swift */,
 			);
 			path = "The New Hero Tracker";
 			sourceTree = "<group>";
@@ -208,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D344D8A1BEBABCA00ECC31A /* thor.jpg in Resources */,
 				5DD45E931BDC9096006578D9 /* drax.jpg in Resources */,
 				5DD45E961BDC9096006578D9 /* groot.jpg in Resources */,
 				5DD45E981BDD2EC3006578D9 /* Black-Iron-Man-l.jpg in Resources */,
@@ -222,7 +223,6 @@
 				5DD45E7C1BDAAF74006578D9 /* avengers.png in Resources */,
 				5DD45E941BDC9096006578D9 /* starlord.jpg in Resources */,
 				5DD45E821BDC6EF4006578D9 /* DragonbonesBB_ital.ttf in Resources */,
-				5DD45E911BDC9096006578D9 /* thor in Resources */,
 				5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */,
 				5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */,
 			);

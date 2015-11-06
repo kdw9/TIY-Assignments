@@ -8,9 +8,14 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController
+{
+    @IBOutlet weak var emailTextField: UITextField!
 
-    override func viewDidLoad() {
+    @IBOutlet weak var emailPassword: UITextField!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -32,4 +37,36 @@ class RegisterViewController: UIViewController {
     }
     */
 
+    func theUserCanRegister() -> Bool
+    {
+        if emailTextField.text != "" && emailPassword.text != ""
+        {
+            return true
+        }
+            return false
+    }
+    
+    @IBAction func createAccountTapped(sender: UIButton)
+    {
+        if theUserCanRegister()
+        {
+            let user = PFUser()
+            user.username = emailTextField.text!
+            user.username = emailPassword.text!
+            
+            user.saveInBackgroundWithBlock
+            {
+                (succeded: Bool, error: NSError?) -> Void in
+                if  succeded
+                {
+                    print("register successful!")
+                }
+                    else
+                {
+                    print("error: "+(error?.localizedDescription)!)
+                }
+            }
+        }
+    }
+    
 }

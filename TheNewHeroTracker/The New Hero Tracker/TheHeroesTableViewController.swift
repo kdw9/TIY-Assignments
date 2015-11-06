@@ -17,6 +17,11 @@ class TheHeroesTableViewController: UITableViewController
         super.viewDidLoad()
         
        title = "The Hero Tracker"
+        
+        tableView.backgroundColor = UIColor.blackColor()
+        
+        self.navigationController?.navigationBar.backgroundColor = UIColor.redColor()
+    
         loadHeroes()
         
         // Uncomment the following line to preserve selection between presentations
