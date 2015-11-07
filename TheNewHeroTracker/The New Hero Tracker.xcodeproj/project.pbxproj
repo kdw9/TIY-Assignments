@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		54BDCBFA0ACBF7E8F1480E27 /* libPods-The New Hero Tracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 851C780C32857FF59404C045 /* libPods-The New Hero Tracker.a */; };
 		5D344D841BEAF34800ECC31A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D831BEAF34800ECC31A /* LoginViewController.swift */; };
-		5D344D861BEAF72700ECC31A /* LOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D851BEAF72700ECC31A /* LOpenViewController.swift */; };
 		5D344D881BEAF83100ECC31A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D871BEAF83100ECC31A /* RegisterViewController.swift */; };
 		5D344D8A1BEBABCA00ECC31A /* thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D344D891BEBABCA00ECC31A /* thor.jpg */; };
+		5D344D8C1BED5F2D00ECC31A /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D8B1BED5F2D00ECC31A /* TipsTableViewController.swift */; };
+		5D344D8E1BED698000ECC31A /* TipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D8D1BED698000ECC31A /* TipTableViewCell.swift */; };
 		5DC3E4731BD99D2900065358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4721BD99D2900065358 /* AppDelegate.swift */; };
 		5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4761BD99D2A00065358 /* Main.storyboard */; };
 		5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4791BD99D2A00065358 /* Assets.xcassets */; };
@@ -39,9 +40,10 @@
 		4104D3DB134ECB99A1E4BD8F /* Pods-The New Hero Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The New Hero Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-The New Hero Tracker/Pods-The New Hero Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		5D344D801BEAE1A700ECC31A /* The New Hero Tracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The New Hero Tracker-Bridging-Header.h"; sourceTree = "<group>"; };
 		5D344D831BEAF34800ECC31A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5D344D851BEAF72700ECC31A /* LOpenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOpenViewController.swift; sourceTree = "<group>"; };
 		5D344D871BEAF83100ECC31A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5D344D891BEBABCA00ECC31A /* thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thor.jpg; sourceTree = "<group>"; };
+		5D344D8B1BED5F2D00ECC31A /* TipsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
+		5D344D8D1BED698000ECC31A /* TipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipTableViewCell.swift; sourceTree = "<group>"; };
 		5DC3E46F1BD99D2900065358 /* The New Hero Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The New Hero Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC3E4721BD99D2900065358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC3E4771BD99D2A00065358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,8 +117,9 @@
 				5DD45E7D1BDC5DBC006578D9 /* HeroDetailViewController.swift */,
 				5DC3E4861BD9A45F00065358 /* Hero.swift */,
 				5D344D831BEAF34800ECC31A /* LoginViewController.swift */,
-				5D344D851BEAF72700ECC31A /* LOpenViewController.swift */,
 				5D344D871BEAF83100ECC31A /* RegisterViewController.swift */,
+				5D344D8B1BED5F2D00ECC31A /* TipsTableViewController.swift */,
+				5D344D8D1BED698000ECC31A /* TipTableViewCell.swift */,
 				5DC3E4881BD9B73E00065358 /* heroes.json */,
 				5DD45E7B1BDAAF74006578D9 /* avengers.png */,
 				5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */,
@@ -284,12 +287,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC3E4731BD99D2900065358 /* AppDelegate.swift in Sources */,
-				5D344D861BEAF72700ECC31A /* LOpenViewController.swift in Sources */,
+				5D344D8E1BED698000ECC31A /* TipTableViewCell.swift in Sources */,
 				5D344D881BEAF83100ECC31A /* RegisterViewController.swift in Sources */,
 				5DD45E7E1BDC5DBC006578D9 /* HeroDetailViewController.swift in Sources */,
 				5DC3E4851BD99D8600065358 /* TheHeroesTableViewController.swift in Sources */,
 				5D344D841BEAF34800ECC31A /* LoginViewController.swift in Sources */,
 				5DC3E4871BD9A45F00065358 /* Hero.swift in Sources */,
+				5D344D8C1BED5F2D00ECC31A /* TipsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

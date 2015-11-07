@@ -61,6 +61,7 @@ class LoginViewController: UIViewController
                 if user !== nil
                 {
                     print("login successful")
+                    self.performSegueWithIdentifier("unwindFromLoginSegue", sender: self)
                 }
                 else
                 {
