@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D64D8A11BEEAB9200448DB1 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D64D8A01BEEAB9200448DB1 /* WeatherAPI.swift */; };
 		5D65CF431BE709C400DC5A14 /* SunnyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D65CF421BE709C400DC5A14 /* SunnyIcon.png */; };
 		5D65CF451BE71C9000DC5A14 /* CityTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D65CF441BE71C9000DC5A14 /* CityTableView.png */; };
 		5D65CF471BE7324000DC5A14 /* CityTableView2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D65CF461BE7324000DC5A14 /* CityTableView2.png */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D64D8A01BEEAB9200448DB1 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		5D65CF421BE709C400DC5A14 /* SunnyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunnyIcon.png; sourceTree = "<group>"; };
 		5D65CF441BE71C9000DC5A14 /* CityTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityTableView.png; sourceTree = "<group>"; };
 		5D65CF461BE7324000DC5A14 /* CityTableView2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityTableView2.png; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				5DFC5CBB1BE3C63100C38A6D /* AppDelegate.swift */,
 				5DFC5CD51BE3F0D100C38A6D /* ForecastTableViewController.swift */,
 				5D65CF561BE7E2B400DC5A14 /* APIController.swift */,
+				5D64D8A01BEEAB9200448DB1 /* WeatherAPI.swift */,
 				5D65CF461BE7324000DC5A14 /* CityTableView2.png */,
 				5DFC5CD71BE3F39D00C38A6D /* WeatherLocationTableViewCell.swift */,
 				5DFC5CD91BE3F74C00C38A6D /* ModalViewController.swift */,
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D64D8A11BEEAB9200448DB1 /* WeatherAPI.swift in Sources */,
 				5DFC5CDC1BE3FA5600C38A6D /* ForecastDetailViewController.swift in Sources */,
 				5DFC5CD61BE3F0D100C38A6D /* ForecastTableViewController.swift in Sources */,
 				5D65CF511BE7D5AC00DC5A14 /* City.swift in Sources */,

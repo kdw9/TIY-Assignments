@@ -11,7 +11,7 @@ import Foundation
 
 class Weather
 {
-    var tempreture: String
+    var temperature: String
     var weatherIcon: String
     var windSpeed: String
     var condition: String
@@ -20,8 +20,8 @@ class Weather
     
     init (weatherDictionary: NSDictionary)
     {
-        tempreture = weatherDictionary["tempreture"] as! String
-        weatherIcon = weatherDictionary["Image"] as! String
+        tempreture = weatherDictionary["temperature"] as! String
+        weatherIcon = weatherDictionary["image"] as! String
         windSpeed = weatherDictionary["windSpeed"] as! String
         condition = weatherDictionary["condition"] as! String
         humidity = weatherDictionary["humidity"] as! String

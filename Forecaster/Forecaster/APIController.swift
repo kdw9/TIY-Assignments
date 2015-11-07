@@ -42,7 +42,6 @@ class APIController
         
                         if let results: NSArray = dictionary["results"] as? NSArray
                         {
-                            //print("Please Work\(results)")
                             if let result = results[0] as? NSDictionary
                             {
                                 let address = result["formatted_address"] as! String
@@ -61,30 +60,16 @@ class APIController
                                 
                             }
                         }
-                }
+                    }
                  
                 }
             })
             task.resume()
       
         }
+        
     }
     
- /*  func searchDarkStormFor (searchTerm: String)
-    {
-    let searchDarkStorm = searchTerm.stringByReplacingOccurrencesOfString(" " , withString: "_", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil)
-        if let escapedSearchTerm = searchDarkStorm.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.alphanumericCharacterSet())
-        {
-    
-        }
-        let urlPath = "https://api.forecast.io/forecast/e9ed5df4f40ee6a7b4a2b1994684e80a/%.f,%.f"
-        = NSDictionary(contentsOfFile: urlPath)
-        let
-            
-        {
-        
-        }
-    }*/
     
     func parseJSON(data:NSData) -> NSDictionary?
     {
@@ -100,3 +85,8 @@ class APIController
     
     }
 }
+
+
+
+
+    
