@@ -14,6 +14,7 @@
 		5D7EDF391BFBAA310047AFE6 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EDF381BFBAA310047AFE6 /* ClockView.swift */; };
 		5D7EDF3B1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EDF3A1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift */; };
 		5D7EDF3D1BFBB9ED0047AFE6 /* TheTimeZoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EDF3C1BFBB9EC0047AFE6 /* TheTimeZoneTableViewCell.swift */; };
+		5D7EDF3F1BFBC39D0047AFE6 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EDF3E1BFBC39D0047AFE6 /* TimeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5D7EDF381BFBAA310047AFE6 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		5D7EDF3A1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZonesTableViewController.swift; sourceTree = "<group>"; };
 		5D7EDF3C1BFBB9EC0047AFE6 /* TheTimeZoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTimeZoneTableViewCell.swift; sourceTree = "<group>"; };
+		5D7EDF3E1BFBC39D0047AFE6 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				5D7EDF261BFBA9E20047AFE6 /* AppDelegate.swift */,
+				5D7EDF3A1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift */,
+				5D7EDF3C1BFBB9EC0047AFE6 /* TheTimeZoneTableViewCell.swift */,
+				5D7EDF3E1BFBC39D0047AFE6 /* TimeTableViewController.swift */,
 				5D7EDF381BFBAA310047AFE6 /* ClockView.swift */,
 				5D7EDF2A1BFBA9E20047AFE6 /* Main.storyboard */,
 				5D7EDF2D1BFBA9E20047AFE6 /* Assets.xcassets */,
 				5D7EDF2F1BFBA9E30047AFE6 /* LaunchScreen.storyboard */,
 				5D7EDF321BFBA9E30047AFE6 /* Info.plist */,
-				5D7EDF3A1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift */,
-				5D7EDF3C1BFBB9EC0047AFE6 /* TheTimeZoneTableViewCell.swift */,
 			);
 			path = ClockZones;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				5D7EDF3B1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift in Sources */,
 				5D7EDF391BFBAA310047AFE6 /* ClockView.swift in Sources */,
 				5D7EDF271BFBA9E20047AFE6 /* AppDelegate.swift in Sources */,
+				5D7EDF3F1BFBC39D0047AFE6 /* TimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

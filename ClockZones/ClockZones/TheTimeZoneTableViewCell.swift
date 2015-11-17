@@ -10,8 +10,8 @@ import UIKit
 
 class TheTimeZoneTableViewCell: UITableViewCell
 {
-    @IBOutlet var timeZoneLabel: UILabel!
-   // @IBDesignable var clockLabel: UILabel!
+    @IBOutlet weak var timeZoneLabel: UILabel!
+    @IBOutlet weak var clockView: ClockView!
     override func awakeFromNib()
     {
         super.awakeFromNib()

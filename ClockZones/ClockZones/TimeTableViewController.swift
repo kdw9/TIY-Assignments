@@ -1,5 +1,5 @@
 //
-//  TimeZonesTableViewController.swift
+//  TimeTableViewController.swift
 //  ClockZones
 //
 //  Created by Keron Williams on 11/17/15.
@@ -8,25 +8,16 @@
 
 import UIKit
 
-protocol TimeTableViewControllerDelegate
-{
-    func timeZoneWasChosen(chosenTimeZone: String)
-}
-
-class TimeZonesTableViewController: UITableViewController, TimeTableViewControllerDelegate
+class TimeTableViewController: UITableViewController
 {
 
-    @IBOutlet weak var populateButton: UIBarButtonItem!
-    
-    
-    var userSelectedTimes = [String]()
-    var allTimeZone = NSTimeZone.knownTimeZoneNames()
-    var remainingTimeZone = NSTimeZone.knownTimeZoneNames()
+    var timeZone: [String]?
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
     }
 
     override func didReceiveMemoryWarning()
@@ -38,51 +29,27 @@ class TimeZonesTableViewController: UITableViewController, TimeTableViewControll
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-       
+        
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return userSelectedTimes.count
+        return timeZone!.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("timerZoneCell", forIndexPath: indexPath) as! TheTimeZoneTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("locationZoneCell", forIndexPath: indexPath)
 
         // Configure the cell...
-        
-        let timeZoneSelected = userSelectedTimes[indexPath.row]
-        cell.timeZoneLabel.text = timeZoneSelected
-        cell.clockView.timezone = NSTimeZone(name: timeZoneSelected)
-        
+        let timeLocator = timeZone?[indexPath.row]
+        cell.textLabel?.text = timeLocator
         
         return cell
     }
-   
+    
 
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle
-    {
-    return.None
-    
-    }
-    
-    //picking from the table and dismissing it
-    func timeZoneWasChosen(chosenTimeZone: String)
-    {
-    navigationController?.dismissViewControllerAnimated(true, completion: nil)
-        userSelectedTimes.append(chosenTimeZone)
-        
-        let rowToRemove = (remainingTimeZone as NSArray).indexOfObject(chosenTimeZone)remainingTimeZone.removeAtIndex(rowToRemove)
-        if remainingTimeZone.count == 0
-        {
-         populateButton.enabled = false
-        }
-        
-        tableView?.reloadData()
-    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -118,14 +85,19 @@ class TimeZonesTableViewController: UITableViewController, TimeTableViewControll
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+//    {
+//      if segue.identifier == "ShowTimeZoneListSegue"
+//        {
+//            let destVC = segue.destinationViewController as! TimeZonesTableViewController
+//            destVC.times =
+//        }
+//        
     }
-    */
+  
 
-}
+
