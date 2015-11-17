@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D7EDF271BFBA9E20047AFE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EDF261BFBA9E20047AFE6 /* AppDelegate.swift */; };
+		5D7EDF2C1BFBA9E20047AFE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7EDF2A1BFBA9E20047AFE6 /* Main.storyboard */; };
+		5D7EDF2E1BFBA9E20047AFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7EDF2D1BFBA9E20047AFE6 /* Assets.xcassets */; };
+		5D7EDF311BFBA9E30047AFE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7EDF2F1BFBA9E30047AFE6 /* LaunchScreen.storyboard */; };
+		5D7EDF391BFBAA310047AFE6 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EDF381BFBAA310047AFE6 /* ClockView.swift */; };
+		5D7EDF3B1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EDF3A1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift */; };
+		5D7EDF3D1BFBB9ED0047AFE6 /* TheTimeZoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EDF3C1BFBB9EC0047AFE6 /* TheTimeZoneTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D7EDF231BFBA9E20047AFE6 /* ClockZones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockZones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7EDF261BFBA9E20047AFE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D7EDF2B1BFBA9E20047AFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D7EDF2D1BFBA9E20047AFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D7EDF301BFBA9E30047AFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D7EDF321BFBA9E30047AFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D7EDF381BFBAA310047AFE6 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		5D7EDF3A1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZonesTableViewController.swift; sourceTree = "<group>"; };
+		5D7EDF3C1BFBB9EC0047AFE6 /* TheTimeZoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTimeZoneTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D7EDF201BFBA9E20047AFE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D7EDF1A1BFBA9E20047AFE6 = {
+			isa = PBXGroup;
+			children = (
+				5D7EDF251BFBA9E20047AFE6 /* ClockZones */,
+				5D7EDF241BFBA9E20047AFE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D7EDF241BFBA9E20047AFE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D7EDF231BFBA9E20047AFE6 /* ClockZones.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D7EDF251BFBA9E20047AFE6 /* ClockZones */ = {
+			isa = PBXGroup;
+			children = (
+				5D7EDF261BFBA9E20047AFE6 /* AppDelegate.swift */,
+				5D7EDF381BFBAA310047AFE6 /* ClockView.swift */,
+				5D7EDF2A1BFBA9E20047AFE6 /* Main.storyboard */,
+				5D7EDF2D1BFBA9E20047AFE6 /* Assets.xcassets */,
+				5D7EDF2F1BFBA9E30047AFE6 /* LaunchScreen.storyboard */,
+				5D7EDF321BFBA9E30047AFE6 /* Info.plist */,
+				5D7EDF3A1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift */,
+				5D7EDF3C1BFBB9EC0047AFE6 /* TheTimeZoneTableViewCell.swift */,
+			);
+			path = ClockZones;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D7EDF221BFBA9E20047AFE6 /* ClockZones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7EDF351BFBA9E30047AFE6 /* Build configuration list for PBXNativeTarget "ClockZones" */;
+			buildPhases = (
+				5D7EDF1F1BFBA9E20047AFE6 /* Sources */,
+				5D7EDF201BFBA9E20047AFE6 /* Frameworks */,
+				5D7EDF211BFBA9E20047AFE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockZones;
+			productName = ClockZones;
+			productReference = 5D7EDF231BFBA9E20047AFE6 /* ClockZones.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D7EDF1B1BFBA9E20047AFE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					5D7EDF221BFBA9E20047AFE6 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 5D7EDF1E1BFBA9E20047AFE6 /* Build configuration list for PBXProject "ClockZones" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D7EDF1A1BFBA9E20047AFE6;
+			productRefGroup = 5D7EDF241BFBA9E20047AFE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D7EDF221BFBA9E20047AFE6 /* ClockZones */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D7EDF211BFBA9E20047AFE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7EDF311BFBA9E30047AFE6 /* LaunchScreen.storyboard in Resources */,
+				5D7EDF2E1BFBA9E20047AFE6 /* Assets.xcassets in Resources */,
+				5D7EDF2C1BFBA9E20047AFE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D7EDF1F1BFBA9E20047AFE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7EDF3D1BFBB9ED0047AFE6 /* TheTimeZoneTableViewCell.swift in Sources */,
+				5D7EDF3B1BFBB7C60047AFE6 /* TimeZonesTableViewController.swift in Sources */,
+				5D7EDF391BFBAA310047AFE6 /* ClockView.swift in Sources */,
+				5D7EDF271BFBA9E20047AFE6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D7EDF2A1BFBA9E20047AFE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D7EDF2B1BFBA9E20047AFE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D7EDF2F1BFBA9E30047AFE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D7EDF301BFBA9E30047AFE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D7EDF331BFBA9E30047AFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D7EDF341BFBA9E30047AFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D7EDF361BFBA9E30047AFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ClockZones/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.ClockZones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D7EDF371BFBA9E30047AFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ClockZones/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.ClockZones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D7EDF1E1BFBA9E20047AFE6 /* Build configuration list for PBXProject "ClockZones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7EDF331BFBA9E30047AFE6 /* Debug */,
+				5D7EDF341BFBA9E30047AFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7EDF351BFBA9E30047AFE6 /* Build configuration list for PBXNativeTarget "ClockZones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7EDF361BFBA9E30047AFE6 /* Debug */,
+				5D7EDF371BFBA9E30047AFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D7EDF1B1BFBA9E20047AFE6 /* Project object */;
+}
