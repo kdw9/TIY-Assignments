@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Foundation
 
 protocol TimeTableViewControllerDelegate
 {
     func timeZoneWasChosen(chosenTimeZone: String)
 }
 
-class TimeZonesTableViewController: UITableViewController, TimeTableViewControllerDelegate
+class TimeZonesTableViewController: UITableViewController, UIPopoverControllerDelegate, TimeTableViewControllerDelegate
 {
 
     @IBOutlet weak var populateButton: UIBarButtonItem!
@@ -63,6 +64,19 @@ class TimeZonesTableViewController: UITableViewController, TimeTableViewControll
     }
    
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "ShowTimeZoneSegue"
+        {
+            let destinationVC = segue.destinationViewController as!TimeTableViewController
+            destinationVC.timeZone = remainingTimeZone
+            destinationVC.delegate = self
+        }
+        
+        
+    }
+
+    
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle
     {
     return.None
@@ -75,7 +89,7 @@ class TimeZonesTableViewController: UITableViewController, TimeTableViewControll
     navigationController?.dismissViewControllerAnimated(true, completion: nil)
         userSelectedTimes.append(chosenTimeZone)
         
-        let rowToRemove = (remainingTimeZone as NSArray).indexOfObject(chosenTimeZone)remainingTimeZone.removeAtIndex(rowToRemove)
+        let rowToRemove = (remainingTimeZone as NSArray).indexOfObject(chosenTimeZone);remainingTimeZone.removeAtIndex(rowToRemove)
         if remainingTimeZone.count == 0
         {
          populateButton.enabled = false
@@ -118,14 +132,10 @@ class TimeZonesTableViewController: UITableViewController, TimeTableViewControll
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

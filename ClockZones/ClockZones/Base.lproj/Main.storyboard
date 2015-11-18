@@ -9,20 +9,20 @@
         <scene sceneID="mM0-dD-uKy">
             <objects>
                 <tableViewController id="mjm-vq-l0e" customClass="TimeZonesTableViewController" customModule="ClockZones" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qkE-mQ-3rh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" id="qkE-mQ-3rh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timerZoneCell" rowHeight="80" id="kQH-aV-zme" customClass="TheTimeZoneTableViewCell" customModule="ClockZones" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timerZoneCell" rowHeight="100" id="kQH-aV-zme" customClass="TheTimeZoneTableViewCell" customModule="ClockZones" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kQH-aV-zme" id="zdd-3b-0tS">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYc-jx-Xd8" customClass="ClockView" customModule="ClockZones" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYc-jx-Xd8" customClass="ClockView" customModule="ClockZones" customModuleProvider="target">
                                             <rect key="frame" x="15" y="0.0" width="80" height="80"/>
                                             <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,8 +31,8 @@
                                                 <constraint firstAttribute="width" constant="80" id="oR9-MG-dbd"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6T6-Nn-Acv">
-                                            <rect key="frame" x="279" y="24" width="239" height="31"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6T6-Nn-Acv">
+                                            <rect key="frame" x="125" y="24" width="239" height="31"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="31" id="OTg-fz-Tal"/>
@@ -46,7 +46,7 @@
                                     <animations/>
                                     <constraints>
                                         <constraint firstItem="IYc-jx-Xd8" firstAttribute="leading" secondItem="zdd-3b-0tS" secondAttribute="leading" constant="15" id="TC6-Xd-tbb"/>
-                                        <constraint firstItem="6T6-Nn-Acv" firstAttribute="leading" secondItem="IYc-jx-Xd8" secondAttribute="trailing" constant="184" id="Y0s-Eo-GUy"/>
+                                        <constraint firstItem="6T6-Nn-Acv" firstAttribute="leading" secondItem="IYc-jx-Xd8" secondAttribute="trailing" constant="30" id="Y0s-Eo-GUy"/>
                                         <constraint firstItem="IYc-jx-Xd8" firstAttribute="centerY" secondItem="zdd-3b-0tS" secondAttribute="centerY" id="plc-5U-TSr"/>
                                         <constraint firstItem="6T6-Nn-Acv" firstAttribute="centerY" secondItem="IYc-jx-Xd8" secondAttribute="centerY" id="sjh-vN-zha"/>
                                     </constraints>
