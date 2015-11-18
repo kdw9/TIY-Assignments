@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		54BDCBFA0ACBF7E8F1480E27 /* libPods-The New Hero Tracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 851C780C32857FF59404C045 /* libPods-The New Hero Tracker.a */; };
+		5D1786191BFD140000B983D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1786181BFD140000B983D6 /* Main.storyboard */; };
 		5D344D841BEAF34800ECC31A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D831BEAF34800ECC31A /* LoginViewController.swift */; };
 		5D344D881BEAF83100ECC31A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D871BEAF83100ECC31A /* RegisterViewController.swift */; };
 		5D344D8A1BEBABCA00ECC31A /* thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D344D891BEBABCA00ECC31A /* thor.jpg */; };
 		5D344D8C1BED5F2D00ECC31A /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D8B1BED5F2D00ECC31A /* TipsTableViewController.swift */; };
 		5D344D8E1BED698000ECC31A /* TipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D344D8D1BED698000ECC31A /* TipTableViewCell.swift */; };
 		5DC3E4731BD99D2900065358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4721BD99D2900065358 /* AppDelegate.swift */; };
-		5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4761BD99D2A00065358 /* Main.storyboard */; };
 		5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E4791BD99D2A00065358 /* Assets.xcassets */; };
 		5DC3E47D1BD99D2A00065358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */; };
 		5DC3E4851BD99D8600065358 /* TheHeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3E4841BD99D8600065358 /* TheHeroesTableViewController.swift */; };
@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		0C53E99B8894BC17797B1715 /* Pods-The New Hero Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The New Hero Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The New Hero Tracker/Pods-The New Hero Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		4104D3DB134ECB99A1E4BD8F /* Pods-The New Hero Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The New Hero Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-The New Hero Tracker/Pods-The New Hero Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		5D1786181BFD140000B983D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5D344D801BEAE1A700ECC31A /* The New Hero Tracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The New Hero Tracker-Bridging-Header.h"; sourceTree = "<group>"; };
 		5D344D831BEAF34800ECC31A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5D344D871BEAF83100ECC31A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		5D344D8D1BED698000ECC31A /* TipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipTableViewCell.swift; sourceTree = "<group>"; };
 		5DC3E46F1BD99D2900065358 /* The New Hero Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The New Hero Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC3E4721BD99D2900065358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DC3E4771BD99D2A00065358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DC3E4791BD99D2A00065358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DC3E47C1BD99D2A00065358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DC3E47E1BD99D2A00065358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +120,7 @@
 				5D344D871BEAF83100ECC31A /* RegisterViewController.swift */,
 				5D344D8B1BED5F2D00ECC31A /* TipsTableViewController.swift */,
 				5D344D8D1BED698000ECC31A /* TipTableViewCell.swift */,
+				5D1786181BFD140000B983D6 /* Main.storyboard */,
 				5DC3E4881BD9B73E00065358 /* heroes.json */,
 				5DD45E7B1BDAAF74006578D9 /* avengers.png */,
 				5DD45E7F1BDC6EF4006578D9 /* DragonbonesBB_ital.ttf */,
@@ -133,7 +134,6 @@
 				5DD45E8A1BDC9096006578D9 /* drax.jpg */,
 				5DD45E8B1BDC9096006578D9 /* starlord.jpg */,
 				5DD45E8D1BDC9096006578D9 /* groot.jpg */,
-				5DC3E4761BD99D2A00065358 /* Main.storyboard */,
 				5DC3E4791BD99D2A00065358 /* Assets.xcassets */,
 				5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */,
 				5DC3E47E1BD99D2A00065358 /* Info.plist */,
@@ -225,9 +225,9 @@
 				5DC3E4891BD9B73E00065358 /* heroes.json in Resources */,
 				5DD45E7C1BDAAF74006578D9 /* avengers.png in Resources */,
 				5DD45E941BDC9096006578D9 /* starlord.jpg in Resources */,
+				5D1786191BFD140000B983D6 /* Main.storyboard in Resources */,
 				5DD45E821BDC6EF4006578D9 /* DragonbonesBB_ital.ttf in Resources */,
 				5DC3E47A1BD99D2A00065358 /* Assets.xcassets in Resources */,
-				5DC3E4781BD99D2A00065358 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +300,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5DC3E4761BD99D2A00065358 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DC3E4771BD99D2A00065358 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5DC3E47B1BD99D2A00065358 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

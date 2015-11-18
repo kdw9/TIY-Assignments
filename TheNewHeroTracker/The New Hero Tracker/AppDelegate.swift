@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
  //  PFOject
-        Parse.setApplicationId("tYdqZBRpIt4P4V3U2uzMdbEMA9fnV7JUvHurNR3d",
-            clientKey: "cP96apkpWgI8tqLHMu8u9Bk87Z5wa6uWcpNAicjY")
+//        Parse.setApplicationId("tYdqZBRpIt4P4V3U2uzMdbEMA9fnV7JUvHurNR3d",
+//            clientKey: "cP96apkpWgI8tqLHMu8u9Bk87Z5wa6uWcpNAicjY")
        
 //        let hero = PFObject(className: "Hero")
 //        hero["name"] = "Thor"
@@ -37,22 +37,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
 //        }
         
-        let query = PFQuery(className: "Hero")
-        query.whereKey("power", greaterThan: 400)
-        query.findObjectsInBackgroundWithBlock
-        {
-            (results: [PFObject]?, error: NSError?) -> Void in
-            if error == nil
-            {
-                print(results)
-            }
-            else
-            {
-                print(error?.localizedDescription)
-            }
-        }
-        return true
-    }
+//        let query = PFQuery(className: "Hero")
+//        query.whereKey("power", greaterThan: 400)
+//        query.findObjectsInBackgroundWithBlock
+//        {
+//            (results: [PFObject]?, error: NSError?) -> Void in
+//            if error == nil
+//            {
+//                print(results)
+//            }
+//            else
+//            {
+//                print(error?.localizedDescription)
+//            }
+//        }
+//        return true
+//    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -76,6 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+  return true
+ }
 
 }
-
