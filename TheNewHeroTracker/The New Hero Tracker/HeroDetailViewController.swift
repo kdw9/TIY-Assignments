@@ -18,6 +18,7 @@ class HeroDetailViewController: UIViewController
     
     // Controll and Drag to connect the IBOutlets into the detail view controller
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var heroPicCenterAlign: NSLayoutConstraint!
     @IBOutlet weak var homeworldLabel: UILabel!
     @IBOutlet weak var powerLabel: UILabel!
     @IBOutlet weak var heroPicture: UIImageView!
@@ -35,12 +36,30 @@ class HeroDetailViewController: UIViewController
          //heroPortrait.image = UIImage(named: hero!.portrait)
         heroPicture.image = UIImage(named: (eachHero?.heroImage)!)
         
+        func viewWillAppear(animated: Bool)
+        {
+            super.viewWillAppear(animated)
+            heroPicCenterAlign.constant -= view.bounds.width
+        }
+        
         
     }
     
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        
+        func viewDidAppear(animated: Bool)
+        {
+            super.viewDidAppear(animated)
+            
+            UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations:
+                {
+                self.heroPicCenterAlign.constant += self.view.bounds.width
+                self.view.layoutIfNeeded()
+                }, completion: nil)
+            
+        }
     }
 }

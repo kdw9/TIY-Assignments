@@ -133,6 +133,7 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="heroPicCenterAlign" destination="dlT-Qa-Sxd" id="uqQ-gu-MNB"/>
                         <outlet property="heroPicture" destination="S3e-13-69M" id="eD1-J5-wxd"/>
                         <outlet property="homeworldLabel" destination="qjA-ph-clP" id="st0-wH-OUR"/>
                         <outlet property="nameLabel" destination="b4H-KB-o8T" id="b3O-CP-gj8"/>
