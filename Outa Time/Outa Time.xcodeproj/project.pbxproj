@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D8B190E1BCB3F31006D085E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8B190D1BCB3F31006D085E /* AppDelegate.swift */; };
+		5D8B19101BCB3F31006D085E /* OutaTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8B190F1BCB3F31006D085E /* OutaTimeViewController.swift */; };
+		5D8B19131BCB3F31006D085E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B19111BCB3F31006D085E /* Main.storyboard */; };
+		5D8B19151BCB3F31006D085E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B19141BCB3F31006D085E /* Assets.xcassets */; };
+		5D8B19181BCB3F31006D085E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B19161BCB3F31006D085E /* LaunchScreen.storyboard */; };
+		5D8B19231BCB3F31006D085E /* Outa_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8B19221BCB3F31006D085E /* Outa_TimeTests.swift */; };
+		5D8B192E1BCB3F31006D085E /* Outa_TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8B192D1BCB3F31006D085E /* Outa_TimeUITests.swift */; };
+		5DE502141BCB4B6B00970D7D /* digital-7(2).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DE502131BCB4B6B00970D7D /* digital-7(2).ttf */; settings = {ASSET_TAGS = (); }; };
+		5DE502161BCB570500970D7D /* TravelTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE502151BCB570500970D7D /* TravelTimePicker.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D8B191F1BCB3F31006D085E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D8B19021BCB3F31006D085E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D8B19091BCB3F31006D085E;
+			remoteInfo = "Outa Time";
+		};
+		5D8B192A1BCB3F31006D085E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D8B19021BCB3F31006D085E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D8B19091BCB3F31006D085E;
+			remoteInfo = "Outa Time";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D8B190A1BCB3F31006D085E /* Outa Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Outa Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8B190D1BCB3F31006D085E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D8B190F1BCB3F31006D085E /* OutaTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutaTimeViewController.swift; sourceTree = "<group>"; };
+		5D8B19121BCB3F31006D085E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D8B19141BCB3F31006D085E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D8B19171BCB3F31006D085E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D8B19191BCB3F31006D085E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8B191E1BCB3F31006D085E /* Outa TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Outa TimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8B19221BCB3F31006D085E /* Outa_TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outa_TimeTests.swift; sourceTree = "<group>"; };
+		5D8B19241BCB3F31006D085E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8B19291BCB3F31006D085E /* Outa TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Outa TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8B192D1BCB3F31006D085E /* Outa_TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outa_TimeUITests.swift; sourceTree = "<group>"; };
+		5D8B192F1BCB3F31006D085E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DE502131BCB4B6B00970D7D /* digital-7(2).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7(2).ttf"; path = "../../../../Downloads/digital-7(2).ttf"; sourceTree = "<group>"; };
+		5DE502151BCB570500970D7D /* TravelTimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelTimePicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D8B19071BCB3F31006D085E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8B191B1BCB3F31006D085E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8B19261BCB3F31006D085E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D8B19011BCB3F31006D085E = {
+			isa = PBXGroup;
+			children = (
+				5D8B190C1BCB3F31006D085E /* Outa Time */,
+				5D8B19211BCB3F31006D085E /* Outa TimeTests */,
+				5D8B192C1BCB3F31006D085E /* Outa TimeUITests */,
+				5D8B190B1BCB3F31006D085E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D8B190B1BCB3F31006D085E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D8B190A1BCB3F31006D085E /* Outa Time.app */,
+				5D8B191E1BCB3F31006D085E /* Outa TimeTests.xctest */,
+				5D8B19291BCB3F31006D085E /* Outa TimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D8B190C1BCB3F31006D085E /* Outa Time */ = {
+			isa = PBXGroup;
+			children = (
+				5D8B190D1BCB3F31006D085E /* AppDelegate.swift */,
+				5D8B190F1BCB3F31006D085E /* OutaTimeViewController.swift */,
+				5D8B19111BCB3F31006D085E /* Main.storyboard */,
+				5D8B19141BCB3F31006D085E /* Assets.xcassets */,
+				5DE502131BCB4B6B00970D7D /* digital-7(2).ttf */,
+				5D8B19161BCB3F31006D085E /* LaunchScreen.storyboard */,
+				5D8B19191BCB3F31006D085E /* Info.plist */,
+				5DE502151BCB570500970D7D /* TravelTimePicker.swift */,
+			);
+			path = "Outa Time";
+			sourceTree = "<group>";
+		};
+		5D8B19211BCB3F31006D085E /* Outa TimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D8B19221BCB3F31006D085E /* Outa_TimeTests.swift */,
+				5D8B19241BCB3F31006D085E /* Info.plist */,
+			);
+			path = "Outa TimeTests";
+			sourceTree = "<group>";
+		};
+		5D8B192C1BCB3F31006D085E /* Outa TimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D8B192D1BCB3F31006D085E /* Outa_TimeUITests.swift */,
+				5D8B192F1BCB3F31006D085E /* Info.plist */,
+			);
+			path = "Outa TimeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D8B19091BCB3F31006D085E /* Outa Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D8B19321BCB3F31006D085E /* Build configuration list for PBXNativeTarget "Outa Time" */;
+			buildPhases = (
+				5D8B19061BCB3F31006D085E /* Sources */,
+				5D8B19071BCB3F31006D085E /* Frameworks */,
+				5D8B19081BCB3F31006D085E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Outa Time";
+			productName = "Outa Time";
+			productReference = 5D8B190A1BCB3F31006D085E /* Outa Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D8B191D1BCB3F31006D085E /* Outa TimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D8B19351BCB3F31006D085E /* Build configuration list for PBXNativeTarget "Outa TimeTests" */;
+			buildPhases = (
+				5D8B191A1BCB3F31006D085E /* Sources */,
+				5D8B191B1BCB3F31006D085E /* Frameworks */,
+				5D8B191C1BCB3F31006D085E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D8B19201BCB3F31006D085E /* PBXTargetDependency */,
+			);
+			name = "Outa TimeTests";
+			productName = "Outa TimeTests";
+			productReference = 5D8B191E1BCB3F31006D085E /* Outa TimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D8B19281BCB3F31006D085E /* Outa TimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D8B19381BCB3F31006D085E /* Build configuration list for PBXNativeTarget "Outa TimeUITests" */;
+			buildPhases = (
+				5D8B19251BCB3F31006D085E /* Sources */,
+				5D8B19261BCB3F31006D085E /* Frameworks */,
+				5D8B19271BCB3F31006D085E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D8B192B1BCB3F31006D085E /* PBXTargetDependency */,
+			);
+			name = "Outa TimeUITests";
+			productName = "Outa TimeUITests";
+			productReference = 5D8B19291BCB3F31006D085E /* Outa TimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D8B19021BCB3F31006D085E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					5D8B19091BCB3F31006D085E = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					5D8B191D1BCB3F31006D085E = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 5D8B19091BCB3F31006D085E;
+					};
+					5D8B19281BCB3F31006D085E = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 5D8B19091BCB3F31006D085E;
+					};
+				};
+			};
+			buildConfigurationList = 5D8B19051BCB3F31006D085E /* Build configuration list for PBXProject "Outa Time" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D8B19011BCB3F31006D085E;
+			productRefGroup = 5D8B190B1BCB3F31006D085E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D8B19091BCB3F31006D085E /* Outa Time */,
+				5D8B191D1BCB3F31006D085E /* Outa TimeTests */,
+				5D8B19281BCB3F31006D085E /* Outa TimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D8B19081BCB3F31006D085E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8B19181BCB3F31006D085E /* LaunchScreen.storyboard in Resources */,
+				5DE502141BCB4B6B00970D7D /* digital-7(2).ttf in Resources */,
+				5D8B19151BCB3F31006D085E /* Assets.xcassets in Resources */,
+				5D8B19131BCB3F31006D085E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8B191C1BCB3F31006D085E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8B19271BCB3F31006D085E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D8B19061BCB3F31006D085E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE502161BCB570500970D7D /* TravelTimePicker.swift in Sources */,
+				5D8B19101BCB3F31006D085E /* OutaTimeViewController.swift in Sources */,
+				5D8B190E1BCB3F31006D085E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8B191A1BCB3F31006D085E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8B19231BCB3F31006D085E /* Outa_TimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8B19251BCB3F31006D085E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8B192E1BCB3F31006D085E /* Outa_TimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D8B19201BCB3F31006D085E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D8B19091BCB3F31006D085E /* Outa Time */;
+			targetProxy = 5D8B191F1BCB3F31006D085E /* PBXContainerItemProxy */;
+		};
+		5D8B192B1BCB3F31006D085E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D8B19091BCB3F31006D085E /* Outa Time */;
+			targetProxy = 5D8B192A1BCB3F31006D085E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D8B19111BCB3F31006D085E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D8B19121BCB3F31006D085E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D8B19161BCB3F31006D085E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D8B19171BCB3F31006D085E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D8B19301BCB3F31006D085E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D8B19311BCB3F31006D085E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D8B19331BCB3F31006D085E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Outa Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.Outa-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D8B19341BCB3F31006D085E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Outa Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.Outa-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5D8B19361BCB3F31006D085E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Outa TimeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.Outa-TimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Outa Time.app/Outa Time";
+			};
+			name = Debug;
+		};
+		5D8B19371BCB3F31006D085E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Outa TimeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.Outa-TimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Outa Time.app/Outa Time";
+			};
+			name = Release;
+		};
+		5D8B19391BCB3F31006D085E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Outa TimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.Outa-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Outa Time";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5D8B193A1BCB3F31006D085E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Outa TimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.Outa-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Outa Time";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D8B19051BCB3F31006D085E /* Build configuration list for PBXProject "Outa Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8B19301BCB3F31006D085E /* Debug */,
+				5D8B19311BCB3F31006D085E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D8B19321BCB3F31006D085E /* Build configuration list for PBXNativeTarget "Outa Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8B19331BCB3F31006D085E /* Debug */,
+				5D8B19341BCB3F31006D085E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D8B19351BCB3F31006D085E /* Build configuration list for PBXNativeTarget "Outa TimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8B19361BCB3F31006D085E /* Debug */,
+				5D8B19371BCB3F31006D085E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D8B19381BCB3F31006D085E /* Build configuration list for PBXNativeTarget "Outa TimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8B19391BCB3F31006D085E /* Debug */,
+				5D8B193A1BCB3F31006D085E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D8B19021BCB3F31006D085E /* Project object */;
+}
