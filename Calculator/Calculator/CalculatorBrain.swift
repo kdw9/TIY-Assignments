@@ -36,7 +36,13 @@ class CalculatorBrain
         
         func symbolPress(operate: String)
         {
-           symbol = operate
+           if operandOne != ""
+           {
+             symbol = operate
+            
+            }
+            
+        
         }
 
     
