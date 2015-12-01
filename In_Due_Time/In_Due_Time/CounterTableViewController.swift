@@ -9,18 +9,37 @@
 import UIKit
 import CoreData
 
-class CounterTableViewController: UITableViewController, UITextFieldDelegate
+@objc protocol DatePickerDelegate
 {
-    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    func dateWasChosen(date: String)
+}
+
+class CounterTableViewController: UITableViewController, UITextFieldDelegate, DatePickerDelegate
+{
     var todoList = Array<TheList>()
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    
     
     
     let checkImg = UIImage (contentsOfFile: "checkbutton.png")
     let unCheckImg = UIImage (contentsOfFile: "unchecked.png")
+    var buttonIndex: NSIndexPath!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "To Do List"
+        
+        let fetchRequest = NSFetchRequest(entityName: "TheList")
+        do
+        {
+        let fetchResults = try managedObjectContext.executeFetchRequest(fetchRequest) as? [TheList]
+        todoList = fetchResults!
+        }
+        catch {
+            let nserror = error as NSError
+            NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
+            abort()
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -48,7 +67,8 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("TodoCell", forIndexPath: indexPath) as! TodoCell
     
 
@@ -58,12 +78,25 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
         if aListItem.title == nil
         {
             cell.listTitleTextField.becomeFirstResponder()
+            cell.checkButton.setImage(unCheckImg, forState: UIControlState.Normal)
+            cell.listTitleTextField.text = ""
         }
         else
         {
             cell.listTitleTextField.text = aListItem.title; resignFirstResponder()
         }
-        
+        if aListItem.isDone
+        {
+            cell.checkButton.setImage(checkImg, forState: UIControlState.Normal)
+            cell.backgroundColor = UIColor(red: 0.28, green: 0.20, blue: 0.52, alpha: 1)
+            cell.listTitleTextField.textColor = UIColor.whiteColor()
+        }
+        else
+        {
+            cell.checkButton.setImage(unCheckImg, forState: UIControlState.Normal)
+            cell.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
+            cell.listTitleTextField.textColor = UIColor.blackColor()
+        }
             // I need to put a for in loop here to make the button work.
         
         
@@ -117,7 +150,10 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
     }
     */
     // MARK: UITextField Delegate
-    
+    func dateWasChosen(date: String)
+    {
+        <#code#>
+    }
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
         var rc = false
@@ -157,3 +193,4 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
         }
     }
 }
+

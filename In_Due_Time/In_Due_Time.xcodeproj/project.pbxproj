@@ -12,12 +12,13 @@
 		5DE2F4131BD6B36B00EB41D0 /* In_Due_Time.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F4111BD6B36B00EB41D0 /* In_Due_Time.xcdatamodeld */; };
 		5DE2F4151BD6B36B00EB41D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2F4141BD6B36B00EB41D0 /* Assets.xcassets */; };
 		5DE2F4181BD6B36B00EB41D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2F4161BD6B36B00EB41D0 /* LaunchScreen.storyboard */; };
-		5DE2F4201BD6B5D000EB41D0 /* CounterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F41F1BD6B5D000EB41D0 /* CounterTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		5DE2F4241BD6C06F00EB41D0 /* TheList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F4221BD6C06F00EB41D0 /* TheList.swift */; settings = {ASSET_TAGS = (); }; };
-		5DE2F4261BD6C92F00EB41D0 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F4251BD6C92F00EB41D0 /* TodoCell.swift */; settings = {ASSET_TAGS = (); }; };
-		5DE2F42C1BD6DBC400EB41D0 /* TheList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F42B1BD6DBC400EB41D0 /* TheList+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		5DE2F42F1BD6E85200EB41D0 /* checkbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2F42D1BD6E85200EB41D0 /* checkbutton.png */; settings = {ASSET_TAGS = (); }; };
-		5DE2F4301BD6E85200EB41D0 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2F42E1BD6E85200EB41D0 /* unchecked.png */; settings = {ASSET_TAGS = (); }; };
+		5DE2F4201BD6B5D000EB41D0 /* CounterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F41F1BD6B5D000EB41D0 /* CounterTableViewController.swift */; };
+		5DE2F4241BD6C06F00EB41D0 /* TheList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F4221BD6C06F00EB41D0 /* TheList.swift */; };
+		5DE2F4261BD6C92F00EB41D0 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F4251BD6C92F00EB41D0 /* TodoCell.swift */; };
+		5DE2F42C1BD6DBC400EB41D0 /* TheList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2F42B1BD6DBC400EB41D0 /* TheList+CoreDataProperties.swift */; };
+		5DE2F42F1BD6E85200EB41D0 /* checkbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2F42D1BD6E85200EB41D0 /* checkbutton.png */; };
+		5DE2F4301BD6E85200EB41D0 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2F42E1BD6E85200EB41D0 /* unchecked.png */; };
+		5DE8E5CE1C0E0FE000BF9B18 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE8E5CD1C0E0FE000BF9B18 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5DE2F42B1BD6DBC400EB41D0 /* TheList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TheList+CoreDataProperties.swift"; path = "../TheList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5DE2F42D1BD6E85200EB41D0 /* checkbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbutton.png; sourceTree = "<group>"; };
 		5DE2F42E1BD6E85200EB41D0 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		5DE8E5CD1C0E0FE000BF9B18 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				5DE2F4161BD6B36B00EB41D0 /* LaunchScreen.storyboard */,
 				5DE2F4191BD6B36B00EB41D0 /* Info.plist */,
 				5DE2F4111BD6B36B00EB41D0 /* In_Due_Time.xcdatamodeld */,
+				5DE8E5CD1C0E0FE000BF9B18 /* DatePickerViewController.swift */,
 			);
 			path = In_Due_Time;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				5DE2F42C1BD6DBC400EB41D0 /* TheList+CoreDataProperties.swift in Sources */,
 				5DE2F40B1BD6B36B00EB41D0 /* AppDelegate.swift in Sources */,
+				5DE8E5CE1C0E0FE000BF9B18 /* DatePickerViewController.swift in Sources */,
 				5DE2F4261BD6C92F00EB41D0 /* TodoCell.swift in Sources */,
 				5DE2F4131BD6B36B00EB41D0 /* In_Due_Time.xcdatamodeld in Sources */,
 				5DE2F4241BD6C06F00EB41D0 /* TheList.swift in Sources */,
@@ -307,6 +311,7 @@
 				5DE2F41E1BD6B36B00EB41D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
