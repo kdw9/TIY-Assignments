@@ -16,6 +16,8 @@ import CoreData
 
 class CounterTableViewController: UITableViewController, UITextFieldDelegate, DatePickerDelegate
 {
+    @IBOutlet weak var errorLabel: UILabel!
+    
     var todoList = Array<TheList>()
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
@@ -51,6 +53,14 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate, Da
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "DatePickerSegue"
+        {
+            let pickerVC = segue.destinationViewController as!DatePickerViewController
+            pickerVC.delegate = self
+        }
     }
 
     // MARK: - Table view data source
@@ -97,33 +107,55 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate, Da
             cell.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
             cell.listTitleTextField.textColor = UIColor.blackColor()
         }
-            // I need to put a for in loop here to make the button work.
         
+        if aListItem.date != nil
+        {
+          cell.dateButton.setTitle("Due By:" + aListItem.date!, forState: UIControlState.Normal)
+        }
         
         
         return cell
     }
 
 
-    /*
+    
     // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let aListItem = todoList[indexPath.row]
+        
+        if aListItem.isDone
+        {
+            let todoItem = todoList[indexPath.row]
+            
+        if editingStyle == .Delete
+        {
+            todoList.removeAtIndex(indexPath.row)
+            managedObjectContext.deleteObject(todoItem)
+        
+        }
+            
+           saveContext()
             // Delete the row from the data source
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            
+        }
+        else
+        {
+            errorLabel.text = "Check tasks befor you delete them!"
+        }
+            
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -152,7 +184,10 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate, Da
     // MARK: UITextField Delegate
     func dateWasChosen(date: String)
     {
-        <#code#>
+        todoList[buttonIndex.row].date = date
+        
+        tableView.reloadData()
+        saveContext()
     }
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
@@ -178,6 +213,42 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate, Da
         let aListItem = NSEntityDescription.insertNewObjectForEntityForName("TheList", inManagedObjectContext: managedObjectContext) as! TheList
           todoList.append(aListItem)
         tableView.reloadData()
+    }
+    
+    @IBAction func dateButtonPressed(sender: UIButton)
+    {
+        let contentView = sender.superview
+        let cell = contentView?.superview as! TodoCell
+        buttonIndex = tableView.indexPathForCell(cell)!
+    }
+    
+    @IBAction func checkboxPressed(sender: UIButton)
+    {
+        let contentView = sender.superview
+        let cell = contentView?.superview as! TodoCell
+        let indexPath = tableView.indexPathForCell(cell)
+        let todoItem = todoList[indexPath!.row]
+        
+        aListItem.title = cell.titleTextField.text //just in case they don't press enter when they're typing in their todo and just immediately check it off
+        
+        if sender.currentImage == unCheckImg
+        {
+            cell.checkButton.setImage(checkImg, forState: UIControlState.Normal)
+            aListItem.isDone = true
+            //            cell.backgroundColor = UIColor.lightTextColor()
+            cell.backgroundColor = UIColor(red:0.38, green:0.00, blue:0.02, alpha:1.0)
+            cell.listTitleTextField.textColor = UIColor.whiteColor()
+        }
+        else
+        {
+            cell.checkButton.setImage(unCheckImg, forState: UIControlState.Normal)
+            aListItem.isDone = false
+            cell.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
+            cell.listTitleTextField.textColor = UIColor.greenColor()
+        }
+        
+        tableView.reloadData()
+        saveContext()
     }
 // MARK: - Private
     

@@ -73,6 +73,7 @@
 				5DE2F42B1BD6DBC400EB41D0 /* TheList+CoreDataProperties.swift */,
 				5DE2F4221BD6C06F00EB41D0 /* TheList.swift */,
 				5DE2F4251BD6C92F00EB41D0 /* TodoCell.swift */,
+				5DE8E5CD1C0E0FE000BF9B18 /* DatePickerViewController.swift */,
 				5DE2F42D1BD6E85200EB41D0 /* checkbutton.png */,
 				5DE2F42E1BD6E85200EB41D0 /* unchecked.png */,
 				5DE2F40E1BD6B36B00EB41D0 /* Main.storyboard */,
@@ -80,7 +81,6 @@
 				5DE2F4161BD6B36B00EB41D0 /* LaunchScreen.storyboard */,
 				5DE2F4191BD6B36B00EB41D0 /* Info.plist */,
 				5DE2F4111BD6B36B00EB41D0 /* In_Due_Time.xcdatamodeld */,
-				5DE8E5CD1C0E0FE000BF9B18 /* DatePickerViewController.swift */,
 			);
 			path = In_Due_Time;
 			sourceTree = "<group>";

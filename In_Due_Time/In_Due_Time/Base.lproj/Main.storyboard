@@ -37,11 +37,24 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="1"/>
                                             <state key="normal" title="Button" image="checkbutton.png"/>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTE-NN-NYl">
+                                            <rect key="frame" x="417" y="3" width="44" height="38"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <state key="normal" title="Date">
+                                                <color key="titleColor" red="0.33571429618950571" green="0.74558246073298429" blue="0.04310342657132079" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="dateButtonPressed:" destination="NAo-8c-Sr0" eventType="touchUpInside" id="fSJ-Kc-p1C"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <animations/>
                                     <constraints>
+                                        <constraint firstItem="1xp-fI-IAW" firstAttribute="leading" secondItem="uTE-NN-NYl" secondAttribute="trailing" constant="84" id="7d9-fF-l3j"/>
                                         <constraint firstItem="1xp-fI-IAW" firstAttribute="leading" secondItem="1EC-fe-b0a" secondAttribute="trailing" constant="480" id="A3l-4E-Aw3"/>
                                         <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="Bdu-bU-3dC"/>
+                                        <constraint firstItem="uTE-NN-NYl" firstAttribute="centerY" secondItem="1xp-fI-IAW" secondAttribute="centerY" id="EKZ-B2-DDd"/>
                                         <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="P37-pJ-frR"/>
                                         <constraint firstAttribute="trailing" secondItem="1xp-fI-IAW" secondAttribute="trailing" constant="15" id="PWI-R0-0KN"/>
                                         <constraint firstItem="1xp-fI-IAW" firstAttribute="centerY" secondItem="1EC-fe-b0a" secondAttribute="centerY" id="SK5-Gl-yae"/>
@@ -74,7 +87,9 @@
                                 <animations/>
                                 <connections>
                                     <outlet property="checkButton" destination="1xp-fI-IAW" id="0U0-5r-qCi"/>
+                                    <outlet property="dateButton" destination="uTE-NN-NYl" id="ZW9-Ob-MpW"/>
                                     <outlet property="listTitleTextField" destination="1EC-fe-b0a" id="3lK-Ih-937"/>
+                                    <segue destination="5VI-Zg-X9O" kind="show" identifier="DatePickerSegue" id="qro-ZU-sNx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -94,6 +109,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Kd-zn-CqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="922" y="258"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="fRe-Ta-JJ5">
+            <objects>
+                <viewController id="5VI-Zg-X9O" customClass="DatePickerViewController" customModule="In_Due_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aCY-0v-vMQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="HvA-jM-0bp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9xM-Gq-ZrM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-1f-mRS">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="470700527.67772001">
+                                    <!--2015-12-01 22:08:47 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hgh-1f-mRS" secondAttribute="trailing" id="EWD-v2-Zhc"/>
+                            <constraint firstItem="hgh-1f-mRS" firstAttribute="centerY" secondItem="9xM-Gq-ZrM" secondAttribute="centerY" id="Evo-mx-rxA"/>
+                            <constraint firstItem="hgh-1f-mRS" firstAttribute="leading" secondItem="9xM-Gq-ZrM" secondAttribute="leading" id="NSv-Jp-gmc"/>
+                            <constraint firstItem="hgh-1f-mRS" firstAttribute="centerX" secondItem="9xM-Gq-ZrM" secondAttribute="centerX" id="gM1-dO-xAM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="hgh-1f-mRS" id="QCH-6Y-QO6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4o-hj-0Ci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608" y="245"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GiP-NP-D6D">

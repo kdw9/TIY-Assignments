@@ -12,15 +12,18 @@ class DatePickerViewController: UIViewController
 {
     
     @IBOutlet var picker: UIDatePicker!
+    
     var delegate: DatePickerDelegate?
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -35,7 +38,7 @@ class DatePickerViewController: UIViewController
     {
         let formatter = NSDateFormatter()
         formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd", options: 0, locale: NSLocale(localeIdentifier: "en-US"))
-        let formattedTime = formatter.stringFromDate(timeToFormat)//.uppercaseString
+        let formattedTime = formatter.stringFromDate(timeToFormat)
         return formattedTime
     }
     /*
