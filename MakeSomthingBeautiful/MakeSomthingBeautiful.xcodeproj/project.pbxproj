@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D70D37D1C1485D000457784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D37C1C1485D000457784 /* Assets.xcassets */; };
+		5D70D3811C14970800457784 /* SoundWaves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3801C14970800457784 /* SoundWaves.jpg */; };
+		5D70D3831C14BB2D00457784 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D70D3821C14BB2D00457784 /* Joke.swift */; };
+		5D70D3911C14E6FC00457784 /* billBurr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3841C14E6FC00457784 /* billBurr.mp3 */; };
+		5D70D3921C14E6FC00457784 /* billBurr.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3851C14E6FC00457784 /* billBurr.png */; };
+		5D70D3931C14E6FC00457784 /* gotJockes.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3861C14E6FC00457784 /* gotJockes.png */; };
+		5D70D3941C14E6FC00457784 /* jimGaffigan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3871C14E6FC00457784 /* jimGaffigan.mp3 */; };
+		5D70D3951C14E6FC00457784 /* jimGaffiganA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3881C14E6FC00457784 /* jimGaffiganA.mp3 */; };
+		5D70D3961C14E6FC00457784 /* jimGaffiganB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3891C14E6FC00457784 /* jimGaffiganB.mp3 */; };
+		5D70D3971C14E6FC00457784 /* jimmy.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38A1C14E6FC00457784 /* jimmy.png */; };
+		5D70D3981C14E6FC00457784 /* jimmyTree.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38B1C14E6FC00457784 /* jimmyTree.png */; };
+		5D70D3991C14E6FC00457784 /* jimmyTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38C1C14E6FC00457784 /* jimmyTwo.png */; };
+		5D70D39A1C14E6FC00457784 /* kev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38D1C14E6FC00457784 /* kev.png */; };
+		5D70D39B1C14E6FC00457784 /* kevHart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38E1C14E6FC00457784 /* kevHart.mp3 */; };
+		5D70D39C1C14E6FC00457784 /* kevHartA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38F1C14E6FC00457784 /* kevHartA.mp3 */; };
+		5D70D39D1C14E6FC00457784 /* kewTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3901C14E6FC00457784 /* kewTwo.png */; };
+		5D9E55FD1C13750E0025531B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E55FC1C13750E0025531B /* AppDelegate.swift */; };
+		5D9E55FF1C13750E0025531B /* AudoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E55FE1C13750E0025531B /* AudoiViewController.swift */; };
+		5D9E56021C13750E0025531B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56001C13750E0025531B /* Main.storyboard */; };
+		5D9E56071C13750E0025531B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56051C13750E0025531B /* LaunchScreen.storyboard */; };
+		5D9E56181C1481950025531B /* 05 set fire to the rain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E560E1C1481950025531B /* 05 set fire to the rain.m4a */; };
+		5D9E56191C1481950025531B /* Best Day of My Life - American Authors _Lyrics_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E560F1C1481950025531B /* Best Day of My Life - American Authors _Lyrics_.mp3 */; };
+		5D9E561A1C1481950025531B /* Chris Brown - Fine China lyrics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56101C1481950025531B /* Chris Brown - Fine China lyrics.mp3 */; };
+		5D9E561B1C1481950025531B /* Jason Derulo - Trumpets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56111C1481950025531B /* Jason Derulo - Trumpets.mp3 */; };
+		5D9E561C1C1481950025531B /* Jeremih - Don_t Tell _Em _Clean Version_ _feat. YG_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56121C1481950025531B /* Jeremih - Don_t Tell _Em _Clean Version_ _feat. YG_.mp3 */; };
+		5D9E561D1C1481950025531B /* Justin Timberlake - Suit & Tie (Official) ft_ JAY Z-[www_flvto_com].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56131C1481950025531B /* Justin Timberlake - Suit & Tie (Official) ft_ JAY Z-[www_flvto_com].mp3 */; };
+		5D9E561E1C1481950025531B /* OneRepublic - Good Life.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56141C1481950025531B /* OneRepublic - Good Life.mp3 */; };
+		5D9E561F1C1481950025531B /* Pharrell Williams _Happy_ _with lyrics_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56151C1481950025531B /* Pharrell Williams _Happy_ _with lyrics_.mp3 */; };
+		5D9E56201C1481950025531B /* Time of Our Lives.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56161C1481950025531B /* Time of Our Lives.mp3 */; };
+		5D9E56211C1481950025531B /* Usher - Caught Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56171C1481950025531B /* Usher - Caught Up.mp3 */; };
+		5D9E56271C1481E10025531B /* Next.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56241C1481E10025531B /* Next.png */; };
+		5D9E56281C1481E10025531B /* PlayPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56251C1481E10025531B /* PlayPause.png */; };
+		5D9E56291C1481E10025531B /* Previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56261C1481E10025531B /* Previous.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D70D37C1C1485D000457784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D70D3801C14970800457784 /* SoundWaves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SoundWaves.jpg; sourceTree = "<group>"; };
+		5D70D3821C14BB2D00457784 /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		5D70D3841C14E6FC00457784 /* billBurr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = billBurr.mp3; sourceTree = "<group>"; };
+		5D70D3851C14E6FC00457784 /* billBurr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = billBurr.png; path = ../billBurr.png; sourceTree = "<group>"; };
+		5D70D3861C14E6FC00457784 /* gotJockes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gotJockes.png; path = ../gotJockes.png; sourceTree = "<group>"; };
+		5D70D3871C14E6FC00457784 /* jimGaffigan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jimGaffigan.mp3; sourceTree = "<group>"; };
+		5D70D3881C14E6FC00457784 /* jimGaffiganA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jimGaffiganA.mp3; sourceTree = "<group>"; };
+		5D70D3891C14E6FC00457784 /* jimGaffiganB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jimGaffiganB.mp3; sourceTree = "<group>"; };
+		5D70D38A1C14E6FC00457784 /* jimmy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jimmy.png; path = ../jimmy.png; sourceTree = "<group>"; };
+		5D70D38B1C14E6FC00457784 /* jimmyTree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jimmyTree.png; path = ../jimmyTree.png; sourceTree = "<group>"; };
+		5D70D38C1C14E6FC00457784 /* jimmyTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jimmyTwo.png; path = ../jimmyTwo.png; sourceTree = "<group>"; };
+		5D70D38D1C14E6FC00457784 /* kev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kev.png; path = ../kev.png; sourceTree = "<group>"; };
+		5D70D38E1C14E6FC00457784 /* kevHart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kevHart.mp3; sourceTree = "<group>"; };
+		5D70D38F1C14E6FC00457784 /* kevHartA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kevHartA.mp3; sourceTree = "<group>"; };
+		5D70D3901C14E6FC00457784 /* kewTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kewTwo.png; path = ../kewTwo.png; sourceTree = "<group>"; };
+		5D9E55F91C13750E0025531B /* MakeSomthingBeautiful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeSomthingBeautiful.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9E55FC1C13750E0025531B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D9E55FE1C13750E0025531B /* AudoiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudoiViewController.swift; sourceTree = "<group>"; };
+		5D9E56011C13750E0025531B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D9E56061C13750E0025531B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D9E56081C13750E0025531B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D9E560E1C1481950025531B /* 05 set fire to the rain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "05 set fire to the rain.m4a"; sourceTree = "<group>"; };
+		5D9E560F1C1481950025531B /* Best Day of My Life - American Authors _Lyrics_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Best Day of My Life - American Authors _Lyrics_.mp3"; sourceTree = "<group>"; };
+		5D9E56101C1481950025531B /* Chris Brown - Fine China lyrics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Chris Brown - Fine China lyrics.mp3"; sourceTree = "<group>"; };
+		5D9E56111C1481950025531B /* Jason Derulo - Trumpets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jason Derulo - Trumpets.mp3"; sourceTree = "<group>"; };
+		5D9E56121C1481950025531B /* Jeremih - Don_t Tell _Em _Clean Version_ _feat. YG_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jeremih - Don_t Tell _Em _Clean Version_ _feat. YG_.mp3"; sourceTree = "<group>"; };
+		5D9E56131C1481950025531B /* Justin Timberlake - Suit & Tie (Official) ft_ JAY Z-[www_flvto_com].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Justin Timberlake - Suit & Tie (Official) ft_ JAY Z-[www_flvto_com].mp3"; sourceTree = "<group>"; };
+		5D9E56141C1481950025531B /* OneRepublic - Good Life.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "OneRepublic - Good Life.mp3"; sourceTree = "<group>"; };
+		5D9E56151C1481950025531B /* Pharrell Williams _Happy_ _with lyrics_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pharrell Williams _Happy_ _with lyrics_.mp3"; sourceTree = "<group>"; };
+		5D9E56161C1481950025531B /* Time of Our Lives.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Time of Our Lives.mp3"; sourceTree = "<group>"; };
+		5D9E56171C1481950025531B /* Usher - Caught Up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Usher - Caught Up.mp3"; sourceTree = "<group>"; };
+		5D9E56241C1481E10025531B /* Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next.png; sourceTree = "<group>"; };
+		5D9E56251C1481E10025531B /* PlayPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPause.png; sourceTree = "<group>"; };
+		5D9E56261C1481E10025531B /* Previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Previous.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D9E55F61C13750E0025531B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D9E55F01C13750E0025531B = {
+			isa = PBXGroup;
+			children = (
+				5D9E55FB1C13750E0025531B /* MakeSomthingBeautiful */,
+				5D9E55FA1C13750E0025531B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D9E55FA1C13750E0025531B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D9E55F91C13750E0025531B /* MakeSomthingBeautiful.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D9E55FB1C13750E0025531B /* MakeSomthingBeautiful */ = {
+			isa = PBXGroup;
+			children = (
+				5D9E56221C1481A30025531B /* comicAudio */,
+				5D9E56231C1481E10025531B /* playButtons */,
+				5D9E55FC1C13750E0025531B /* AppDelegate.swift */,
+				5D9E55FE1C13750E0025531B /* AudoiViewController.swift */,
+				5D70D3821C14BB2D00457784 /* Joke.swift */,
+				5D9E56001C13750E0025531B /* Main.storyboard */,
+				5D70D37C1C1485D000457784 /* Assets.xcassets */,
+				5D9E56051C13750E0025531B /* LaunchScreen.storyboard */,
+				5D9E56081C13750E0025531B /* Info.plist */,
+			);
+			path = MakeSomthingBeautiful;
+			sourceTree = "<group>";
+		};
+		5D9E56221C1481A30025531B /* comicAudio */ = {
+			isa = PBXGroup;
+			children = (
+				5D70D3841C14E6FC00457784 /* billBurr.mp3 */,
+				5D70D3871C14E6FC00457784 /* jimGaffigan.mp3 */,
+				5D70D3881C14E6FC00457784 /* jimGaffiganA.mp3 */,
+				5D70D3891C14E6FC00457784 /* jimGaffiganB.mp3 */,
+				5D70D38E1C14E6FC00457784 /* kevHart.mp3 */,
+				5D70D38F1C14E6FC00457784 /* kevHartA.mp3 */,
+				5D9E560E1C1481950025531B /* 05 set fire to the rain.m4a */,
+				5D9E560F1C1481950025531B /* Best Day of My Life - American Authors _Lyrics_.mp3 */,
+				5D9E56101C1481950025531B /* Chris Brown - Fine China lyrics.mp3 */,
+				5D9E56111C1481950025531B /* Jason Derulo - Trumpets.mp3 */,
+				5D9E56121C1481950025531B /* Jeremih - Don_t Tell _Em _Clean Version_ _feat. YG_.mp3 */,
+				5D9E56131C1481950025531B /* Justin Timberlake - Suit & Tie (Official) ft_ JAY Z-[www_flvto_com].mp3 */,
+				5D9E56141C1481950025531B /* OneRepublic - Good Life.mp3 */,
+				5D9E56151C1481950025531B /* Pharrell Williams _Happy_ _with lyrics_.mp3 */,
+				5D9E56161C1481950025531B /* Time of Our Lives.mp3 */,
+				5D9E56171C1481950025531B /* Usher - Caught Up.mp3 */,
+			);
+			name = comicAudio;
+			sourceTree = "<group>";
+		};
+		5D9E56231C1481E10025531B /* playButtons */ = {
+			isa = PBXGroup;
+			children = (
+				5D70D3851C14E6FC00457784 /* billBurr.png */,
+				5D70D3861C14E6FC00457784 /* gotJockes.png */,
+				5D70D38A1C14E6FC00457784 /* jimmy.png */,
+				5D70D38B1C14E6FC00457784 /* jimmyTree.png */,
+				5D70D38C1C14E6FC00457784 /* jimmyTwo.png */,
+				5D70D38D1C14E6FC00457784 /* kev.png */,
+				5D70D3901C14E6FC00457784 /* kewTwo.png */,
+				5D9E56241C1481E10025531B /* Next.png */,
+				5D9E56251C1481E10025531B /* PlayPause.png */,
+				5D9E56261C1481E10025531B /* Previous.png */,
+				5D70D3801C14970800457784 /* SoundWaves.jpg */,
+			);
+			path = playButtons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D9E55F81C13750E0025531B /* MakeSomthingBeautiful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9E560B1C13750E0025531B /* Build configuration list for PBXNativeTarget "MakeSomthingBeautiful" */;
+			buildPhases = (
+				5D9E55F51C13750E0025531B /* Sources */,
+				5D9E55F61C13750E0025531B /* Frameworks */,
+				5D9E55F71C13750E0025531B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakeSomthingBeautiful;
+			productName = MakeSomthingBeautiful;
+			productReference = 5D9E55F91C13750E0025531B /* MakeSomthingBeautiful.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D9E55F11C13750E0025531B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					5D9E55F81C13750E0025531B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 5D9E55F41C13750E0025531B /* Build configuration list for PBXProject "MakeSomthingBeautiful" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D9E55F01C13750E0025531B;
+			productRefGroup = 5D9E55FA1C13750E0025531B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D9E55F81C13750E0025531B /* MakeSomthingBeautiful */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D9E55F71C13750E0025531B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D70D39D1C14E6FC00457784 /* kewTwo.png in Resources */,
+				5D9E56201C1481950025531B /* Time of Our Lives.mp3 in Resources */,
+				5D70D3961C14E6FC00457784 /* jimGaffiganB.mp3 in Resources */,
+				5D9E561A1C1481950025531B /* Chris Brown - Fine China lyrics.mp3 in Resources */,
+				5D70D3991C14E6FC00457784 /* jimmyTwo.png in Resources */,
+				5D9E56191C1481950025531B /* Best Day of My Life - American Authors _Lyrics_.mp3 in Resources */,
+				5D70D3921C14E6FC00457784 /* billBurr.png in Resources */,
+				5D70D3951C14E6FC00457784 /* jimGaffiganA.mp3 in Resources */,
+				5D9E561B1C1481950025531B /* Jason Derulo - Trumpets.mp3 in Resources */,
+				5D9E56271C1481E10025531B /* Next.png in Resources */,
+				5D70D39A1C14E6FC00457784 /* kev.png in Resources */,
+				5D9E56181C1481950025531B /* 05 set fire to the rain.m4a in Resources */,
+				5D70D37D1C1485D000457784 /* Assets.xcassets in Resources */,
+				5D9E561D1C1481950025531B /* Justin Timberlake - Suit & Tie (Official) ft_ JAY Z-[www_flvto_com].mp3 in Resources */,
+				5D70D3911C14E6FC00457784 /* billBurr.mp3 in Resources */,
+				5D9E56071C13750E0025531B /* LaunchScreen.storyboard in Resources */,
+				5D9E56021C13750E0025531B /* Main.storyboard in Resources */,
+				5D70D39C1C14E6FC00457784 /* kevHartA.mp3 in Resources */,
+				5D9E56281C1481E10025531B /* PlayPause.png in Resources */,
+				5D70D3931C14E6FC00457784 /* gotJockes.png in Resources */,
+				5D9E56211C1481950025531B /* Usher - Caught Up.mp3 in Resources */,
+				5D9E56291C1481E10025531B /* Previous.png in Resources */,
+				5D70D3971C14E6FC00457784 /* jimmy.png in Resources */,
+				5D70D3941C14E6FC00457784 /* jimGaffigan.mp3 in Resources */,
+				5D70D39B1C14E6FC00457784 /* kevHart.mp3 in Resources */,
+				5D9E561C1C1481950025531B /* Jeremih - Don_t Tell _Em _Clean Version_ _feat. YG_.mp3 in Resources */,
+				5D70D3981C14E6FC00457784 /* jimmyTree.png in Resources */,
+				5D9E561E1C1481950025531B /* OneRepublic - Good Life.mp3 in Resources */,
+				5D9E561F1C1481950025531B /* Pharrell Williams _Happy_ _with lyrics_.mp3 in Resources */,
+				5D70D3811C14970800457784 /* SoundWaves.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D9E55F51C13750E0025531B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9E55FF1C13750E0025531B /* AudoiViewController.swift in Sources */,
+				5D9E55FD1C13750E0025531B /* AppDelegate.swift in Sources */,
+				5D70D3831C14BB2D00457784 /* Joke.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D9E56001C13750E0025531B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D9E56011C13750E0025531B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D9E56051C13750E0025531B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D9E56061C13750E0025531B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D9E56091C13750E0025531B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D9E560A1C13750E0025531B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D9E560C1C13750E0025531B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MakeSomthingBeautiful/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.MakeSomthingBeautiful;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D9E560D1C13750E0025531B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MakeSomthingBeautiful/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.MakeSomthingBeautiful;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D9E55F41C13750E0025531B /* Build configuration list for PBXProject "MakeSomthingBeautiful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9E56091C13750E0025531B /* Debug */,
+				5D9E560A1C13750E0025531B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D9E560B1C13750E0025531B /* Build configuration list for PBXNativeTarget "MakeSomthingBeautiful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9E560C1C13750E0025531B /* Debug */,
+				5D9E560D1C13750E0025531B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D9E55F11C13750E0025531B /* Project object */;
+}
