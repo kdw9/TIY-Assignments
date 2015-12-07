@@ -16,7 +16,8 @@ class AudioViewController: UIViewController
     @IBOutlet var comedianLabel: UILabel!
     @IBOutlet var albumArtwork: UIImageView!
     
-    @IBOutlet var playPauseButton: UIButton!
+    @IBOutlet var playButton: UIButton!
+    @IBOutlet var pauseButton: UIButton!
     
     let avQueuePlayer = AVQueuePlayer()
     var jokes = Array<Joke>()
@@ -30,8 +31,21 @@ class AudioViewController: UIViewController
         setupAudioSession()
         configurePlayList()
         loadCurrentJoke()
+        title = "U Got Jokes"
     }
-
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+//    {
+//        if segue.identifier == "ShowSearchBarPopoverSegue"
+//        {
+//            let destVC = segue.destinationViewController as!
+//            SearchTextFieldTableViewController
+//            destVC.searchBar = search
+//            destVC.popoverPresentationController?.delegate = self!
+//            let contentHeight = 44.0 * CGFloat(search.count)
+//            destVC.preferredContentSize = CGSizeMake(width:  200.0, contentHeight)
+//        }
+//    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -77,23 +91,23 @@ class AudioViewController: UIViewController
     
     func configurePlayList()
     {
-        let billBurr = Joke(title: "Standup", comic: "Bill Burr", filename: "billBurr", albumArtwork: "billBurr")
+        let billBurr = Joke(title: "Bill Burr", comic: "Bill Burr", filename: "billBurr", albumArtwork: "billBurr")
         jokes.append(billBurr)
         currentjoke = billBurr
         
-        let jimGaffigan = Joke(title: "Hot Pockets", comic: "Jim Gaffigan", filename: "jimGaffigan", albumArtwork: "jimmy")
+        let jimGaffigan = Joke(title: "Jim Gaffigan", comic: "Jim Gaffigan", filename: "jimGaffigan", albumArtwork: "jimmy")
         jokes.append(jimGaffigan)
         
-        let jimGaffiganA = Joke(title: "Hot Pockets A", comic: "Jim Gaffigan", filename: "jimGaffiganA", albumArtwork: "jimmyTwo")
+        let jimGaffiganA = Joke(title: "Jim Gaffigan", comic: "Jim Gaffigan", filename: "jimGaffiganA", albumArtwork: "jimmyTwo")
         jokes.append(jimGaffiganA)
         
-        let jimGaffiganB = Joke(title: "Hot Pockets B", comic: "Jim Gaffigan", filename: "jimGaffiganB", albumArtwork: "jimmyTree")
+        let jimGaffiganB = Joke(title: "Jim Gaffigan", comic: "Jim Gaffigan", filename: "jimGaffiganB", albumArtwork: "jimmyTree")
         jokes.append(jimGaffiganB)
         
-        let kevin = Joke(title: "Top Ten", comic: "Kevin Hart", filename: "kevHart", albumArtwork: "kev")
+        let kevin = Joke(title: "Kevin Hart", comic: "Kevin Hart", filename: "kevHart", albumArtwork: "kev")
         jokes.append(kevin)
         
-        let kevinH = Joke(title: "Top Five", comic: "Kevin Hart", filename: "kevHartA", albumArtwork: "kevTwo")
+        let kevinH = Joke(title: "Kevin Hart", comic: "Kevin Hart", filename: "kevHartA", albumArtwork: "kevTwo")
         jokes.append(kevinH)
         
     }
@@ -137,13 +151,19 @@ class AudioViewController: UIViewController
         nowPlaying = play
         if play
         {
-            playPauseButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
+            playButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
             avQueuePlayer.play()
         }
         else
         {
-            playPauseButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
+            pauseButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
             avQueuePlayer.pause()
         }
     }
+//    // MARK: - UIPopOverPresentationController Delegate
+//    
+//    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle
+//    {
+//        return .None
+//    }
 }

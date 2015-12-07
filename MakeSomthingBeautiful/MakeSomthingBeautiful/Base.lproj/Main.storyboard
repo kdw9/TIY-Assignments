@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3oF-2s-NNH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e9a-3m-ri7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -73,7 +73,7 @@
                                     <constraint firstAttribute="width" constant="50" id="DuM-fu-xH2"/>
                                     <constraint firstAttribute="height" constant="50" id="NcT-iq-hcV"/>
                                 </constraints>
-                                <state key="normal" image="PlayPause"/>
+                                <state key="normal" image="Play.png"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="DuM-fu-xH2"/>
@@ -134,7 +134,9 @@
                             <constraint firstItem="QYG-6T-pRM" firstAttribute="top" secondItem="vwu-gv-OBF" secondAttribute="bottom" constant="15" id="6eK-eC-yZF">
                                 <variation key="widthClass=compact" constant="270"/>
                             </constraint>
-                            <constraint firstItem="mAs-x8-OzK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7fO-7z-alI"/>
+                            <constraint firstItem="mAs-x8-OzK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7fO-7z-alI">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="mAs-x8-OzK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9i0-vS-Y09"/>
                             <constraint firstItem="QYG-6T-pRM" firstAttribute="centerX" secondItem="vwu-gv-OBF" secondAttribute="centerX" id="A3S-jq-8m7"/>
                             <constraint firstItem="mAs-x8-OzK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="APc-aY-IOd"/>
@@ -221,43 +223,162 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="3Mm-wv-YnP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bzy-R2-nj5"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bzy-R2-nj5">
+                            <connections>
+                                <segue destination="nbA-ck-cm5" kind="presentation" id="diz-NC-nqG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="albumArtwork" destination="JNj-id-Fa8" id="Z8m-gn-RYZ"/>
                         <outlet property="comedianLabel" destination="vwu-gv-OBF" id="qfk-ac-GzF"/>
-                        <outlet property="playPauseButton" destination="QYG-6T-pRM" id="vNM-3N-1y7"/>
+                        <outlet property="pauseButton" destination="QYG-6T-pRM" id="KNs-fS-Rqk"/>
+                        <outlet property="playButton" destination="QYG-6T-pRM" id="nS4-wK-AFn"/>
+                        <outlet property="searchDisplayController" destination="T9W-en-H5N" id="Nz0-JL-f2N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="T9W-en-H5N">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="CPA-Iz-GlX"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="98m-yP-kfH"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="fAJ-20-bKO"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="qgv-Ij-5mG"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1239" y="369"/>
+            <point key="canvasLocation" x="2041.5" y="369"/>
+        </scene>
+        <!--Search Barl View Controller-->
+        <scene sceneID="jMK-P3-rRE">
+            <objects>
+                <viewController id="nbA-ck-cm5" customClass="SearchBarlViewController" customModule="MakeSomthingBeautiful" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m99-L2-cB5"/>
+                        <viewControllerLayoutGuide type="bottom" id="fyg-5J-LsY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vff-h5-5cW">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VYi-IW-4A1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="CIH-TF-7QV"/>
+                                    <constraint firstAttribute="height" constant="44" id="xiQ-FX-sNk"/>
+                                </constraints>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CIH-TF-7QV"/>
+                                        <exclude reference="xiQ-FX-sNk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="CIH-TF-7QV"/>
+                                        <include reference="xiQ-FX-sNk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="nbA-ck-cm5" id="vfv-nb-bBR"/>
+                                </connections>
+                            </searchBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gj.png" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-bh-ylU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VYi-IW-4A1" secondAttribute="trailing" constant="20" id="Ae7-h1-67E"/>
+                            <constraint firstItem="VYi-IW-4A1" firstAttribute="leading" secondItem="vff-h5-5cW" secondAttribute="leading" constant="20" id="Wi7-UN-Lrk"/>
+                            <constraint firstItem="VYi-IW-4A1" firstAttribute="centerX" secondItem="vff-h5-5cW" secondAttribute="centerX" id="bq0-Mb-5us"/>
+                            <constraint firstItem="VYi-IW-4A1" firstAttribute="top" secondItem="CQA-bh-ylU" secondAttribute="bottom" id="e08-OW-EyT"/>
+                            <constraint firstItem="VYi-IW-4A1" firstAttribute="top" secondItem="m99-L2-cB5" secondAttribute="bottom" constant="149" id="iDv-f3-LeB"/>
+                            <constraint firstItem="CQA-bh-ylU" firstAttribute="leading" secondItem="vff-h5-5cW" secondAttribute="leadingMargin" constant="60" id="klq-27-plu"/>
+                            <constraint firstItem="CQA-bh-ylU" firstAttribute="centerX" secondItem="VYi-IW-4A1" secondAttribute="centerX" id="ucd-NC-cXT"/>
+                            <constraint firstItem="CQA-bh-ylU" firstAttribute="top" secondItem="m99-L2-cB5" secondAttribute="bottom" constant="21" id="vMC-gE-aph"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VYi-IW-4A1"/>
+                                <exclude reference="CQA-bh-ylU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="klq-27-plu"/>
+                                <exclude reference="ucd-NC-cXT"/>
+                                <exclude reference="vMC-gE-aph"/>
+                                <exclude reference="Ae7-h1-67E"/>
+                                <exclude reference="Wi7-UN-Lrk"/>
+                                <exclude reference="bq0-Mb-5us"/>
+                                <exclude reference="e08-OW-EyT"/>
+                                <exclude reference="iDv-f3-LeB"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VYi-IW-4A1"/>
+                                <include reference="CQA-bh-ylU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="klq-27-plu"/>
+                                <include reference="ucd-NC-cXT"/>
+                                <include reference="vMC-gE-aph"/>
+                                <include reference="Ae7-h1-67E"/>
+                                <include reference="Wi7-UN-Lrk"/>
+                                <include reference="bq0-Mb-5us"/>
+                                <include reference="e08-OW-EyT"/>
+                                <include reference="iDv-f3-LeB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="VYi-IW-4A1" id="khr-1o-DHe"/>
+                        <outlet property="searchDisplayController" destination="ODc-CE-GdW" id="DMb-Mh-J3A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Idu-Bx-bLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ODc-CE-GdW">
+                    <connections>
+                        <outlet property="delegate" destination="nbA-ck-cm5" id="2fi-nL-m9G"/>
+                        <outlet property="searchBar" destination="VYi-IW-4A1" id="9dl-Pn-LH5"/>
+                        <outlet property="searchContentsController" destination="nbA-ck-cm5" id="Hep-uT-hb5"/>
+                        <outlet property="searchResultsDataSource" destination="nbA-ck-cm5" id="KWv-sH-TTU"/>
+                        <outlet property="searchResultsDelegate" destination="nbA-ck-cm5" id="ooM-8d-g6g"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2857.5" y="366"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="U9G-iy-OAH">
+        <scene sceneID="Aoe-J5-VJg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3oF-2s-NNH" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9a-3m-ri7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NZp-R5-rse">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nwt-o1-dAK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3VF-Y5-dCh"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HaV-FM-ZqN"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LPd-bH-IUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otN-oS-nvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541.5" y="369"/>
+            <point key="canvasLocation" x="1239" y="369"/>
         </scene>
     </scenes>
     <resources>
         <image name="Next" width="500" height="500"/>
-        <image name="PlayPause" width="500" height="500"/>
+        <image name="Play.png" width="500" height="500"/>
         <image name="Previous" width="500" height="500"/>
         <image name="billBurr.png" width="800" height="496"/>
+        <image name="gj.png" width="800" height="427"/>
         <image name="gotJockes.png" width="1200" height="258"/>
     </resources>
 </document>

@@ -22,7 +22,10 @@
 		5D70D39A1C14E6FC00457784 /* kev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38D1C14E6FC00457784 /* kev.png */; };
 		5D70D39B1C14E6FC00457784 /* kevHart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38E1C14E6FC00457784 /* kevHart.mp3 */; };
 		5D70D39C1C14E6FC00457784 /* kevHartA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D38F1C14E6FC00457784 /* kevHartA.mp3 */; };
-		5D70D39D1C14E6FC00457784 /* kewTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3901C14E6FC00457784 /* kewTwo.png */; };
+		5D70D39D1C14E6FC00457784 /* kevTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3901C14E6FC00457784 /* kevTwo.png */; };
+		5D70D39F1C14F16A00457784 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D39E1C14F16A00457784 /* Pause.png */; };
+		5D70D3A31C15173D00457784 /* SearchBarlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D70D3A21C15173D00457784 /* SearchBarlViewController.swift */; };
+		5D70D3A51C153B8D00457784 /* gj.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D70D3A41C153B8D00457784 /* gj.png */; };
 		5D9E55FD1C13750E0025531B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E55FC1C13750E0025531B /* AppDelegate.swift */; };
 		5D9E55FF1C13750E0025531B /* AudoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E55FE1C13750E0025531B /* AudoiViewController.swift */; };
 		5D9E56021C13750E0025531B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56001C13750E0025531B /* Main.storyboard */; };
@@ -38,7 +41,7 @@
 		5D9E56201C1481950025531B /* Time of Our Lives.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56161C1481950025531B /* Time of Our Lives.mp3 */; };
 		5D9E56211C1481950025531B /* Usher - Caught Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56171C1481950025531B /* Usher - Caught Up.mp3 */; };
 		5D9E56271C1481E10025531B /* Next.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56241C1481E10025531B /* Next.png */; };
-		5D9E56281C1481E10025531B /* PlayPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56251C1481E10025531B /* PlayPause.png */; };
+		5D9E56281C1481E10025531B /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56251C1481E10025531B /* Play.png */; };
 		5D9E56291C1481E10025531B /* Previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E56261C1481E10025531B /* Previous.png */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +61,10 @@
 		5D70D38D1C14E6FC00457784 /* kev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kev.png; path = ../kev.png; sourceTree = "<group>"; };
 		5D70D38E1C14E6FC00457784 /* kevHart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kevHart.mp3; sourceTree = "<group>"; };
 		5D70D38F1C14E6FC00457784 /* kevHartA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kevHartA.mp3; sourceTree = "<group>"; };
-		5D70D3901C14E6FC00457784 /* kewTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kewTwo.png; path = ../kewTwo.png; sourceTree = "<group>"; };
+		5D70D3901C14E6FC00457784 /* kevTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kevTwo.png; path = ../kevTwo.png; sourceTree = "<group>"; };
+		5D70D39E1C14F16A00457784 /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
+		5D70D3A21C15173D00457784 /* SearchBarlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarlViewController.swift; sourceTree = "<group>"; };
+		5D70D3A41C153B8D00457784 /* gj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gj.png; sourceTree = "<group>"; };
 		5D9E55F91C13750E0025531B /* MakeSomthingBeautiful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeSomthingBeautiful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9E55FC1C13750E0025531B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D9E55FE1C13750E0025531B /* AudoiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudoiViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +82,7 @@
 		5D9E56161C1481950025531B /* Time of Our Lives.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Time of Our Lives.mp3"; sourceTree = "<group>"; };
 		5D9E56171C1481950025531B /* Usher - Caught Up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Usher - Caught Up.mp3"; sourceTree = "<group>"; };
 		5D9E56241C1481E10025531B /* Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next.png; sourceTree = "<group>"; };
-		5D9E56251C1481E10025531B /* PlayPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPause.png; sourceTree = "<group>"; };
+		5D9E56251C1481E10025531B /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
 		5D9E56261C1481E10025531B /* Previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Previous.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,8 +119,10 @@
 				5D9E56221C1481A30025531B /* comicAudio */,
 				5D9E56231C1481E10025531B /* playButtons */,
 				5D9E55FC1C13750E0025531B /* AppDelegate.swift */,
+				5D70D3A21C15173D00457784 /* SearchBarlViewController.swift */,
 				5D9E55FE1C13750E0025531B /* AudoiViewController.swift */,
 				5D70D3821C14BB2D00457784 /* Joke.swift */,
+				5D70D3A41C153B8D00457784 /* gj.png */,
 				5D9E56001C13750E0025531B /* Main.storyboard */,
 				5D70D37C1C1485D000457784 /* Assets.xcassets */,
 				5D9E56051C13750E0025531B /* LaunchScreen.storyboard */,
@@ -149,15 +157,16 @@
 		5D9E56231C1481E10025531B /* playButtons */ = {
 			isa = PBXGroup;
 			children = (
+				5D70D39E1C14F16A00457784 /* Pause.png */,
 				5D70D3851C14E6FC00457784 /* billBurr.png */,
 				5D70D3861C14E6FC00457784 /* gotJockes.png */,
 				5D70D38A1C14E6FC00457784 /* jimmy.png */,
 				5D70D38B1C14E6FC00457784 /* jimmyTree.png */,
 				5D70D38C1C14E6FC00457784 /* jimmyTwo.png */,
 				5D70D38D1C14E6FC00457784 /* kev.png */,
-				5D70D3901C14E6FC00457784 /* kewTwo.png */,
+				5D70D3901C14E6FC00457784 /* kevTwo.png */,
 				5D9E56241C1481E10025531B /* Next.png */,
-				5D9E56251C1481E10025531B /* PlayPause.png */,
+				5D9E56251C1481E10025531B /* Play.png */,
 				5D9E56261C1481E10025531B /* Previous.png */,
 				5D70D3801C14970800457784 /* SoundWaves.jpg */,
 			);
@@ -222,7 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D70D39D1C14E6FC00457784 /* kewTwo.png in Resources */,
+				5D70D39D1C14E6FC00457784 /* kevTwo.png in Resources */,
 				5D9E56201C1481950025531B /* Time of Our Lives.mp3 in Resources */,
 				5D70D3961C14E6FC00457784 /* jimGaffiganB.mp3 in Resources */,
 				5D9E561A1C1481950025531B /* Chris Brown - Fine China lyrics.mp3 in Resources */,
@@ -232,6 +241,7 @@
 				5D70D3951C14E6FC00457784 /* jimGaffiganA.mp3 in Resources */,
 				5D9E561B1C1481950025531B /* Jason Derulo - Trumpets.mp3 in Resources */,
 				5D9E56271C1481E10025531B /* Next.png in Resources */,
+				5D70D3A51C153B8D00457784 /* gj.png in Resources */,
 				5D70D39A1C14E6FC00457784 /* kev.png in Resources */,
 				5D9E56181C1481950025531B /* 05 set fire to the rain.m4a in Resources */,
 				5D70D37D1C1485D000457784 /* Assets.xcassets in Resources */,
@@ -240,7 +250,7 @@
 				5D9E56071C13750E0025531B /* LaunchScreen.storyboard in Resources */,
 				5D9E56021C13750E0025531B /* Main.storyboard in Resources */,
 				5D70D39C1C14E6FC00457784 /* kevHartA.mp3 in Resources */,
-				5D9E56281C1481E10025531B /* PlayPause.png in Resources */,
+				5D9E56281C1481E10025531B /* Play.png in Resources */,
 				5D70D3931C14E6FC00457784 /* gotJockes.png in Resources */,
 				5D9E56211C1481950025531B /* Usher - Caught Up.mp3 in Resources */,
 				5D9E56291C1481E10025531B /* Previous.png in Resources */,
@@ -248,6 +258,7 @@
 				5D70D3941C14E6FC00457784 /* jimGaffigan.mp3 in Resources */,
 				5D70D39B1C14E6FC00457784 /* kevHart.mp3 in Resources */,
 				5D9E561C1C1481950025531B /* Jeremih - Don_t Tell _Em _Clean Version_ _feat. YG_.mp3 in Resources */,
+				5D70D39F1C14F16A00457784 /* Pause.png in Resources */,
 				5D70D3981C14E6FC00457784 /* jimmyTree.png in Resources */,
 				5D9E561E1C1481950025531B /* OneRepublic - Good Life.mp3 in Resources */,
 				5D9E561F1C1481950025531B /* Pharrell Williams _Happy_ _with lyrics_.mp3 in Resources */,
@@ -265,6 +276,7 @@
 				5D9E55FF1C13750E0025531B /* AudoiViewController.swift in Sources */,
 				5D9E55FD1C13750E0025531B /* AppDelegate.swift in Sources */,
 				5D70D3831C14BB2D00457784 /* Joke.swift in Sources */,
+				5D70D3A31C15173D00457784 /* SearchBarlViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
