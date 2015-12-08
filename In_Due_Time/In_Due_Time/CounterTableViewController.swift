@@ -9,18 +9,39 @@
 import UIKit
 import CoreData
 
-class CounterTableViewController: UITableViewController, UITextFieldDelegate
+@objc protocol DatePickerDelegate
 {
-    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    func dateWasChosen(date: String)
+}
+
+class CounterTableViewController: UITableViewController, UITextFieldDelegate, DatePickerDelegate
+{
+    @IBOutlet weak var errorLabel: UILabel!
+    
     var todoList = Array<TheList>()
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    
     
     
     let checkImg = UIImage (contentsOfFile: "checkbutton.png")
     let unCheckImg = UIImage (contentsOfFile: "unchecked.png")
+    var buttonIndex: NSIndexPath!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "To Do List"
+        
+        let fetchRequest = NSFetchRequest(entityName: "TheList")
+        do
+        {
+        let fetchResults = try managedObjectContext.executeFetchRequest(fetchRequest) as? [TheList]
+        todoList = fetchResults!
+        }
+        catch {
+            let nserror = error as NSError
+            NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
+            abort()
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,6 +53,14 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "DatePickerSegue"
+        {
+            let pickerVC = segue.destinationViewController as!DatePickerViewController
+            pickerVC.delegate = self
+        }
     }
 
     // MARK: - Table view data source
@@ -48,7 +77,8 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("TodoCell", forIndexPath: indexPath) as! TodoCell
     
 
@@ -58,39 +88,74 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
         if aListItem.title == nil
         {
             cell.listTitleTextField.becomeFirstResponder()
+            cell.checkButton.setImage(unCheckImg, forState: UIControlState.Normal)
+            cell.listTitleTextField.text = ""
         }
         else
         {
             cell.listTitleTextField.text = aListItem.title; resignFirstResponder()
         }
+        if aListItem.isDone
+        {
+            cell.checkButton.setImage(checkImg, forState: UIControlState.Normal)
+            cell.backgroundColor = UIColor(red: 0.28, green: 0.20, blue: 0.52, alpha: 1)
+            cell.listTitleTextField.textColor = UIColor.whiteColor()
+        }
+        else
+        {
+            cell.checkButton.setImage(unCheckImg, forState: UIControlState.Normal)
+            cell.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
+            cell.listTitleTextField.textColor = UIColor.blackColor()
+        }
         
-            // I need to put a for in loop here to make the button work.
-        
+        if aListItem.date != nil
+        {
+          cell.dateButton.setTitle("Due By:" + aListItem.date!, forState: UIControlState.Normal)
+        }
         
         
         return cell
     }
 
 
-    /*
+    
     // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let aListItem = todoList[indexPath.row]
+        
+        if aListItem.isDone
+        {
+            let todoItem = todoList[indexPath.row]
+            
+        if editingStyle == .Delete
+        {
+            todoList.removeAtIndex(indexPath.row)
+            managedObjectContext.deleteObject(todoItem)
+        
+        }
+            
+           saveContext()
             // Delete the row from the data source
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            
+        }
+        else
+        {
+            errorLabel.text = "Check tasks befor you delete them!"
+        }
+            
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -117,7 +182,13 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
     }
     */
     // MARK: UITextField Delegate
-    
+    func dateWasChosen(date: String)
+    {
+        todoList[buttonIndex.row].date = date
+        
+        tableView.reloadData()
+        saveContext()
+    }
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
         var rc = false
@@ -143,6 +214,42 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
           todoList.append(aListItem)
         tableView.reloadData()
     }
+    
+    @IBAction func dateButtonPressed(sender: UIButton)
+    {
+        let contentView = sender.superview
+        let cell = contentView?.superview as! TodoCell
+        buttonIndex = tableView.indexPathForCell(cell)!
+    }
+    
+    @IBAction func checkboxPressed(sender: UIButton)
+    {
+        let contentView = sender.superview
+        let cell = contentView?.superview as! TodoCell
+        let indexPath = tableView.indexPathForCell(cell)
+        let todoItem = todoList[indexPath!.row]
+        
+        aListItem.title = cell.titleTextField.text //just in case they don't press enter when they're typing in their todo and just immediately check it off
+        
+        if sender.currentImage == unCheckImg
+        {
+            cell.checkButton.setImage(checkImg, forState: UIControlState.Normal)
+            aListItem.isDone = true
+            //            cell.backgroundColor = UIColor.lightTextColor()
+            cell.backgroundColor = UIColor(red:0.38, green:0.00, blue:0.02, alpha:1.0)
+            cell.listTitleTextField.textColor = UIColor.whiteColor()
+        }
+        else
+        {
+            cell.checkButton.setImage(unCheckImg, forState: UIControlState.Normal)
+            aListItem.isDone = false
+            cell.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
+            cell.listTitleTextField.textColor = UIColor.greenColor()
+        }
+        
+        tableView.reloadData()
+        saveContext()
+    }
 // MARK: - Private
     
     func saveContext()
@@ -157,3 +264,4 @@ class CounterTableViewController: UITableViewController, UITextFieldDelegate
         }
     }
 }
+

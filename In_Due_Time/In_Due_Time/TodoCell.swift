@@ -11,7 +11,7 @@ import UIKit
 class TodoCell: UITableViewCell {
 
     @IBOutlet var listTitleTextField: UITextField!
-
+    @IBOutlet weak var dateButton: UIButton!
     @IBOutlet var checkButton: UIButton!
   
     
@@ -28,3 +28,5 @@ class TodoCell: UITableViewCell {
     }
 
 }
+
+
